@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8fad1f36674b435e8616093336f03d5c" Name="Diagram1" ZoomLevel="50">
+        <EntityTypeShape EntityType="UCAMModel.Program" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UCAMModel.Student" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UCAMModel.StudentInstitution" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UCAMModel.StudentRegistration" Width="1.5" PointX="2.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UCAMModel.AffiliatedInstitution" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UCAMModel.CoE_PaperGenerate" Width="1.5" PointX="9.375" PointY="4.75" />
+        <EntityTypeShape EntityType="UCAMModel.Institution" Width="1.5" PointX="11.375" PointY="0.75" />
+        <EntityTypeShape EntityType="UCAMModel.CalenderUnitMaster" Width="1.5" PointX="11.75" PointY="6.125" />
+        <EntityTypeShape EntityType="UCAMModel.CalenderUnitType" Width="1.5" PointX="14" PointY="6" />
+        <EntityTypeShape EntityType="UCAMModel.ProgramType" Width="1.5" PointX="0.75" PointY="11.75" />
+        <AssociationConnector Association="UCAMModel.FK_UIUEMS_CC_CalenderUnitType_UIUEMS_CC_CalenderUnitMaster" />
+        <EntityTypeShape EntityType="UCAMModel.Batch" Width="1.5" PointX="5.375" PointY="9.75" />
+        <EntityTypeShape EntityType="UCAMModel.Course" Width="1.5" PointX="7.375" PointY="11.75" />
+        <EntityTypeShape EntityType="UCAMModel.Person" Width="1.5" PointX="11.375" PointY="9.75" />
+        <EntityTypeShape EntityType="UCAMModel.Employee" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="UCAMModel.User" Width="1.5" PointX="13.375" PointY="0.75" />
+        <EntityTypeShape EntityType="UCAMModel.UserInPerson" Width="1.5" PointX="3.375" PointY="13.75" />
+        <EntityTypeShape EntityType="UCAMModel.Semester" Width="1.5" PointX="13.75" PointY="9.75" />
+        <EntityTypeShape EntityType="UCAMModel.StudentYearSemesterHistory" Width="1.5" PointX="0.75" PointY="14.75" />
+        <EntityTypeShape EntityType="UCAMModel.Year" Width="1.5" PointX="13.75" PointY="14.75" />
+        <EntityTypeShape EntityType="UCAMModel.CourseRegistrationApprovalHistory" Width="1.5" PointX="16.375" PointY="0.75" />
+        <EntityTypeShape EntityType="UCAMModel.CourseRegistrationApprovalStatu" Width="1.5" PointX="3.375" PointY="16.75" />
+        <EntityTypeShape EntityType="UCAMModel.UserInstitution" Width="1.5" PointX="16.375" PointY="7.75" />
+        <EntityTypeShape EntityType="UCAMModel.UserAccessProgram" Width="1.5" PointX="16.375" PointY="11.75" />
+        <EntityTypeShape EntityType="UCAMModel.StudentCourseHistory" Width="1.5" PointX="9" PointY="18.75" />
+        <AssociationConnector Association="UCAMModel.FK_StudentCourseHistory_Student" />
+        <AssociationConnector Association="UCAMModel.FK_UIUEMS_CC_Student_CourseHistory_UIUEMS_CC_Student_CourseHistory" />
+        <AssociationConnector Association="UCAMModel.FK_UIUEMS_CC_Student_CourseHistory_UIUEMS_CC_Student_CourseHistory1" />
+        <EntityTypeShape EntityType="UCAMModel.MarksTemplateAndPersonAssign" Width="1.5" PointX="16.375" PointY="15.75" />
+        <EntityTypeShape EntityType="UCAMModel.ExamMarkDetail" Width="1.5" PointX="18.375" PointY="0.75" />
+        <EntityTypeShape EntityType="UCAMModel.ExamMarkMaster" Width="1.5" PointX="18.375" PointY="5.75" />
+        <EntityTypeShape EntityType="UCAMModel.StudentACUDetail" Width="1.5" PointX="5.375" PointY="18.75" />
+        <EntityTypeShape EntityType="UCAMModel.SystemImageConfiguration" Width="1.5" PointX="18.375" PointY="10.75" />
+        <EntityTypeShape EntityType="UCAMModel.SystemImageTypeMetaTable" Width="1.5" PointX="11.375" PointY="18.75" />
+        <EntityTypeShape EntityType="UCAMModel.Department" Width="1.5" PointX="13.375" PointY="18.75" />
+        <EntityTypeShape EntityType="UCAMModel.ProgramWiseFaculty" Width="1.5" PointX="18.375" PointY="15.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

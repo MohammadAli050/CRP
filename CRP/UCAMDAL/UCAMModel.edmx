@@ -1,0 +1,2289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="UCAMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BUP_AFF_Result.dbo.AffiliatedInstitution' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="AffiliatedInstitution">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="Code" />
+            <PropertyRef Name="CreatedBy" />
+            <PropertyRef Name="CreatedDate" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Code" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Address" Type="nvarchar(max)" />
+          <Property Name="Attribute1" Type="nvarchar(max)" />
+          <Property Name="Attribute2" Type="nvarchar(max)" />
+          <Property Name="Attribute3" Type="nvarchar(max)" />
+          <Property Name="CreatedBy" Type="int" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Batch">
+          <Key>
+            <PropertyRef Name="BatchId" />
+          </Key>
+          <Property Name="BatchId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AcaCalId" Type="int" />
+          <Property Name="ProgramId" Type="int" />
+          <Property Name="BatchNO" Type="int" />
+          <Property Name="Attribute1" Type="nvarchar(max)" />
+          <Property Name="Attribute2" Type="nvarchar(max)" />
+          <Property Name="Attribute3" Type="nvarchar(max)" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="CalenderUnitMaster">
+          <Key>
+            <PropertyRef Name="CalenderUnitMasterID" />
+          </Key>
+          <Property Name="CalenderUnitMasterID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreatedBy" Type="int" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="CalenderUnitType">
+          <Key>
+            <PropertyRef Name="CalenderUnitTypeID" />
+          </Key>
+          <Property Name="CalenderUnitTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CalenderUnitMasterID" Type="int" Nullable="false" />
+          <Property Name="TypeName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Code" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreatedBy" Type="int" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="CoE_PaperGenerate">
+          <Key>
+            <PropertyRef Name="SL" />
+          </Key>
+          <Property Name="SL" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DateTime" Type="datetime" />
+          <Property Name="AcaCalId" Type="int" />
+          <Property Name="ProgramId" Type="int" />
+          <Property Name="Type" Type="nvarchar(max)" />
+          <Property Name="UserLoginId" Type="nvarchar(max)" />
+          <Property Name="UserIP" Type="nvarchar(max)" />
+          <Property Name="PageName" Type="nvarchar" MaxLength="500" />
+          <Property Name="EventName" Type="nvarchar" MaxLength="500" />
+          <Property Name="MessageType" Type="nvarchar(max)" />
+          <Property Name="Message" Type="nvarchar(max)" />
+          <Property Name="StudentRoll" Type="nvarchar" MaxLength="500" />
+          <Property Name="StudentId" Type="int" />
+          <Property Name="PageId" Type="nvarchar(max)" />
+          <Property Name="PageUrl" Type="nvarchar(max)" />
+          <Property Name="IsApproved" Type="bit" />
+          <Property Name="ApprovedDate" Type="datetime" />
+          <Property Name="ApprovedLoginId" Type="nvarchar(max)" />
+          <Property Name="ApprovedIP" Type="nvarchar(max)" />
+          <Property Name="Remarks" Type="nvarchar(max)" />
+          <Property Name="DownloadDate" Type="datetime" />
+          <Property Name="DownloaderLoginId" Type="nvarchar(max)" />
+          <Property Name="DownloadIP" Type="nvarchar(max)" />
+          <Property Name="IsDownloaded" Type="bit" />
+        </EntityType>
+        <EntityType Name="Course">
+          <Key>
+            <PropertyRef Name="CourseID" />
+            <PropertyRef Name="VersionID" />
+          </Key>
+          <Property Name="CourseID" Type="int" Nullable="false" />
+          <Property Name="VersionID" Type="int" Nullable="false" />
+          <Property Name="FormalCode" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="VersionCode" Type="varchar" MaxLength="50" />
+          <Property Name="Title" Type="varchar" MaxLength="150" />
+          <Property Name="CourseGroupId" Type="int" />
+          <Property Name="ProgramID" Type="int" />
+          <Property Name="TypeDefinitionID" Type="int" />
+          <Property Name="AssocCourseID" Type="int" />
+          <Property Name="AssocVersionID" Type="int" />
+          <Property Name="StartAcademicCalenderID" Type="int" />
+          <Property Name="CourseContent" Type="varchar" MaxLength="500" />
+          <Property Name="IsCreditCourse" Type="bit" />
+          <Property Name="Credits" Type="numeric" Precision="18" Scale="2" />
+          <Property Name="IsSectionMandatory" Type="bit" />
+          <Property Name="HasEquivalents" Type="bit" />
+          <Property Name="HasMultipleACUSpan" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+          <Property Name="TranscriptCode" Type="nvarchar(max)" />
+          <Property Name="CourseGroup" Type="nvarchar(max)" />
+          <Property Name="BillTypeDefinitionID" Type="int" />
+        </EntityType>
+        <EntityType Name="CourseRegistrationApprovalHistory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AcacalId" Type="int" />
+          <Property Name="InstituteId" Type="int" />
+          <Property Name="ProgramId" Type="int" />
+          <Property Name="StudentId" Type="int" />
+          <Property Name="CourseId" Type="int" />
+          <Property Name="VersionId" Type="int" />
+          <Property Name="ApplicationStatus" Type="int" />
+          <Property Name="InstituteForwardDate" Type="datetime" />
+          <Property Name="COEApprovedDate" Type="datetime" />
+          <Property Name="OptionalDate" Type="datetime" />
+          <Property Name="OptionalDate2" Type="datetime" />
+          <Property Name="OptionalDate3" Type="datetime" />
+          <Property Name="Comments" Type="nvarchar(max)" />
+          <Property Name="Remarks" Type="nvarchar(max)" />
+          <Property Name="YearNo" Type="int" />
+          <Property Name="SemesterNo" Type="int" />
+          <Property Name="Attribute1" Type="int" />
+          <Property Name="Attribute2" Type="int" />
+          <Property Name="Attribute3" Type="nvarchar(max)" />
+          <Property Name="Attribute4" Type="nvarchar(max)" />
+          <Property Name="Attribute5" Type="nvarchar(max)" />
+          <Property Name="Attribute6" Type="nvarchar(max)" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="CourseRegistrationApprovalStatus">
+          <Key>
+            <PropertyRef Name="StatusId" />
+          </Key>
+          <Property Name="StatusId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StatusName" Type="nvarchar(max)" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="Attribute1" Type="int" />
+          <Property Name="Attribute2" Type="nvarchar" MaxLength="50" />
+          <Property Name="Attribute3" Type="nvarchar(max)" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="DeptID" />
+          </Key>
+          <Property Name="DeptID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Code" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="OpeningDate" Type="datetime" />
+          <Property Name="DetailedName" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="ClosingDate" Type="datetime" />
+          <Property Name="CreatedBy" Type="int" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmployeeID" />
+          </Key>
+          <Property Name="EmployeeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Code" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="DeptID" Type="int" />
+          <Property Name="CreatedBy" Type="int" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+          <Property Name="SchoolId" Type="int" />
+          <Property Name="Remarks" Type="nvarchar(max)" />
+          <Property Name="History" Type="nvarchar(max)" />
+          <Property Name="PersonId" Type="int" />
+          <Property Name="Attribute1" Type="nvarchar(max)" />
+          <Property Name="Attribute2" Type="nvarchar(max)" />
+          <Property Name="DOJ" Type="datetime" />
+          <Property Name="Status" Type="int" />
+          <Property Name="Program" Type="nvarchar" MaxLength="50" />
+          <Property Name="Designation" Type="nvarchar" MaxLength="50" />
+          <Property Name="LibraryCardNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="MIUEmployeeID" Type="nvarchar" MaxLength="50" />
+          <Property Name="EmployeeTypeId" Type="int" />
+          <Property Name="InstituteId" Type="int" />
+        </EntityType>
+        <EntityType Name="ExamMarkDetails">
+          <Key>
+            <PropertyRef Name="ExamMarkDetailId" />
+          </Key>
+          <Property Name="ExamMarkDetailId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ExamMarkMasterId" Type="int" />
+          <Property Name="CourseHistoryId" Type="int" />
+          <Property Name="Marks" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="ConvertedMark" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="IsFinalSubmit" Type="bit" />
+          <Property Name="ExamTemplateBasicItemId" Type="int" />
+          <Property Name="ExamStatus" Type="int" />
+          <Property Name="ExamMarkTypeId" Type="int" />
+          <Property Name="Attribute1" Type="varchar" MaxLength="50" />
+          <Property Name="Attribute2" Type="varchar" MaxLength="50" />
+          <Property Name="Attribute3" Type="varchar" MaxLength="50" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="ExamMarkMaster">
+          <Key>
+            <PropertyRef Name="ExamMarkMasterId" />
+          </Key>
+          <Property Name="ExamMarkMasterId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ExamMark" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="ExamMarkEntryDate" Type="datetime" />
+          <Property Name="ExamDate" Type="datetime" />
+          <Property Name="ExamTemplateBasicItemId" Type="int" />
+          <Property Name="AcaCalId" Type="int" />
+          <Property Name="AcaCalSectionId" Type="int" />
+          <Property Name="CourseId" Type="int" />
+          <Property Name="VersionId" Type="int" />
+          <Property Name="Attribute1" Type="varchar" MaxLength="50" />
+          <Property Name="Attribute2" Type="varchar" MaxLength="50" />
+          <Property Name="Attribute3" Type="varchar" MaxLength="50" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Institution">
+          <Key>
+            <PropertyRef Name="InstituteId" />
+          </Key>
+          <Property Name="InstituteId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="InstituteName" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="InstituteCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="InstituteAddress" Type="nvarchar(max)" />
+          <Property Name="LogoBytes" Type="nvarchar(max)" />
+          <Property Name="ActiveStatus" Type="int" />
+          <Property Name="Attribute1" Type="nvarchar(max)" />
+          <Property Name="Attribute2" Type="nvarchar(max)" />
+          <Property Name="Attribute3" Type="nvarchar(max)" />
+          <Property Name="CreatedBy" Type="int" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="MarksTemplateAndPersonAssign">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AcacalId" Type="int" />
+          <Property Name="CourseId" Type="int" />
+          <Property Name="VersionId" Type="int" />
+          <Property Name="ExamTemplateMasterId" Type="int" />
+          <Property Name="MarksUploadByOne" Type="int" />
+          <Property Name="MarksUploadByTwo" Type="int" />
+          <Property Name="FinalSubmitted" Type="int" />
+          <Property Name="FinalSubmittedDate" Type="datetime" />
+          <Property Name="Published" Type="int" />
+          <Property Name="PublishedDate" Type="datetime" />
+          <Property Name="Attribute1" Type="int" />
+          <Property Name="Attribute2" Type="int" />
+          <Property Name="Attribute3" Type="nvarchar(max)" />
+          <Property Name="Attribute4" Type="nvarchar(max)" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Person">
+          <Key>
+            <PropertyRef Name="PersonID" />
+          </Key>
+          <Property Name="PersonID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FullName" Type="nvarchar(max)" />
+          <Property Name="DOB" Type="datetime" />
+          <Property Name="Gender" Type="nvarchar(max)" />
+          <Property Name="MatrialStatus" Type="nvarchar(max)" />
+          <Property Name="BloodGroup" Type="nvarchar(max)" />
+          <Property Name="Religion" Type="nvarchar(max)" />
+          <Property Name="Nationality" Type="nvarchar(max)" />
+          <Property Name="FatherName" Type="varchar(max)" />
+          <Property Name="FatherProfession" Type="nvarchar(max)" />
+          <Property Name="MotherName" Type="nvarchar(max)" />
+          <Property Name="MotherProfession" Type="nvarchar(max)" />
+          <Property Name="GuardianName" Type="nvarchar(max)" />
+          <Property Name="Phone" Type="nvarchar(max)" />
+          <Property Name="Email" Type="nvarchar" MaxLength="250" />
+          <Property Name="PhotoPath" Type="nvarchar(max)" />
+          <Property Name="SignaturePath" Type="nvarchar(max)" />
+          <Property Name="Remarks" Type="nvarchar(max)" />
+          <Property Name="TypeId" Type="int" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="CreatedBy" Type="int" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+          <Property Name="SMSContactSelf" Type="nvarchar" MaxLength="50" />
+          <Property Name="SMSContactGuardian" Type="nvarchar" MaxLength="50" />
+          <Property Name="PhotoBytes" Type="nvarchar(max)" />
+          <Property Name="SignatureBytes" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Program">
+          <Key>
+            <PropertyRef Name="ProgramID" />
+          </Key>
+          <Property Name="ProgramID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Code" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ShortName" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="TotalCredit" Type="numeric" Precision="18" Scale="2" />
+          <Property Name="DeptID" Type="int" Nullable="false" />
+          <Property Name="DetailName" Type="varchar" MaxLength="100" />
+          <Property Name="ProgramTypeID" Type="int" />
+          <Property Name="CalenderUnitMasterID" Type="int" />
+          <Property Name="Attribute1" Type="nvarchar(max)" />
+          <Property Name="Attribute2" Type="nvarchar(max)" />
+          <Property Name="Attribute3" Type="nvarchar(max)" />
+          <Property Name="CreatedBy" Type="int" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+          <Property Name="DegreeName" Type="varchar" MaxLength="100" />
+          <Property Name="Duration" Type="int" />
+          <Property Name="FacultyId" Type="int" />
+          <Property Name="InstituteId" Type="int" />
+        </EntityType>
+        <EntityType Name="ProgramType">
+          <Key>
+            <PropertyRef Name="ProgramTypeID" />
+          </Key>
+          <Property Name="ProgramTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TypeDescription" Type="varchar" MaxLength="200" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ProgramWiseFaculty">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FacultyName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="CreatedBy" Type="int" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Semester">
+          <Key>
+            <PropertyRef Name="SemesterId" />
+          </Key>
+          <Property Name="SemesterId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SemesterName" Type="varchar" MaxLength="50" />
+          <Property Name="YearId" Type="int" />
+          <Property Name="ProgramId" Type="int" />
+          <Property Name="SemesterNo" Type="int" />
+          <Property Name="Attribute1" Type="varchar" MaxLength="50" />
+          <Property Name="Attribute2" Type="varchar" MaxLength="50" />
+          <Property Name="Attribute3" Type="varchar" MaxLength="50" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Student">
+          <Key>
+            <PropertyRef Name="StudentID" />
+          </Key>
+          <Property Name="StudentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Roll" Type="nvarchar" MaxLength="15" Nullable="false" />
+          <Property Name="PersonID" Type="int" Nullable="false" />
+          <Property Name="BatchId" Type="int" Nullable="false" />
+          <Property Name="ProgramID" Type="int" Nullable="false" />
+          <Property Name="SessionId" Type="int" Nullable="false" />
+          <Property Name="GradeMasterID" Type="int" />
+          <Property Name="AccountHeadsID" Type="int" />
+          <Property Name="TreeMasterID" Type="int" />
+          <Property Name="TreeCalendarMasterID" Type="int" />
+          <Property Name="CandidateID" Type="int" />
+          <Property Name="Major1NodeID" Type="int" />
+          <Property Name="Major2NodeID" Type="int" />
+          <Property Name="Major3NodeID" Type="int" />
+          <Property Name="Minor1NodeID" Type="int" />
+          <Property Name="Minor2NodeID" Type="int" />
+          <Property Name="Minor3NodeID" Type="int" />
+          <Property Name="History" Type="nvarchar(max)" />
+          <Property Name="IsCompleted" Type="bit" />
+          <Property Name="CompletedAcaCalID" Type="int" />
+          <Property Name="TranscriptSerial" Type="nvarchar" MaxLength="12" />
+          <Property Name="Remarks" Type="varchar" MaxLength="500" />
+          <Property Name="Pre_Math" Type="bit" />
+          <Property Name="Pre_English" Type="bit" />
+          <Property Name="IsDiploma" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="IsProvisionalAdmission" Type="bit" />
+          <Property Name="ValidUptoProAdmissionDate" Type="datetime" />
+          <Property Name="Attribute1" Type="nvarchar" MaxLength="500" />
+          <Property Name="Attribute2" Type="nvarchar" MaxLength="500" />
+          <Property Name="Attribute3" Type="nvarchar" MaxLength="500" />
+          <Property Name="CreatedBy" Type="int" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BUP_AFF_Result.dbo.StudentACUDetail' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="StudentACUDetail">
+          <Key>
+            <PropertyRef Name="StdACUDetailID" />
+            <PropertyRef Name="StdAcademicCalenderID" />
+            <PropertyRef Name="StudentID" />
+            <PropertyRef Name="CreatedBy" />
+            <PropertyRef Name="CreatedDate" />
+          </Key>
+          <Property Name="StdACUDetailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StdAcademicCalenderID" Type="int" Nullable="false" />
+          <Property Name="StudentID" Type="int" Nullable="false" />
+          <Property Name="StatusTypeID" Type="int" />
+          <Property Name="SchSetUpID" Type="int" />
+          <Property Name="Credit" Type="decimal" Precision="3" Scale="1" />
+          <Property Name="CGPA" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="GPA" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TranscriptCredit" Type="decimal" Precision="3" Scale="1" />
+          <Property Name="TranscriptCGPA" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TranscriptGPA" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TotalGradePoint" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="IsAllGradeSubmitted" Type="bit" />
+          <Property Name="Description" Type="varchar" MaxLength="200" />
+          <Property Name="CreatedBy" Type="int" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+          <Property Name="Remarks" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="StudentCourseHistory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StudentID" Type="int" Nullable="false" />
+          <Property Name="CalCourseProgNodeID" Type="int" />
+          <Property Name="AcaCalSectionID" Type="int" />
+          <Property Name="RetakeNo" Type="int" />
+          <Property Name="ObtainedTotalMarks" Type="numeric" Precision="18" Scale="2" />
+          <Property Name="ObtainedGPA" Type="numeric" Precision="18" Scale="2" />
+          <Property Name="ObtainedGrade" Type="varchar" MaxLength="2" />
+          <Property Name="GradeId" Type="int" />
+          <Property Name="CourseStatusID" Type="int" />
+          <Property Name="CourseStatusDate" Type="datetime" />
+          <Property Name="AcaCalID" Type="int" />
+          <Property Name="CourseID" Type="int" Nullable="false" />
+          <Property Name="VersionID" Type="int" Nullable="false" />
+          <Property Name="CourseCredit" Type="numeric" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="CompletedCredit" Type="numeric" Precision="18" Scale="2" />
+          <Property Name="Node_CourseID" Type="int" />
+          <Property Name="NodeID" Type="int" />
+          <Property Name="IsMultipleACUSpan" Type="bit" />
+          <Property Name="IsConsiderGPA" Type="bit" />
+          <Property Name="CourseWavTransfrID" Type="int" />
+          <Property Name="SemesterNo" Type="int" />
+          <Property Name="YearNo" Type="int" />
+          <Property Name="EqCourseHistoryId" Type="int" />
+          <Property Name="Attribute1" Type="nvarchar(max)" />
+          <Property Name="Attribute2" Type="nvarchar(max)" />
+          <Property Name="Attribute3" Type="nvarchar(max)" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+          <Property Name="Remark" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="StudentInstitution">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StudentId" Type="int" Nullable="false" />
+          <Property Name="InstitutionId" Type="int" Nullable="false" />
+          <Property Name="Attribute1" Type="nvarchar(max)" />
+          <Property Name="Attribute2" Type="nvarchar(max)" />
+          <Property Name="Attribute3" Type="nvarchar(max)" />
+          <Property Name="CreatedBy" Type="int" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+          <Property Name="ExemCenterId" Type="int" />
+        </EntityType>
+        <EntityType Name="StudentRegistration">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StudentId" Type="int" Nullable="false" />
+          <Property Name="RegistrationNo" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="SessionId" Type="int" />
+          <Property Name="Attribute1" Type="nvarchar(max)" />
+          <Property Name="Attribute2" Type="nvarchar(max)" />
+          <Property Name="Attribute3" Type="nvarchar(max)" />
+          <Property Name="CreatedBy" Type="int" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="StudentYearSemesterHistory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StudentId" Type="int" />
+          <Property Name="AcacalId" Type="int" />
+          <Property Name="YearId" Type="int" />
+          <Property Name="SemesterId" Type="int" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="IsClosed" Type="bit" />
+          <Property Name="Remarks" Type="nvarchar(max)" />
+          <Property Name="Attribute1" Type="int" />
+          <Property Name="Attribute2" Type="int" />
+          <Property Name="Attribute3" Type="nvarchar(max)" />
+          <Property Name="Attribute4" Type="nvarchar(max)" />
+          <Property Name="Attribute5" Type="nvarchar(max)" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SystemImageConfiguration">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AcacalId" Type="int" />
+          <Property Name="ProgramId" Type="int" />
+          <Property Name="BatchId" Type="int" />
+          <Property Name="ImageTypeId" Type="int" />
+          <Property Name="ImageBytes" Type="nvarchar(max)" />
+          <Property Name="Remarks" Type="nvarchar(max)" />
+          <Property Name="Comments" Type="nvarchar(max)" />
+          <Property Name="Attribute1" Type="int" />
+          <Property Name="Attribute2" Type="int" />
+          <Property Name="Attribute3" Type="nvarchar(max)" />
+          <Property Name="Attribute4" Type="nvarchar(max)" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SystemImageTypeMetaTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ImageType" Type="nvarchar(max)" />
+          <Property Name="Remarks" Type="nvarchar(max)" />
+          <Property Name="Comments" Type="nvarchar(max)" />
+          <Property Name="Attribute1" Type="int" />
+          <Property Name="Attribute2" Type="int" />
+          <Property Name="Attribute3" Type="nvarchar(max)" />
+          <Property Name="Attribute4" Type="nvarchar(max)" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="User_ID" />
+          </Key>
+          <Property Name="User_ID" Type="int" Nullable="false" />
+          <Property Name="LogInID" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="RoleID" Type="int" />
+          <Property Name="RoleExistStartDate" Type="datetime" />
+          <Property Name="RoleExistEndDate" Type="datetime" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="CreatedBy" Type="int" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="UserAccessProgram">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="User_ID" Type="int" />
+          <Property Name="AccessPattern" Type="nvarchar(max)" />
+          <Property Name="AccessStartDate" Type="datetime" />
+          <Property Name="AccessEndDate" Type="datetime" />
+          <Property Name="IsAllCourse" Type="bit" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BUP_AFF_Result.dbo.UserInPerson' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="UserInPerson">
+          <Key>
+            <PropertyRef Name="User_ID" />
+            <PropertyRef Name="PersonID" />
+          </Key>
+          <Property Name="User_ID" Type="int" Nullable="false" />
+          <Property Name="PersonID" Type="int" Nullable="false" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="UserInstitution">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="User_ID" Type="int" Nullable="false" />
+          <Property Name="InstitutionID" Type="int" />
+          <Property Name="ProgramID" Type="int" />
+          <Property Name="Attribute1" Type="nvarchar" MaxLength="50" />
+          <Property Name="Attribute2" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Year">
+          <Key>
+            <PropertyRef Name="YearId" />
+          </Key>
+          <Property Name="YearId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="YearName" Type="varchar" MaxLength="50" />
+          <Property Name="Code" Type="varchar" MaxLength="10" />
+          <Property Name="YearNo" Type="int" />
+          <Property Name="ProgramTypeId" Type="int" />
+          <Property Name="ProgramId" Type="int" />
+          <Property Name="DepartmentId" Type="int" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <Association Name="FK_StudentCourseHistory_Student">
+          <End Role="Student" Type="Self.Student" Multiplicity="1" />
+          <End Role="StudentCourseHistory" Type="Self.StudentCourseHistory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Student">
+              <PropertyRef Name="StudentID" />
+            </Principal>
+            <Dependent Role="StudentCourseHistory">
+              <PropertyRef Name="StudentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UIUEMS_CC_CalenderUnitType_UIUEMS_CC_CalenderUnitMaster">
+          <End Role="CalenderUnitMaster" Type="Self.CalenderUnitMaster" Multiplicity="1" />
+          <End Role="CalenderUnitType" Type="Self.CalenderUnitType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CalenderUnitMaster">
+              <PropertyRef Name="CalenderUnitMasterID" />
+            </Principal>
+            <Dependent Role="CalenderUnitType">
+              <PropertyRef Name="CalenderUnitMasterID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UIUEMS_CC_Student_CourseHistory_UIUEMS_CC_Student_CourseHistory">
+          <End Role="StudentCourseHistory" Type="Self.StudentCourseHistory" Multiplicity="1" />
+          <End Role="StudentCourseHistory1" Type="Self.StudentCourseHistory" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="StudentCourseHistory">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="StudentCourseHistory1">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UIUEMS_CC_Student_CourseHistory_UIUEMS_CC_Student_CourseHistory1">
+          <End Role="StudentCourseHistory" Type="Self.StudentCourseHistory" Multiplicity="1" />
+          <End Role="StudentCourseHistory1" Type="Self.StudentCourseHistory" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="StudentCourseHistory">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="StudentCourseHistory1">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="UCAMModelStoreContainer">
+          <EntitySet Name="Batch" EntityType="Self.Batch" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CalenderUnitMaster" EntityType="Self.CalenderUnitMaster" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CalenderUnitType" EntityType="Self.CalenderUnitType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CoE_PaperGenerate" EntityType="Self.CoE_PaperGenerate" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Course" EntityType="Self.Course" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CourseRegistrationApprovalHistory" EntityType="Self.CourseRegistrationApprovalHistory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CourseRegistrationApprovalStatus" EntityType="Self.CourseRegistrationApprovalStatus" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Department" EntityType="Self.Department" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ExamMarkDetails" EntityType="Self.ExamMarkDetails" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ExamMarkMaster" EntityType="Self.ExamMarkMaster" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Institution" EntityType="Self.Institution" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MarksTemplateAndPersonAssign" EntityType="Self.MarksTemplateAndPersonAssign" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Person" EntityType="Self.Person" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Program" EntityType="Self.Program" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ProgramType" EntityType="Self.ProgramType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ProgramWiseFaculty" EntityType="Self.ProgramWiseFaculty" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Semester" EntityType="Self.Semester" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="StudentCourseHistory" EntityType="Self.StudentCourseHistory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="StudentInstitution" EntityType="Self.StudentInstitution" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="StudentRegistration" EntityType="Self.StudentRegistration" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="StudentYearSemesterHistory" EntityType="Self.StudentYearSemesterHistory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SystemImageConfiguration" EntityType="Self.SystemImageConfiguration" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SystemImageTypeMetaTable" EntityType="Self.SystemImageTypeMetaTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserAccessProgram" EntityType="Self.UserAccessProgram" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserInstitution" EntityType="Self.UserInstitution" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Year" EntityType="Self.Year" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AffiliatedInstitution" EntityType="Self.AffiliatedInstitution" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [AffiliatedInstitution].[Id] AS [Id], 
+    [AffiliatedInstitution].[Name] AS [Name], 
+    [AffiliatedInstitution].[Code] AS [Code], 
+    [AffiliatedInstitution].[Address] AS [Address], 
+    [AffiliatedInstitution].[Attribute1] AS [Attribute1], 
+    [AffiliatedInstitution].[Attribute2] AS [Attribute2], 
+    [AffiliatedInstitution].[Attribute3] AS [Attribute3], 
+    [AffiliatedInstitution].[CreatedBy] AS [CreatedBy], 
+    [AffiliatedInstitution].[CreatedDate] AS [CreatedDate], 
+    [AffiliatedInstitution].[ModifiedBy] AS [ModifiedBy], 
+    [AffiliatedInstitution].[ModifiedDate] AS [ModifiedDate]
+    FROM [dbo].[AffiliatedInstitution] AS [AffiliatedInstitution]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="StudentACUDetail" EntityType="Self.StudentACUDetail" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [StudentACUDetail].[StdACUDetailID] AS [StdACUDetailID], 
+    [StudentACUDetail].[StdAcademicCalenderID] AS [StdAcademicCalenderID], 
+    [StudentACUDetail].[StudentID] AS [StudentID], 
+    [StudentACUDetail].[StatusTypeID] AS [StatusTypeID], 
+    [StudentACUDetail].[SchSetUpID] AS [SchSetUpID], 
+    [StudentACUDetail].[Credit] AS [Credit], 
+    [StudentACUDetail].[CGPA] AS [CGPA], 
+    [StudentACUDetail].[GPA] AS [GPA], 
+    [StudentACUDetail].[TranscriptCredit] AS [TranscriptCredit], 
+    [StudentACUDetail].[TranscriptCGPA] AS [TranscriptCGPA], 
+    [StudentACUDetail].[TranscriptGPA] AS [TranscriptGPA], 
+    [StudentACUDetail].[TotalGradePoint] AS [TotalGradePoint], 
+    [StudentACUDetail].[IsAllGradeSubmitted] AS [IsAllGradeSubmitted], 
+    [StudentACUDetail].[Description] AS [Description], 
+    [StudentACUDetail].[CreatedBy] AS [CreatedBy], 
+    [StudentACUDetail].[CreatedDate] AS [CreatedDate], 
+    [StudentACUDetail].[ModifiedBy] AS [ModifiedBy], 
+    [StudentACUDetail].[ModifiedDate] AS [ModifiedDate], 
+    [StudentACUDetail].[Remarks] AS [Remarks]
+    FROM [dbo].[StudentACUDetail] AS [StudentACUDetail]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="UserInPerson" EntityType="Self.UserInPerson" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [UserInPerson].[User_ID] AS [User_ID], 
+    [UserInPerson].[PersonID] AS [PersonID], 
+    [UserInPerson].[CreatedBy] AS [CreatedBy], 
+    [UserInPerson].[CreatedDate] AS [CreatedDate], 
+    [UserInPerson].[ModifiedBy] AS [ModifiedBy], 
+    [UserInPerson].[ModifiedDate] AS [ModifiedDate]
+    FROM [dbo].[UserInPerson] AS [UserInPerson]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_StudentCourseHistory_Student" Association="Self.FK_StudentCourseHistory_Student">
+            <End Role="Student" EntitySet="Student" />
+            <End Role="StudentCourseHistory" EntitySet="StudentCourseHistory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UIUEMS_CC_CalenderUnitType_UIUEMS_CC_CalenderUnitMaster" Association="Self.FK_UIUEMS_CC_CalenderUnitType_UIUEMS_CC_CalenderUnitMaster">
+            <End Role="CalenderUnitMaster" EntitySet="CalenderUnitMaster" />
+            <End Role="CalenderUnitType" EntitySet="CalenderUnitType" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UIUEMS_CC_Student_CourseHistory_UIUEMS_CC_Student_CourseHistory" Association="Self.FK_UIUEMS_CC_Student_CourseHistory_UIUEMS_CC_Student_CourseHistory">
+            <End Role="StudentCourseHistory" EntitySet="StudentCourseHistory" />
+            <End Role="StudentCourseHistory1" EntitySet="StudentCourseHistory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UIUEMS_CC_Student_CourseHistory_UIUEMS_CC_Student_CourseHistory1" Association="Self.FK_UIUEMS_CC_Student_CourseHistory_UIUEMS_CC_Student_CourseHistory1">
+            <End Role="StudentCourseHistory" EntitySet="StudentCourseHistory" />
+            <End Role="StudentCourseHistory1" EntitySet="StudentCourseHistory" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="UCAMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Program">
+          <Key>
+            <PropertyRef Name="ProgramID" />
+          </Key>
+          <Property Name="ProgramID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ShortName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TotalCredit" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="DeptID" Type="Int32" Nullable="false" />
+          <Property Name="DetailName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ProgramTypeID" Type="Int32" />
+          <Property Name="CalenderUnitMasterID" Type="Int32" />
+          <Property Name="Attribute1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+          <Property Name="DegreeName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Duration" Type="Int32" />
+          <Property Name="FacultyId" Type="Int32" />
+          <Property Name="InstituteId" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Student">
+          <Key>
+            <PropertyRef Name="StudentID" />
+          </Key>
+          <Property Name="StudentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Roll" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PersonID" Type="Int32" Nullable="false" />
+          <Property Name="BatchId" Type="Int32" Nullable="false" />
+          <Property Name="ProgramID" Type="Int32" Nullable="false" />
+          <Property Name="SessionId" Type="Int32" Nullable="false" />
+          <Property Name="GradeMasterID" Type="Int32" />
+          <Property Name="AccountHeadsID" Type="Int32" />
+          <Property Name="TreeMasterID" Type="Int32" />
+          <Property Name="TreeCalendarMasterID" Type="Int32" />
+          <Property Name="CandidateID" Type="Int32" />
+          <Property Name="Major1NodeID" Type="Int32" />
+          <Property Name="Major2NodeID" Type="Int32" />
+          <Property Name="Major3NodeID" Type="Int32" />
+          <Property Name="Minor1NodeID" Type="Int32" />
+          <Property Name="Minor2NodeID" Type="Int32" />
+          <Property Name="Minor3NodeID" Type="Int32" />
+          <Property Name="History" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IsCompleted" Type="Boolean" />
+          <Property Name="CompletedAcaCalID" Type="Int32" />
+          <Property Name="TranscriptSerial" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+          <Property Name="Remarks" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Pre_Math" Type="Boolean" />
+          <Property Name="Pre_English" Type="Boolean" />
+          <Property Name="IsDiploma" Type="Boolean" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="IsDeleted" Type="Boolean" />
+          <Property Name="IsProvisionalAdmission" Type="Boolean" />
+          <Property Name="ValidUptoProAdmissionDate" Type="DateTime" Precision="3" />
+          <Property Name="Attribute1" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute2" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute3" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="StudentCourseHistories" Relationship="UCAMModel.FK_StudentCourseHistory_Student" FromRole="Student" ToRole="StudentCourseHistory" />
+        </EntityType>
+        <EntityType Name="StudentInstitution">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StudentId" Type="Int32" Nullable="false" />
+          <Property Name="InstitutionId" Type="Int32" Nullable="false" />
+          <Property Name="Attribute1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+          <Property Name="ExemCenterId" Type="Int32" />
+        </EntityType>
+        <EntityType Name="StudentRegistration">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StudentId" Type="Int32" Nullable="false" />
+          <Property Name="RegistrationNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SessionId" Type="Int32" />
+          <Property Name="Attribute1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="AffiliatedInstitution">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="Code" />
+            <PropertyRef Name="CreatedBy" />
+            <PropertyRef Name="CreatedDate" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="UCAMEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Programs" EntityType="Self.Program" />
+          <EntitySet Name="Students" EntityType="Self.Student" />
+          <EntitySet Name="StudentInstitutions" EntityType="Self.StudentInstitution" />
+          <EntitySet Name="StudentRegistrations" EntityType="Self.StudentRegistration" />
+          <EntitySet Name="AffiliatedInstitutions" EntityType="Self.AffiliatedInstitution" />
+          <EntitySet Name="CoE_PaperGenerate" EntityType="UCAMModel.CoE_PaperGenerate" />
+          <EntitySet Name="Institutions" EntityType="UCAMModel.Institution" />
+          <EntitySet Name="CalenderUnitMasters" EntityType="UCAMModel.CalenderUnitMaster" />
+          <EntitySet Name="CalenderUnitTypes" EntityType="UCAMModel.CalenderUnitType" />
+          <EntitySet Name="ProgramTypes" EntityType="UCAMModel.ProgramType" />
+          <AssociationSet Name="FK_UIUEMS_CC_CalenderUnitType_UIUEMS_CC_CalenderUnitMaster" Association="UCAMModel.FK_UIUEMS_CC_CalenderUnitType_UIUEMS_CC_CalenderUnitMaster">
+            <End Role="CalenderUnitMaster" EntitySet="CalenderUnitMasters" />
+            <End Role="CalenderUnitType" EntitySet="CalenderUnitTypes" />
+          </AssociationSet>
+          <EntitySet Name="Batches" EntityType="UCAMModel.Batch" />
+          <EntitySet Name="Courses" EntityType="UCAMModel.Course" />
+          <EntitySet Name="People" EntityType="UCAMModel.Person" />
+          <EntitySet Name="Employees" EntityType="UCAMModel.Employee" />
+          <EntitySet Name="Users" EntityType="UCAMModel.User" />
+          <EntitySet Name="UserInPersons" EntityType="UCAMModel.UserInPerson" />
+          <EntitySet Name="Semesters" EntityType="UCAMModel.Semester" />
+          <EntitySet Name="StudentYearSemesterHistories" EntityType="UCAMModel.StudentYearSemesterHistory" />
+          <EntitySet Name="Years" EntityType="UCAMModel.Year" />
+          <EntitySet Name="CourseRegistrationApprovalHistories" EntityType="UCAMModel.CourseRegistrationApprovalHistory" />
+          <EntitySet Name="CourseRegistrationApprovalStatus" EntityType="UCAMModel.CourseRegistrationApprovalStatu" />
+          <EntitySet Name="UserInstitutions" EntityType="UCAMModel.UserInstitution" />
+          <EntitySet Name="UserAccessPrograms" EntityType="UCAMModel.UserAccessProgram" />
+          <EntitySet Name="StudentCourseHistories" EntityType="UCAMModel.StudentCourseHistory" />
+          <AssociationSet Name="FK_StudentCourseHistory_Student" Association="UCAMModel.FK_StudentCourseHistory_Student">
+            <End Role="Student" EntitySet="Students" />
+            <End Role="StudentCourseHistory" EntitySet="StudentCourseHistories" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UIUEMS_CC_Student_CourseHistory_UIUEMS_CC_Student_CourseHistory" Association="UCAMModel.FK_UIUEMS_CC_Student_CourseHistory_UIUEMS_CC_Student_CourseHistory">
+            <End Role="StudentCourseHistory" EntitySet="StudentCourseHistories" />
+            <End Role="StudentCourseHistory1" EntitySet="StudentCourseHistories" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UIUEMS_CC_Student_CourseHistory_UIUEMS_CC_Student_CourseHistory1" Association="UCAMModel.FK_UIUEMS_CC_Student_CourseHistory_UIUEMS_CC_Student_CourseHistory1">
+            <End Role="StudentCourseHistory" EntitySet="StudentCourseHistories" />
+            <End Role="StudentCourseHistory1" EntitySet="StudentCourseHistories" />
+          </AssociationSet>
+          <EntitySet Name="MarksTemplateAndPersonAssigns" EntityType="UCAMModel.MarksTemplateAndPersonAssign" />
+          <EntitySet Name="ExamMarkDetails" EntityType="UCAMModel.ExamMarkDetail" />
+          <EntitySet Name="ExamMarkMasters" EntityType="UCAMModel.ExamMarkMaster" />
+          <EntitySet Name="StudentACUDetails" EntityType="UCAMModel.StudentACUDetail" />
+          <EntitySet Name="SystemImageConfigurations" EntityType="UCAMModel.SystemImageConfiguration" />
+          <EntitySet Name="SystemImageTypeMetaTables" EntityType="UCAMModel.SystemImageTypeMetaTable" />
+          <EntitySet Name="Departments" EntityType="UCAMModel.Department" />
+          <EntitySet Name="ProgramWiseFaculties" EntityType="UCAMModel.ProgramWiseFaculty" />
+        </EntityContainer>
+        <EntityType Name="CoE_PaperGenerate">
+          <Key>
+            <PropertyRef Name="SL" />
+          </Key>
+          <Property Name="SL" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DateTime" Type="DateTime" Precision="3" />
+          <Property Name="AcaCalId" Type="Int32" />
+          <Property Name="ProgramId" Type="Int32" />
+          <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UserLoginId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UserIP" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PageName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="EventName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="MessageType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="StudentRoll" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="StudentId" Type="Int32" />
+          <Property Name="PageId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PageUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IsApproved" Type="Boolean" />
+          <Property Name="ApprovedDate" Type="DateTime" Precision="3" />
+          <Property Name="ApprovedLoginId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ApprovedIP" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DownloadDate" Type="DateTime" Precision="3" />
+          <Property Name="DownloaderLoginId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DownloadIP" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IsDownloaded" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="Institution">
+          <Key>
+            <PropertyRef Name="InstituteId" />
+          </Key>
+          <Property Name="InstituteId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="InstituteName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="InstituteCode" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="InstituteAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+          <Property Name="LogoBytes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ActiveStatus" Type="Int32" />
+        </EntityType>
+        <EntityType Name="CalenderUnitMaster">
+          <Key>
+            <PropertyRef Name="CalenderUnitMasterID" />
+          </Key>
+          <Property Name="CalenderUnitMasterID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="CalenderUnitTypes" Relationship="UCAMModel.FK_UIUEMS_CC_CalenderUnitType_UIUEMS_CC_CalenderUnitMaster" FromRole="CalenderUnitMaster" ToRole="CalenderUnitType" />
+        </EntityType>
+        <EntityType Name="CalenderUnitType">
+          <Key>
+            <PropertyRef Name="CalenderUnitTypeID" />
+          </Key>
+          <Property Name="CalenderUnitTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CalenderUnitMasterID" Type="Int32" Nullable="false" />
+          <Property Name="TypeName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="CalenderUnitMaster" Relationship="UCAMModel.FK_UIUEMS_CC_CalenderUnitType_UIUEMS_CC_CalenderUnitMaster" FromRole="CalenderUnitType" ToRole="CalenderUnitMaster" />
+        </EntityType>
+        <EntityType Name="ProgramType">
+          <Key>
+            <PropertyRef Name="ProgramTypeID" />
+          </Key>
+          <Property Name="ProgramTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TypeDescription" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="FK_UIUEMS_CC_CalenderUnitType_UIUEMS_CC_CalenderUnitMaster">
+          <End Type="UCAMModel.CalenderUnitMaster" Role="CalenderUnitMaster" Multiplicity="1" />
+          <End Type="UCAMModel.CalenderUnitType" Role="CalenderUnitType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CalenderUnitMaster">
+              <PropertyRef Name="CalenderUnitMasterID" />
+            </Principal>
+            <Dependent Role="CalenderUnitType">
+              <PropertyRef Name="CalenderUnitMasterID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Batch">
+          <Key>
+            <PropertyRef Name="BatchId" />
+          </Key>
+          <Property Name="BatchId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AcaCalId" Type="Int32" />
+          <Property Name="ProgramId" Type="Int32" />
+          <Property Name="BatchNO" Type="Int32" />
+          <Property Name="Attribute1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Course">
+          <Key>
+            <PropertyRef Name="CourseID" />
+            <PropertyRef Name="VersionID" />
+          </Key>
+          <Property Name="CourseID" Type="Int32" Nullable="false" />
+          <Property Name="VersionID" Type="Int32" Nullable="false" />
+          <Property Name="FormalCode" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="VersionCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Title" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="CourseGroupId" Type="Int32" />
+          <Property Name="ProgramID" Type="Int32" />
+          <Property Name="TypeDefinitionID" Type="Int32" />
+          <Property Name="AssocCourseID" Type="Int32" />
+          <Property Name="AssocVersionID" Type="Int32" />
+          <Property Name="StartAcademicCalenderID" Type="Int32" />
+          <Property Name="CourseContent" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="IsCreditCourse" Type="Boolean" />
+          <Property Name="Credits" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="IsSectionMandatory" Type="Boolean" />
+          <Property Name="HasEquivalents" Type="Boolean" />
+          <Property Name="HasMultipleACUSpan" Type="Boolean" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+          <Property Name="TranscriptCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CourseGroup" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BillTypeDefinitionID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Person">
+          <Key>
+            <PropertyRef Name="PersonID" />
+          </Key>
+          <Property Name="PersonID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FullName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DOB" Type="DateTime" Precision="3" />
+          <Property Name="Gender" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MatrialStatus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BloodGroup" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Religion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Nationality" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FatherName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="FatherProfession" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MotherName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MotherProfession" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="GuardianName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="PhotoPath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SignaturePath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TypeId" Type="Int32" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="IsDeleted" Type="Boolean" />
+          <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+          <Property Name="SMSContactSelf" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SMSContactGuardian" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PhotoBytes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SignatureBytes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmployeeID" />
+          </Key>
+          <Property Name="EmployeeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Code" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="DeptID" Type="Int32" />
+          <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+          <Property Name="SchoolId" Type="Int32" />
+          <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="History" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PersonId" Type="Int32" />
+          <Property Name="Attribute1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DOJ" Type="DateTime" Precision="3" />
+          <Property Name="Status" Type="Int32" />
+          <Property Name="Program" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Designation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LibraryCardNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MIUEmployeeID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EmployeeTypeId" Type="Int32" />
+          <Property Name="InstituteId" Type="Int32" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="User_ID" />
+          </Key>
+          <Property Name="User_ID" Type="Int32" Nullable="false" />
+          <Property Name="LogInID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="RoleID" Type="Int32" />
+          <Property Name="RoleExistStartDate" Type="DateTime" Precision="3" />
+          <Property Name="RoleExistEndDate" Type="DateTime" Precision="3" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="UserInPerson">
+          <Key>
+            <PropertyRef Name="User_ID" />
+            <PropertyRef Name="PersonID" />
+          </Key>
+          <Property Name="User_ID" Type="Int32" Nullable="false" />
+          <Property Name="PersonID" Type="Int32" Nullable="false" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Semester">
+          <Key>
+            <PropertyRef Name="SemesterId" />
+          </Key>
+          <Property Name="SemesterId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SemesterName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="YearId" Type="Int32" />
+          <Property Name="ProgramId" Type="Int32" />
+          <Property Name="SemesterNo" Type="Int32" />
+          <Property Name="Attribute1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Attribute2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Attribute3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="StudentYearSemesterHistory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StudentId" Type="Int32" />
+          <Property Name="AcacalId" Type="Int32" />
+          <Property Name="YearId" Type="Int32" />
+          <Property Name="SemesterId" Type="Int32" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="IsClosed" Type="Boolean" />
+          <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute1" Type="Int32" />
+          <Property Name="Attribute2" Type="Int32" />
+          <Property Name="Attribute3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute5" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Year">
+          <Key>
+            <PropertyRef Name="YearId" />
+          </Key>
+          <Property Name="YearId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="YearName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="YearNo" Type="Int32" />
+          <Property Name="ProgramTypeId" Type="Int32" />
+          <Property Name="ProgramId" Type="Int32" />
+          <Property Name="DepartmentId" Type="Int32" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="CourseRegistrationApprovalHistory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AcacalId" Type="Int32" />
+          <Property Name="InstituteId" Type="Int32" />
+          <Property Name="ProgramId" Type="Int32" />
+          <Property Name="StudentId" Type="Int32" />
+          <Property Name="CourseId" Type="Int32" />
+          <Property Name="VersionId" Type="Int32" />
+          <Property Name="ApplicationStatus" Type="Int32" />
+          <Property Name="InstituteForwardDate" Type="DateTime" Precision="3" />
+          <Property Name="COEApprovedDate" Type="DateTime" Precision="3" />
+          <Property Name="OptionalDate" Type="DateTime" Precision="3" />
+          <Property Name="OptionalDate2" Type="DateTime" Precision="3" />
+          <Property Name="OptionalDate3" Type="DateTime" Precision="3" />
+          <Property Name="Comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="YearNo" Type="Int32" />
+          <Property Name="SemesterNo" Type="Int32" />
+          <Property Name="Attribute1" Type="Int32" />
+          <Property Name="Attribute2" Type="Int32" />
+          <Property Name="Attribute3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute5" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute6" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="CourseRegistrationApprovalStatu">
+          <Key>
+            <PropertyRef Name="StatusId" />
+          </Key>
+          <Property Name="StatusId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StatusName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="Attribute1" Type="Int32" />
+          <Property Name="Attribute2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="UserInstitution">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="User_ID" Type="Int32" Nullable="false" />
+          <Property Name="InstitutionID" Type="Int32" />
+          <Property Name="ProgramID" Type="Int32" />
+          <Property Name="Attribute1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="UserAccessProgram">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="User_ID" Type="Int32" />
+          <Property Name="AccessPattern" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AccessStartDate" Type="DateTime" Precision="3" />
+          <Property Name="AccessEndDate" Type="DateTime" Precision="3" />
+          <Property Name="IsAllCourse" Type="Boolean" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="StudentCourseHistory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StudentID" Type="Int32" Nullable="false" />
+          <Property Name="CalCourseProgNodeID" Type="Int32" />
+          <Property Name="AcaCalSectionID" Type="Int32" />
+          <Property Name="RetakeNo" Type="Int32" />
+          <Property Name="ObtainedTotalMarks" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="ObtainedGPA" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="ObtainedGrade" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="GradeId" Type="Int32" />
+          <Property Name="CourseStatusID" Type="Int32" />
+          <Property Name="CourseStatusDate" Type="DateTime" Precision="3" />
+          <Property Name="AcaCalID" Type="Int32" />
+          <Property Name="CourseID" Type="Int32" Nullable="false" />
+          <Property Name="VersionID" Type="Int32" Nullable="false" />
+          <Property Name="CourseCredit" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="CompletedCredit" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Node_CourseID" Type="Int32" />
+          <Property Name="NodeID" Type="Int32" />
+          <Property Name="IsMultipleACUSpan" Type="Boolean" />
+          <Property Name="IsConsiderGPA" Type="Boolean" />
+          <Property Name="CourseWavTransfrID" Type="Int32" />
+          <Property Name="SemesterNo" Type="Int32" />
+          <Property Name="YearNo" Type="Int32" />
+          <Property Name="EqCourseHistoryId" Type="Int32" />
+          <Property Name="Attribute1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+          <Property Name="Remark" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Student" Relationship="UCAMModel.FK_StudentCourseHistory_Student" FromRole="StudentCourseHistory" ToRole="Student" />
+          <NavigationProperty Name="StudentCourseHistory1" Relationship="UCAMModel.FK_UIUEMS_CC_Student_CourseHistory_UIUEMS_CC_Student_CourseHistory" FromRole="StudentCourseHistory" ToRole="StudentCourseHistory1" />
+          <NavigationProperty Name="StudentCourseHistory2" Relationship="UCAMModel.FK_UIUEMS_CC_Student_CourseHistory_UIUEMS_CC_Student_CourseHistory" FromRole="StudentCourseHistory1" ToRole="StudentCourseHistory" />
+          <NavigationProperty Name="StudentCourseHistory11" Relationship="UCAMModel.FK_UIUEMS_CC_Student_CourseHistory_UIUEMS_CC_Student_CourseHistory1" FromRole="StudentCourseHistory" ToRole="StudentCourseHistory1" />
+          <NavigationProperty Name="StudentCourseHistory3" Relationship="UCAMModel.FK_UIUEMS_CC_Student_CourseHistory_UIUEMS_CC_Student_CourseHistory1" FromRole="StudentCourseHistory1" ToRole="StudentCourseHistory" />
+        </EntityType>
+        <Association Name="FK_StudentCourseHistory_Student">
+          <End Type="UCAMModel.Student" Role="Student" Multiplicity="1" />
+          <End Type="UCAMModel.StudentCourseHistory" Role="StudentCourseHistory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Student">
+              <PropertyRef Name="StudentID" />
+            </Principal>
+            <Dependent Role="StudentCourseHistory">
+              <PropertyRef Name="StudentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UIUEMS_CC_Student_CourseHistory_UIUEMS_CC_Student_CourseHistory">
+          <End Type="UCAMModel.StudentCourseHistory" Role="StudentCourseHistory" Multiplicity="1" />
+          <End Type="UCAMModel.StudentCourseHistory" Role="StudentCourseHistory1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="StudentCourseHistory">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="StudentCourseHistory1">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UIUEMS_CC_Student_CourseHistory_UIUEMS_CC_Student_CourseHistory1">
+          <End Type="UCAMModel.StudentCourseHistory" Role="StudentCourseHistory" Multiplicity="1" />
+          <End Type="UCAMModel.StudentCourseHistory" Role="StudentCourseHistory1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="StudentCourseHistory">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="StudentCourseHistory1">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="MarksTemplateAndPersonAssign">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AcacalId" Type="Int32" />
+          <Property Name="CourseId" Type="Int32" />
+          <Property Name="VersionId" Type="Int32" />
+          <Property Name="ExamTemplateMasterId" Type="Int32" />
+          <Property Name="MarksUploadByOne" Type="Int32" />
+          <Property Name="MarksUploadByTwo" Type="Int32" />
+          <Property Name="FinalSubmitted" Type="Int32" />
+          <Property Name="FinalSubmittedDate" Type="DateTime" Precision="3" />
+          <Property Name="Published" Type="Int32" />
+          <Property Name="PublishedDate" Type="DateTime" Precision="3" />
+          <Property Name="Attribute1" Type="Int32" />
+          <Property Name="Attribute2" Type="Int32" />
+          <Property Name="Attribute3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="ExamMarkDetail">
+          <Key>
+            <PropertyRef Name="ExamMarkDetailId" />
+          </Key>
+          <Property Name="ExamMarkDetailId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ExamMarkMasterId" Type="Int32" />
+          <Property Name="CourseHistoryId" Type="Int32" />
+          <Property Name="Marks" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="ConvertedMark" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="IsFinalSubmit" Type="Boolean" />
+          <Property Name="ExamTemplateBasicItemId" Type="Int32" />
+          <Property Name="ExamStatus" Type="Int32" />
+          <Property Name="ExamMarkTypeId" Type="Int32" />
+          <Property Name="Attribute1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Attribute2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Attribute3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="ExamMarkMaster">
+          <Key>
+            <PropertyRef Name="ExamMarkMasterId" />
+          </Key>
+          <Property Name="ExamMarkMasterId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ExamMark" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="ExamMarkEntryDate" Type="DateTime" Precision="3" />
+          <Property Name="ExamDate" Type="DateTime" Precision="3" />
+          <Property Name="ExamTemplateBasicItemId" Type="Int32" />
+          <Property Name="AcaCalId" Type="Int32" />
+          <Property Name="AcaCalSectionId" Type="Int32" />
+          <Property Name="CourseId" Type="Int32" />
+          <Property Name="VersionId" Type="Int32" />
+          <Property Name="Attribute1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Attribute2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Attribute3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="StudentACUDetail">
+          <Key>
+            <PropertyRef Name="StdACUDetailID" />
+            <PropertyRef Name="StdAcademicCalenderID" />
+            <PropertyRef Name="StudentID" />
+            <PropertyRef Name="CreatedBy" />
+            <PropertyRef Name="CreatedDate" />
+          </Key>
+          <Property Name="StdACUDetailID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StdAcademicCalenderID" Type="Int32" Nullable="false" />
+          <Property Name="StudentID" Type="Int32" Nullable="false" />
+          <Property Name="StatusTypeID" Type="Int32" />
+          <Property Name="SchSetUpID" Type="Int32" />
+          <Property Name="Credit" Type="Decimal" Precision="3" Scale="1" />
+          <Property Name="CGPA" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="GPA" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TranscriptCredit" Type="Decimal" Precision="3" Scale="1" />
+          <Property Name="TranscriptCGPA" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TranscriptGPA" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="IsAllGradeSubmitted" Type="Boolean" />
+          <Property Name="Description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+          <Property Name="Remarks" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="TotalGradePoint" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="SystemImageConfiguration">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AcacalId" Type="Int32" />
+          <Property Name="ProgramId" Type="Int32" />
+          <Property Name="BatchId" Type="Int32" />
+          <Property Name="ImageTypeId" Type="Int32" />
+          <Property Name="ImageBytes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute1" Type="Int32" />
+          <Property Name="Attribute2" Type="Int32" />
+          <Property Name="Attribute3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="SystemImageTypeMetaTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ImageType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute1" Type="Int32" />
+          <Property Name="Attribute2" Type="Int32" />
+          <Property Name="Attribute3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="DeptID" />
+          </Key>
+          <Property Name="DeptID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="OpeningDate" Type="DateTime" Precision="3" />
+          <Property Name="DetailedName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ClosingDate" Type="DateTime" Precision="3" />
+          <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="ProgramWiseFaculty">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FacultyName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="UCAMModelStoreContainer" CdmEntityContainer="UCAMEntities">
+          <EntitySetMapping Name="Programs">
+            <EntityTypeMapping TypeName="UCAMModel.Program">
+              <MappingFragment StoreEntitySet="Program">
+                <ScalarProperty Name="InstituteId" ColumnName="InstituteId" />
+                <ScalarProperty Name="ProgramID" ColumnName="ProgramID" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+                <ScalarProperty Name="TotalCredit" ColumnName="TotalCredit" />
+                <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+                <ScalarProperty Name="DetailName" ColumnName="DetailName" />
+                <ScalarProperty Name="ProgramTypeID" ColumnName="ProgramTypeID" />
+                <ScalarProperty Name="CalenderUnitMasterID" ColumnName="CalenderUnitMasterID" />
+                <ScalarProperty Name="Attribute1" ColumnName="Attribute1" />
+                <ScalarProperty Name="Attribute2" ColumnName="Attribute2" />
+                <ScalarProperty Name="Attribute3" ColumnName="Attribute3" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="DegreeName" ColumnName="DegreeName" />
+                <ScalarProperty Name="Duration" ColumnName="Duration" />
+                <ScalarProperty Name="FacultyId" ColumnName="FacultyId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Students">
+            <EntityTypeMapping TypeName="UCAMModel.Student">
+              <MappingFragment StoreEntitySet="Student">
+                <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+                <ScalarProperty Name="Roll" ColumnName="Roll" />
+                <ScalarProperty Name="PersonID" ColumnName="PersonID" />
+                <ScalarProperty Name="BatchId" ColumnName="BatchId" />
+                <ScalarProperty Name="ProgramID" ColumnName="ProgramID" />
+                <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+                <ScalarProperty Name="GradeMasterID" ColumnName="GradeMasterID" />
+                <ScalarProperty Name="AccountHeadsID" ColumnName="AccountHeadsID" />
+                <ScalarProperty Name="TreeMasterID" ColumnName="TreeMasterID" />
+                <ScalarProperty Name="TreeCalendarMasterID" ColumnName="TreeCalendarMasterID" />
+                <ScalarProperty Name="CandidateID" ColumnName="CandidateID" />
+                <ScalarProperty Name="Major1NodeID" ColumnName="Major1NodeID" />
+                <ScalarProperty Name="Major2NodeID" ColumnName="Major2NodeID" />
+                <ScalarProperty Name="Major3NodeID" ColumnName="Major3NodeID" />
+                <ScalarProperty Name="Minor1NodeID" ColumnName="Minor1NodeID" />
+                <ScalarProperty Name="Minor2NodeID" ColumnName="Minor2NodeID" />
+                <ScalarProperty Name="Minor3NodeID" ColumnName="Minor3NodeID" />
+                <ScalarProperty Name="History" ColumnName="History" />
+                <ScalarProperty Name="IsCompleted" ColumnName="IsCompleted" />
+                <ScalarProperty Name="CompletedAcaCalID" ColumnName="CompletedAcaCalID" />
+                <ScalarProperty Name="TranscriptSerial" ColumnName="TranscriptSerial" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="Pre_Math" ColumnName="Pre_Math" />
+                <ScalarProperty Name="Pre_English" ColumnName="Pre_English" />
+                <ScalarProperty Name="IsDiploma" ColumnName="IsDiploma" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="IsProvisionalAdmission" ColumnName="IsProvisionalAdmission" />
+                <ScalarProperty Name="ValidUptoProAdmissionDate" ColumnName="ValidUptoProAdmissionDate" />
+                <ScalarProperty Name="Attribute1" ColumnName="Attribute1" />
+                <ScalarProperty Name="Attribute2" ColumnName="Attribute2" />
+                <ScalarProperty Name="Attribute3" ColumnName="Attribute3" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StudentInstitutions">
+            <EntityTypeMapping TypeName="UCAMModel.StudentInstitution">
+              <MappingFragment StoreEntitySet="StudentInstitution">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+                <ScalarProperty Name="InstitutionId" ColumnName="InstitutionId" />
+                <ScalarProperty Name="Attribute1" ColumnName="Attribute1" />
+                <ScalarProperty Name="Attribute2" ColumnName="Attribute2" />
+                <ScalarProperty Name="Attribute3" ColumnName="Attribute3" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ExemCenterId" ColumnName="ExemCenterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StudentRegistrations">
+            <EntityTypeMapping TypeName="UCAMModel.StudentRegistration">
+              <MappingFragment StoreEntitySet="StudentRegistration">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+                <ScalarProperty Name="RegistrationNo" ColumnName="RegistrationNo" />
+                <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+                <ScalarProperty Name="Attribute1" ColumnName="Attribute1" />
+                <ScalarProperty Name="Attribute2" ColumnName="Attribute2" />
+                <ScalarProperty Name="Attribute3" ColumnName="Attribute3" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AffiliatedInstitutions">
+            <EntityTypeMapping TypeName="UCAMModel.AffiliatedInstitution">
+              <MappingFragment StoreEntitySet="AffiliatedInstitution">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Attribute1" ColumnName="Attribute1" />
+                <ScalarProperty Name="Attribute2" ColumnName="Attribute2" />
+                <ScalarProperty Name="Attribute3" ColumnName="Attribute3" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CoE_PaperGenerate">
+            <EntityTypeMapping TypeName="UCAMModel.CoE_PaperGenerate">
+              <MappingFragment StoreEntitySet="CoE_PaperGenerate">
+                <ScalarProperty Name="IsDownloaded" ColumnName="IsDownloaded" />
+                <ScalarProperty Name="DownloadIP" ColumnName="DownloadIP" />
+                <ScalarProperty Name="DownloaderLoginId" ColumnName="DownloaderLoginId" />
+                <ScalarProperty Name="DownloadDate" ColumnName="DownloadDate" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="ApprovedIP" ColumnName="ApprovedIP" />
+                <ScalarProperty Name="ApprovedLoginId" ColumnName="ApprovedLoginId" />
+                <ScalarProperty Name="ApprovedDate" ColumnName="ApprovedDate" />
+                <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+                <ScalarProperty Name="PageUrl" ColumnName="PageUrl" />
+                <ScalarProperty Name="PageId" ColumnName="PageId" />
+                <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+                <ScalarProperty Name="StudentRoll" ColumnName="StudentRoll" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="MessageType" ColumnName="MessageType" />
+                <ScalarProperty Name="EventName" ColumnName="EventName" />
+                <ScalarProperty Name="PageName" ColumnName="PageName" />
+                <ScalarProperty Name="UserIP" ColumnName="UserIP" />
+                <ScalarProperty Name="UserLoginId" ColumnName="UserLoginId" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="ProgramId" ColumnName="ProgramId" />
+                <ScalarProperty Name="AcaCalId" ColumnName="AcaCalId" />
+                <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+                <ScalarProperty Name="SL" ColumnName="SL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Institutions">
+            <EntityTypeMapping TypeName="UCAMModel.Institution">
+              <MappingFragment StoreEntitySet="Institution">
+                <ScalarProperty Name="ActiveStatus" ColumnName="ActiveStatus" />
+                <ScalarProperty Name="LogoBytes" ColumnName="LogoBytes" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Attribute3" ColumnName="Attribute3" />
+                <ScalarProperty Name="Attribute2" ColumnName="Attribute2" />
+                <ScalarProperty Name="Attribute1" ColumnName="Attribute1" />
+                <ScalarProperty Name="InstituteAddress" ColumnName="InstituteAddress" />
+                <ScalarProperty Name="InstituteCode" ColumnName="InstituteCode" />
+                <ScalarProperty Name="InstituteName" ColumnName="InstituteName" />
+                <ScalarProperty Name="InstituteId" ColumnName="InstituteId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CalenderUnitMasters">
+            <EntityTypeMapping TypeName="UCAMModel.CalenderUnitMaster">
+              <MappingFragment StoreEntitySet="CalenderUnitMaster">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="CalenderUnitMasterID" ColumnName="CalenderUnitMasterID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CalenderUnitTypes">
+            <EntityTypeMapping TypeName="UCAMModel.CalenderUnitType">
+              <MappingFragment StoreEntitySet="CalenderUnitType">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+                <ScalarProperty Name="CalenderUnitMasterID" ColumnName="CalenderUnitMasterID" />
+                <ScalarProperty Name="CalenderUnitTypeID" ColumnName="CalenderUnitTypeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProgramTypes">
+            <EntityTypeMapping TypeName="UCAMModel.ProgramType">
+              <MappingFragment StoreEntitySet="ProgramType">
+                <ScalarProperty Name="TypeDescription" ColumnName="TypeDescription" />
+                <ScalarProperty Name="ProgramTypeID" ColumnName="ProgramTypeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Batches">
+            <EntityTypeMapping TypeName="UCAMModel.Batch">
+              <MappingFragment StoreEntitySet="Batch">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Attribute3" ColumnName="Attribute3" />
+                <ScalarProperty Name="Attribute2" ColumnName="Attribute2" />
+                <ScalarProperty Name="Attribute1" ColumnName="Attribute1" />
+                <ScalarProperty Name="BatchNO" ColumnName="BatchNO" />
+                <ScalarProperty Name="ProgramId" ColumnName="ProgramId" />
+                <ScalarProperty Name="AcaCalId" ColumnName="AcaCalId" />
+                <ScalarProperty Name="BatchId" ColumnName="BatchId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Courses">
+            <EntityTypeMapping TypeName="UCAMModel.Course">
+              <MappingFragment StoreEntitySet="Course">
+                <ScalarProperty Name="BillTypeDefinitionID" ColumnName="BillTypeDefinitionID" />
+                <ScalarProperty Name="CourseGroup" ColumnName="CourseGroup" />
+                <ScalarProperty Name="TranscriptCode" ColumnName="TranscriptCode" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="HasMultipleACUSpan" ColumnName="HasMultipleACUSpan" />
+                <ScalarProperty Name="HasEquivalents" ColumnName="HasEquivalents" />
+                <ScalarProperty Name="IsSectionMandatory" ColumnName="IsSectionMandatory" />
+                <ScalarProperty Name="Credits" ColumnName="Credits" />
+                <ScalarProperty Name="IsCreditCourse" ColumnName="IsCreditCourse" />
+                <ScalarProperty Name="CourseContent" ColumnName="CourseContent" />
+                <ScalarProperty Name="StartAcademicCalenderID" ColumnName="StartAcademicCalenderID" />
+                <ScalarProperty Name="AssocVersionID" ColumnName="AssocVersionID" />
+                <ScalarProperty Name="AssocCourseID" ColumnName="AssocCourseID" />
+                <ScalarProperty Name="TypeDefinitionID" ColumnName="TypeDefinitionID" />
+                <ScalarProperty Name="ProgramID" ColumnName="ProgramID" />
+                <ScalarProperty Name="CourseGroupId" ColumnName="CourseGroupId" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="VersionCode" ColumnName="VersionCode" />
+                <ScalarProperty Name="FormalCode" ColumnName="FormalCode" />
+                <ScalarProperty Name="VersionID" ColumnName="VersionID" />
+                <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="People">
+            <EntityTypeMapping TypeName="UCAMModel.Person">
+              <MappingFragment StoreEntitySet="Person">
+                <ScalarProperty Name="SignatureBytes" ColumnName="SignatureBytes" />
+                <ScalarProperty Name="PhotoBytes" ColumnName="PhotoBytes" />
+                <ScalarProperty Name="SMSContactGuardian" ColumnName="SMSContactGuardian" />
+                <ScalarProperty Name="SMSContactSelf" ColumnName="SMSContactSelf" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="SignaturePath" ColumnName="SignaturePath" />
+                <ScalarProperty Name="PhotoPath" ColumnName="PhotoPath" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="GuardianName" ColumnName="GuardianName" />
+                <ScalarProperty Name="MotherProfession" ColumnName="MotherProfession" />
+                <ScalarProperty Name="MotherName" ColumnName="MotherName" />
+                <ScalarProperty Name="FatherProfession" ColumnName="FatherProfession" />
+                <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+                <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+                <ScalarProperty Name="Religion" ColumnName="Religion" />
+                <ScalarProperty Name="BloodGroup" ColumnName="BloodGroup" />
+                <ScalarProperty Name="MatrialStatus" ColumnName="MatrialStatus" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="DOB" ColumnName="DOB" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="PersonID" ColumnName="PersonID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="UCAMModel.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="InstituteId" ColumnName="InstituteId" />
+                <ScalarProperty Name="EmployeeTypeId" ColumnName="EmployeeTypeId" />
+                <ScalarProperty Name="MIUEmployeeID" ColumnName="MIUEmployeeID" />
+                <ScalarProperty Name="LibraryCardNo" ColumnName="LibraryCardNo" />
+                <ScalarProperty Name="Designation" ColumnName="Designation" />
+                <ScalarProperty Name="Program" ColumnName="Program" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="DOJ" ColumnName="DOJ" />
+                <ScalarProperty Name="Attribute2" ColumnName="Attribute2" />
+                <ScalarProperty Name="Attribute1" ColumnName="Attribute1" />
+                <ScalarProperty Name="PersonId" ColumnName="PersonId" />
+                <ScalarProperty Name="History" ColumnName="History" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="SchoolId" ColumnName="SchoolId" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="UCAMModel.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="RoleExistEndDate" ColumnName="RoleExistEndDate" />
+                <ScalarProperty Name="RoleExistStartDate" ColumnName="RoleExistStartDate" />
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="LogInID" ColumnName="LogInID" />
+                <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserInPersons">
+            <EntityTypeMapping TypeName="UCAMModel.UserInPerson">
+              <MappingFragment StoreEntitySet="UserInPerson">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="PersonID" ColumnName="PersonID" />
+                <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Semesters">
+            <EntityTypeMapping TypeName="UCAMModel.Semester">
+              <MappingFragment StoreEntitySet="Semester">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Attribute3" ColumnName="Attribute3" />
+                <ScalarProperty Name="Attribute2" ColumnName="Attribute2" />
+                <ScalarProperty Name="Attribute1" ColumnName="Attribute1" />
+                <ScalarProperty Name="SemesterNo" ColumnName="SemesterNo" />
+                <ScalarProperty Name="ProgramId" ColumnName="ProgramId" />
+                <ScalarProperty Name="YearId" ColumnName="YearId" />
+                <ScalarProperty Name="SemesterName" ColumnName="SemesterName" />
+                <ScalarProperty Name="SemesterId" ColumnName="SemesterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StudentYearSemesterHistories">
+            <EntityTypeMapping TypeName="UCAMModel.StudentYearSemesterHistory">
+              <MappingFragment StoreEntitySet="StudentYearSemesterHistory">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Attribute5" ColumnName="Attribute5" />
+                <ScalarProperty Name="Attribute4" ColumnName="Attribute4" />
+                <ScalarProperty Name="Attribute3" ColumnName="Attribute3" />
+                <ScalarProperty Name="Attribute2" ColumnName="Attribute2" />
+                <ScalarProperty Name="Attribute1" ColumnName="Attribute1" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="IsClosed" ColumnName="IsClosed" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="SemesterId" ColumnName="SemesterId" />
+                <ScalarProperty Name="YearId" ColumnName="YearId" />
+                <ScalarProperty Name="AcacalId" ColumnName="AcacalId" />
+                <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Years">
+            <EntityTypeMapping TypeName="UCAMModel.Year">
+              <MappingFragment StoreEntitySet="Year">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+                <ScalarProperty Name="ProgramId" ColumnName="ProgramId" />
+                <ScalarProperty Name="ProgramTypeId" ColumnName="ProgramTypeId" />
+                <ScalarProperty Name="YearNo" ColumnName="YearNo" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="YearName" ColumnName="YearName" />
+                <ScalarProperty Name="YearId" ColumnName="YearId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CourseRegistrationApprovalHistories">
+            <EntityTypeMapping TypeName="UCAMModel.CourseRegistrationApprovalHistory">
+              <MappingFragment StoreEntitySet="CourseRegistrationApprovalHistory">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Attribute6" ColumnName="Attribute6" />
+                <ScalarProperty Name="Attribute5" ColumnName="Attribute5" />
+                <ScalarProperty Name="Attribute4" ColumnName="Attribute4" />
+                <ScalarProperty Name="Attribute3" ColumnName="Attribute3" />
+                <ScalarProperty Name="Attribute2" ColumnName="Attribute2" />
+                <ScalarProperty Name="Attribute1" ColumnName="Attribute1" />
+                <ScalarProperty Name="SemesterNo" ColumnName="SemesterNo" />
+                <ScalarProperty Name="YearNo" ColumnName="YearNo" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="Comments" ColumnName="Comments" />
+                <ScalarProperty Name="OptionalDate3" ColumnName="OptionalDate3" />
+                <ScalarProperty Name="OptionalDate2" ColumnName="OptionalDate2" />
+                <ScalarProperty Name="OptionalDate" ColumnName="OptionalDate" />
+                <ScalarProperty Name="COEApprovedDate" ColumnName="COEApprovedDate" />
+                <ScalarProperty Name="InstituteForwardDate" ColumnName="InstituteForwardDate" />
+                <ScalarProperty Name="ApplicationStatus" ColumnName="ApplicationStatus" />
+                <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+                <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+                <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+                <ScalarProperty Name="ProgramId" ColumnName="ProgramId" />
+                <ScalarProperty Name="InstituteId" ColumnName="InstituteId" />
+                <ScalarProperty Name="AcacalId" ColumnName="AcacalId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CourseRegistrationApprovalStatus">
+            <EntityTypeMapping TypeName="UCAMModel.CourseRegistrationApprovalStatu">
+              <MappingFragment StoreEntitySet="CourseRegistrationApprovalStatus">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Attribute3" ColumnName="Attribute3" />
+                <ScalarProperty Name="Attribute2" ColumnName="Attribute2" />
+                <ScalarProperty Name="Attribute1" ColumnName="Attribute1" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+                <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserInstitutions">
+            <EntityTypeMapping TypeName="UCAMModel.UserInstitution">
+              <MappingFragment StoreEntitySet="UserInstitution">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Attribute2" ColumnName="Attribute2" />
+                <ScalarProperty Name="Attribute1" ColumnName="Attribute1" />
+                <ScalarProperty Name="ProgramID" ColumnName="ProgramID" />
+                <ScalarProperty Name="InstitutionID" ColumnName="InstitutionID" />
+                <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserAccessPrograms">
+            <EntityTypeMapping TypeName="UCAMModel.UserAccessProgram">
+              <MappingFragment StoreEntitySet="UserAccessProgram">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsAllCourse" ColumnName="IsAllCourse" />
+                <ScalarProperty Name="AccessEndDate" ColumnName="AccessEndDate" />
+                <ScalarProperty Name="AccessStartDate" ColumnName="AccessStartDate" />
+                <ScalarProperty Name="AccessPattern" ColumnName="AccessPattern" />
+                <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StudentCourseHistories">
+            <EntityTypeMapping TypeName="UCAMModel.StudentCourseHistory">
+              <MappingFragment StoreEntitySet="StudentCourseHistory">
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Attribute3" ColumnName="Attribute3" />
+                <ScalarProperty Name="Attribute2" ColumnName="Attribute2" />
+                <ScalarProperty Name="Attribute1" ColumnName="Attribute1" />
+                <ScalarProperty Name="EqCourseHistoryId" ColumnName="EqCourseHistoryId" />
+                <ScalarProperty Name="YearNo" ColumnName="YearNo" />
+                <ScalarProperty Name="SemesterNo" ColumnName="SemesterNo" />
+                <ScalarProperty Name="CourseWavTransfrID" ColumnName="CourseWavTransfrID" />
+                <ScalarProperty Name="IsConsiderGPA" ColumnName="IsConsiderGPA" />
+                <ScalarProperty Name="IsMultipleACUSpan" ColumnName="IsMultipleACUSpan" />
+                <ScalarProperty Name="NodeID" ColumnName="NodeID" />
+                <ScalarProperty Name="Node_CourseID" ColumnName="Node_CourseID" />
+                <ScalarProperty Name="CompletedCredit" ColumnName="CompletedCredit" />
+                <ScalarProperty Name="CourseCredit" ColumnName="CourseCredit" />
+                <ScalarProperty Name="VersionID" ColumnName="VersionID" />
+                <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+                <ScalarProperty Name="AcaCalID" ColumnName="AcaCalID" />
+                <ScalarProperty Name="CourseStatusDate" ColumnName="CourseStatusDate" />
+                <ScalarProperty Name="CourseStatusID" ColumnName="CourseStatusID" />
+                <ScalarProperty Name="GradeId" ColumnName="GradeId" />
+                <ScalarProperty Name="ObtainedGrade" ColumnName="ObtainedGrade" />
+                <ScalarProperty Name="ObtainedGPA" ColumnName="ObtainedGPA" />
+                <ScalarProperty Name="ObtainedTotalMarks" ColumnName="ObtainedTotalMarks" />
+                <ScalarProperty Name="RetakeNo" ColumnName="RetakeNo" />
+                <ScalarProperty Name="AcaCalSectionID" ColumnName="AcaCalSectionID" />
+                <ScalarProperty Name="CalCourseProgNodeID" ColumnName="CalCourseProgNodeID" />
+                <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MarksTemplateAndPersonAssigns">
+            <EntityTypeMapping TypeName="UCAMModel.MarksTemplateAndPersonAssign">
+              <MappingFragment StoreEntitySet="MarksTemplateAndPersonAssign">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Attribute4" ColumnName="Attribute4" />
+                <ScalarProperty Name="Attribute3" ColumnName="Attribute3" />
+                <ScalarProperty Name="Attribute2" ColumnName="Attribute2" />
+                <ScalarProperty Name="Attribute1" ColumnName="Attribute1" />
+                <ScalarProperty Name="PublishedDate" ColumnName="PublishedDate" />
+                <ScalarProperty Name="Published" ColumnName="Published" />
+                <ScalarProperty Name="FinalSubmittedDate" ColumnName="FinalSubmittedDate" />
+                <ScalarProperty Name="FinalSubmitted" ColumnName="FinalSubmitted" />
+                <ScalarProperty Name="MarksUploadByTwo" ColumnName="MarksUploadByTwo" />
+                <ScalarProperty Name="MarksUploadByOne" ColumnName="MarksUploadByOne" />
+                <ScalarProperty Name="ExamTemplateMasterId" ColumnName="ExamTemplateMasterId" />
+                <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+                <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+                <ScalarProperty Name="AcacalId" ColumnName="AcacalId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ExamMarkDetails">
+            <EntityTypeMapping TypeName="UCAMModel.ExamMarkDetail">
+              <MappingFragment StoreEntitySet="ExamMarkDetails">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Attribute3" ColumnName="Attribute3" />
+                <ScalarProperty Name="Attribute2" ColumnName="Attribute2" />
+                <ScalarProperty Name="Attribute1" ColumnName="Attribute1" />
+                <ScalarProperty Name="ExamMarkTypeId" ColumnName="ExamMarkTypeId" />
+                <ScalarProperty Name="ExamStatus" ColumnName="ExamStatus" />
+                <ScalarProperty Name="ExamTemplateBasicItemId" ColumnName="ExamTemplateBasicItemId" />
+                <ScalarProperty Name="IsFinalSubmit" ColumnName="IsFinalSubmit" />
+                <ScalarProperty Name="ConvertedMark" ColumnName="ConvertedMark" />
+                <ScalarProperty Name="Marks" ColumnName="Marks" />
+                <ScalarProperty Name="CourseHistoryId" ColumnName="CourseHistoryId" />
+                <ScalarProperty Name="ExamMarkMasterId" ColumnName="ExamMarkMasterId" />
+                <ScalarProperty Name="ExamMarkDetailId" ColumnName="ExamMarkDetailId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ExamMarkMasters">
+            <EntityTypeMapping TypeName="UCAMModel.ExamMarkMaster">
+              <MappingFragment StoreEntitySet="ExamMarkMaster">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Attribute3" ColumnName="Attribute3" />
+                <ScalarProperty Name="Attribute2" ColumnName="Attribute2" />
+                <ScalarProperty Name="Attribute1" ColumnName="Attribute1" />
+                <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+                <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+                <ScalarProperty Name="AcaCalSectionId" ColumnName="AcaCalSectionId" />
+                <ScalarProperty Name="AcaCalId" ColumnName="AcaCalId" />
+                <ScalarProperty Name="ExamTemplateBasicItemId" ColumnName="ExamTemplateBasicItemId" />
+                <ScalarProperty Name="ExamDate" ColumnName="ExamDate" />
+                <ScalarProperty Name="ExamMarkEntryDate" ColumnName="ExamMarkEntryDate" />
+                <ScalarProperty Name="ExamMark" ColumnName="ExamMark" />
+                <ScalarProperty Name="ExamMarkMasterId" ColumnName="ExamMarkMasterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StudentACUDetails">
+            <EntityTypeMapping TypeName="UCAMModel.StudentACUDetail">
+              <MappingFragment StoreEntitySet="StudentACUDetail">
+                <ScalarProperty Name="TotalGradePoint" ColumnName="TotalGradePoint" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="IsAllGradeSubmitted" ColumnName="IsAllGradeSubmitted" />
+                <ScalarProperty Name="TranscriptGPA" ColumnName="TranscriptGPA" />
+                <ScalarProperty Name="TranscriptCGPA" ColumnName="TranscriptCGPA" />
+                <ScalarProperty Name="TranscriptCredit" ColumnName="TranscriptCredit" />
+                <ScalarProperty Name="GPA" ColumnName="GPA" />
+                <ScalarProperty Name="CGPA" ColumnName="CGPA" />
+                <ScalarProperty Name="Credit" ColumnName="Credit" />
+                <ScalarProperty Name="SchSetUpID" ColumnName="SchSetUpID" />
+                <ScalarProperty Name="StatusTypeID" ColumnName="StatusTypeID" />
+                <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+                <ScalarProperty Name="StdAcademicCalenderID" ColumnName="StdAcademicCalenderID" />
+                <ScalarProperty Name="StdACUDetailID" ColumnName="StdACUDetailID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SystemImageConfigurations">
+            <EntityTypeMapping TypeName="UCAMModel.SystemImageConfiguration">
+              <MappingFragment StoreEntitySet="SystemImageConfiguration">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Attribute4" ColumnName="Attribute4" />
+                <ScalarProperty Name="Attribute3" ColumnName="Attribute3" />
+                <ScalarProperty Name="Attribute2" ColumnName="Attribute2" />
+                <ScalarProperty Name="Attribute1" ColumnName="Attribute1" />
+                <ScalarProperty Name="Comments" ColumnName="Comments" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="ImageBytes" ColumnName="ImageBytes" />
+                <ScalarProperty Name="ImageTypeId" ColumnName="ImageTypeId" />
+                <ScalarProperty Name="BatchId" ColumnName="BatchId" />
+                <ScalarProperty Name="ProgramId" ColumnName="ProgramId" />
+                <ScalarProperty Name="AcacalId" ColumnName="AcacalId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SystemImageTypeMetaTables">
+            <EntityTypeMapping TypeName="UCAMModel.SystemImageTypeMetaTable">
+              <MappingFragment StoreEntitySet="SystemImageTypeMetaTable">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Attribute4" ColumnName="Attribute4" />
+                <ScalarProperty Name="Attribute3" ColumnName="Attribute3" />
+                <ScalarProperty Name="Attribute2" ColumnName="Attribute2" />
+                <ScalarProperty Name="Attribute1" ColumnName="Attribute1" />
+                <ScalarProperty Name="Comments" ColumnName="Comments" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="ImageType" ColumnName="ImageType" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Departments">
+            <EntityTypeMapping TypeName="UCAMModel.Department">
+              <MappingFragment StoreEntitySet="Department">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ClosingDate" ColumnName="ClosingDate" />
+                <ScalarProperty Name="DetailedName" ColumnName="DetailedName" />
+                <ScalarProperty Name="OpeningDate" ColumnName="OpeningDate" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProgramWiseFaculties">
+            <EntityTypeMapping TypeName="UCAMModel.ProgramWiseFaculty">
+              <MappingFragment StoreEntitySet="ProgramWiseFaculty">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="FacultyName" ColumnName="FacultyName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

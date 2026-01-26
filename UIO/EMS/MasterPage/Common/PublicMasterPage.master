@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="PublicMasterPage" CodeBehind="PublicMasterPage.master.cs" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>
+        <asp:ContentPlaceHolder runat="server" ID="Title" />
+    </title>
+    <asp:PlaceHolder runat="server" ID="plh">
+        <link rel="shortcut icon" href="<%= string.Format("{0}/Images/", CommonUtility.AppPath.ApplicationPath) %>" />
+    </asp:PlaceHolder>
+    <script type="text/javascript" src="../../JavaScript/jquery-1.7.1.js"></script>
+    <link href="../../ContentCSS/CSS/SiteMaster.CSS" rel="stylesheet" />
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-62797653-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <asp:ContentPlaceHolder runat="server" ID="Head" />
+</head>
+<body id="MasterBody">
+
+    <form id="form" runat="server" enctype="multipart/form-data">
+        <ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" ScriptMode="Release"></ajaxToolkit:ToolkitScriptManager>
+        <div class="ContainWrapper">
+
+            <div class="Header-Container">
+                <div class="Banner-Container">
+                    <div style=" text-align:center; margin-left:auto; margin-right:auto;">
+                        <img src='<%= string.Format("{0}/Images/coverImage.png", CommonUtility.AppPath.ApplicationPath) %>' style="float: left" />
+                    </div>
+                    <div class="cleaner"></div>
+                </div>
+            </div>
+            <div class="navMenu">
+                <div class="cleaner" style="text-align:center; height:40px; vertical-align:middle; color:darkgreen; padding-top:7px; padding-bottom:4px; font-family:'Microsoft JhengHei UI' !important; font-size:2.1em;">
+                    Welcome to Online Degree Verification of <b>Manarat International University (MIU)</b>
+                </div>
+            </div>
+
+            <div class="mainBodyContainer">
+                <asp:ContentPlaceHolder runat="server" ID="MainContainer" />
+            </div>
+
+            <div class="footer">
+                <div>
+                    Powered by <b>Edusoft Consultants Ltd</b><br />
+                    Copyright &copy; 2013 - 2014 Edusoft Consultants Ltd. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+

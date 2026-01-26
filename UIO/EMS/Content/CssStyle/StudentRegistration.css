@@ -1,0 +1,125 @@
+﻿/*Common CSS*/
+.float-right {
+    float: right;
+}
+.float-left {
+    float: left;
+}
+.cleaner {
+    clear: both;
+}
+.border1px {
+    border: 1px solid green;
+    padding: 2px;
+}
+.margin-bottom {
+    margin-bottom: 10px;
+}
+.margin-right {
+    margin-right: 10px;
+}
+.dropdownList-size {
+    width: 200px;
+}
+.align-right {
+    text-align: right;
+}
+.align-left {
+    text-align: left;
+}
+.labelDisplay {
+    display: inline-block;
+}
+/*End Coomon CSS*/
+/*Master Page [StudentManagement]*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+.mian-container {
+    max-width: 100%;
+    min-width: 900px;
+    background-color: yellowgreen;
+}
+.head-wrapper, .menu-wrapper {
+    height: 40px;
+    /*width: 100%;*/
+    padding: 0 20px;
+    background-color: #3c332c;
+}
+.title-name {
+    padding-top: 8px;
+    margin-left: 5px;
+    color: #C3FDB8;
+    font: normal 20px Garamond;
+}
+.main-container .menu-wrapper {
+    background-color: #9a8f98;
+}
+.BodyContent-wrapper {
+    /*width: 100%;*/
+    padding: 10px 20px;
+    /*background-color: #fcf4cf;*/
+    /*-webkit-animation: pulse 80s infinite alternate;*/
+
+}
+/*End Master Page*/
+
+
+/*Start WorkSheet Generate*/
+.WorkSheet .selectAllCheckBox input {
+    margin: 0 10px 10px 21px;
+}
+.WorkSheet #BodyContent_gvwCollection tr td {
+    padding-left: 15px;
+}
+/*End WorkSheet Generate*/
+
+/*Start Transfer Student*/
+.TransferStudent .selectAllCheckBox input {
+    margin: 0 10px 10px 21px;
+}
+.TransferStudent #BodyContent_gvwCollection tr td {
+    padding-left: 15px;
+}
+/*End Transfer Student*/
+
+
+/*common message*/
+.common-css fieldset {
+    
+}
+.common-css label {
+    display: inline-block;
+    width: 185px;
+}
+/*common message*/
+
+/*Start Auto Preregistration Count*/
+.AutoPreregistrationCount .dropdownList-size {
+    width: 135px;
+}
+/*End Auto Preregistration Count*/
+
+/*Start Registration Admin*/
+.RegistrationAdmin-Search-Container .SearchTitle {
+    display: inline-block;
+    width: 70px;
+    margin-right: 5px;
+    text-align: right;
+}
+.RegistrationAdmin-Search-Container .SearchDropdown {
+    margin-left: 0px;
+    width: 90px;
+}
+/*End Registration Admin*/
+
+
+@-webkit-keyframes pulse {
+      /*0% {background-color: #45CEEF;}*/
+     25% {background-color: #FFF5A5;}
+     50% {background-color: #FFD4DA;}
+     /*75% {background-color: #99D2E4;}*/
+     100% {background-color: #D8CAB4;}
+}

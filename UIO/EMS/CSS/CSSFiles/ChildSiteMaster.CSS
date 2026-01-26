@@ -1,0 +1,205 @@
+﻿/*Start PasswordChangeByAdmin-container Start*/
+.PasswordChangeByAdmin-container .field-Title{
+    width: 50px;
+}
+.PasswordChangeByAdmin-container .SearchKey {
+    margin-left: -6px;
+    padding: 2px;
+}
+.PasswordChangeByAdmin-container .input-Size {
+    width: 120px;
+}
+.PasswordChangeByAdmin-container .dropDownList {
+    width: 123px;
+}
+.PasswordChangeByAdmin-container .div-margin {
+    margin: 10px 0;
+}
+.PasswordChangeByAdmin-container .btn-size {
+    width: 140px;
+}
+/*End PasswordChangeByAdmin-container End*/
+
+/*Start PasswordChangeByUser-container Start*/
+.PasswordChangeByUser-container .field-Title{
+    width: 130px;
+}
+.PasswordChangeByUser-container .input-Size {
+    width: 150px;
+}
+.PasswordChangeByUser-container .div-margin {
+    margin: 10px 0;
+}
+.PasswordChangeByUser-container .btn-size {
+    width: 100px;
+    margin-left: 7px;
+}
+/*End PasswordChangeByUser-container End*/
+
+/*Start UserCreate-container Start*/
+.UserCreate-container .field-Title{
+    width: 80px;
+}
+.UserCreate-container .input-Size {
+    width: 120px;
+}
+.UserCreate-container .AvailableKey {
+    margin-left: -6px;
+    padding: 2px;
+}
+.UserCreate-container .dropDownList {
+    width: 123px;
+}
+.UserCreate-container .div-margin {
+    margin: 10px 0;
+}
+.UserCreate-container .ActiveUser input {
+    margin: 0px;
+}
+.UserCreate-container .btn-size {
+    width: 100px;
+}
+/*End UserCreate-container End*/
+
+/*Start ForgetPassword-container Start*/
+.ForgetPassword-container .field-Title{
+    width: 60px;
+}
+.ForgetPassword-container .title-flag{
+    margin-bottom: 30px;
+}
+.ForgetPassword-container .input-Size {
+    width: 170px;
+}
+.ForgetPassword-container .div-margin {
+    margin: 10px 0;
+}
+.ForgetPassword-container .btn-size {
+    width: 130px;
+    margin-left: 7px;
+}
+.ForgetPassword-container .imgList {
+    height: auto;
+    width: 30px;
+}
+/*End UserCreate-container End*/
+
+/*Start UserProfile-container Start*/
+.UserProfile-container .field-Title{
+    width: 100px;
+}
+.UserProfile-container .input-Size {
+    width: 170px;
+}
+.UserProfile-container .dropDownList {
+    width: 123px;
+}
+.UserProfile-container .AvailableKey {
+    margin-left: -6px;
+    padding: 2px;
+}
+.UserProfile-container .radioButtonGroup input {
+    margin-left: 0px;
+}
+.UserProfile-container .radioButtonFlag input {
+    margin-left: 13px;
+}
+.UserProfile-container .div-margin {
+    margin: 10px 0;
+}
+.UserProfile-container .btn-size {
+    width: 120px;
+    margin-left: 7px;
+}
+/*End UserCreate-container End*/
+
+/*Start PersonUserRelation-container Start*/
+.PersonUserRelation-container .field-Title{
+    width: 100px;
+}
+.PersonUserRelation-container .input-Size {
+    width: 120px;
+}
+.PersonUserRelation-container .dropDownList {
+    width: 123px;
+}
+.PersonUserRelation-container .SearchKey {
+    margin-left: -6px;
+    padding: 2px;
+}
+.PersonUserRelation-container .CommonPanel {
+    border: 1px solid #F2F2F2;
+    padding: 5px;
+    margin-right: 10px;
+}
+.PersonUserRelation-container .div-margin {
+    margin: 10px 0;
+}
+.PersonUserRelation-container .btn-size {
+    width: 120px;
+}
+/*End PersonUserRelation-container End*/
+
+/*Start SearchPerson-container Start*/
+.SearchPerson-container .field-Title{
+    width: 80px;
+}
+.SearchPerson-container .input-Size {
+    width: 120px;
+}
+.SearchPerson-container .dropDownList {
+    width: 123px;
+}
+.SearchPerson-container .SearchKey {
+    margin-left: -6px;
+    padding: 2px;
+}
+.SearchPerson-container .div-margin {
+    margin: 10px 0;
+}
+.SearchPersonGridPanel .mainTable {
+    width: 50%;
+    margin-top: 20px;
+}
+.SearchPersonGridPanel table, tr, th {
+    border: 1px solid #008080;
+}
+.SearchPersonGridPanel .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+/*End PersonUserRelation-container End*/
+
+/*Start PasswordChange-container Start*/
+.PasswordChange-container .field-Title{
+    width: 120px;
+}
+.PasswordChange-container .field-Title-Fix {
+    margin-left: 7px;
+}
+.PasswordChange-container .SearchKey {
+    margin-left: -6px;
+    padding: 2px;
+}
+.PasswordChange-container .input-Size {
+    width: 184px;
+}
+.PasswordChange-container .Day {
+    width: 55px;
+}
+.PasswordChange-container .Month {
+    width: 65px;
+}
+.PasswordChange-container .Year {
+    width: 60px;
+}
+.PasswordChange-container .div-margin {
+    margin: 10px 0;
+}
+.PasswordChange-container .btn-size {
+    width: 100px;
+    margin-left: 7px;
+}
+/*End PasswordChangeByAdmin-container End*/
+

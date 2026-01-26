@@ -1,0 +1,220 @@
+﻿/*Common CSS*/
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #5d5d5d;
+    /*border-top: 4px solid #F30;*/
+}
+.floatLeft {
+    float: left;
+}
+.floatRight { 
+    float: right;
+}
+.cleaner {
+    clear: both;
+}
+.display-inline {
+    display: inline-block;
+}
+.margin-zero {
+    margin: 0px;
+}
+/*Master Page CSS*/
+#MasterBody .mainBodyContainer {
+    margin: 0px 20px;
+}
+#MasterBody .ContainWrapper {
+    min-width: 980px;
+    /*width: 980px;*/
+    margin: 0 auto;
+    /*background-color: orchid;*/
+}
+#MasterBody .notice-wrapper {
+    display: inline-block;
+    min-width: 930px;
+    max-width: 96%;
+}
+#MasterBody .Header-Container {
+    padding: 0 25px 0 25px;
+    /*background-color: red;*/
+}
+#MasterBody .Banner-Container {
+    margin-top: 10px;
+}
+#MasterBody .loginStatusPanel {
+    margin-top: 10px;
+    text-align: right;
+}
+#MasterBody .loginStatusPanel .StatusPanel {
+    margin-top: 20px;
+}
+    #MasterBody .loginStatusPanel .semesterStatusLabel {
+        display: inline-block;
+        width: 100px;
+        text-align: right;
+    }
+    #MasterBody .loginStatusPanel .semesterStatus {
+        display: inline-block;
+        width: 140px;
+        text-align: left;
+        font-weight: bold;
+    }
+#MasterBody .loginStyle {
+    cursor: pointer;
+    display: inline-block;
+    width: 300px;
+    text-align: right;
+    padding-right: 3px;
+    color: #5d5d5d;
+    text-decoration: none;
+    
+}
+#MasterBody .logoutStyle {
+    cursor: pointer;
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    color: #5d5d5d;
+    text-decoration: none;
+}
+    #MasterBody .loginStyle:hover, #MasterBody .logoutStyle:hover {
+        font-weight: bold;
+    }
+
+/*Menu*/
+#MasterBody .navMenu {
+    background-color: #F2F2F2;
+    height: 40px;
+    border-bottom: 4px solid #39b54a;
+}
+    #MasterBody .navMenu .staticHome {
+        list-style: none;
+        display: inline-block;
+        float: left;
+        padding: 0px;
+    }
+#MasterBody .navMenu .staticHome li a {
+    cursor: pointer;
+    /*height: 28px;*/
+    padding: 12px 30px 12px 30px;
+    color: #5d5d5d;
+    text-decoration: initial;
+    font-weight: bold;
+}
+    #MasterBody .navMenu .staticHome li a:hover {
+        color: white;
+        background-color: black;
+    }
+    #MasterBody .navMenu #menuMain ul li a {
+        padding: 0 20px;
+        cursor: pointer;
+        height: 28px;
+        padding-top: 12px;
+        color: #5d5d5d;
+        background-image: none;
+    }
+    #MasterBody .navMenu #menuMain ul li a:hover {
+        color: white;
+        background-color: black;
+    }
+        #MasterBody .navMenu #menuMain ul li ul {
+            background-color: #F2F2F2;
+            border-bottom: 2px solid #FFA500;
+        }
+/*navMenu*/
+
+/*Footer*/
+#MasterBody .footer {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-top: 2px solid #F2F2F2;
+    padding-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+/*Footer*/
+
+/*Message and Page Title*/ 
+.ContainWrapper .Message-Area {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+
+.ContainWrapper .Message-Area .msgTitle {
+    font-weight: bold;
+    font-size: 10pt; 
+}
+.ContainWrapper .Message-Area #MainContainer_lblMsg {
+    color: red;
+}
+
+.ContainWrapper .PageTitle {
+    margin-top: 10px;
+}
+.ContainWrapper .PageTitle label {
+    color: #212020;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+.msgPanel 
+{
+     margin-top: 0px;
+     border: 0px solid #008080;
+     padding: 0px;
+     width: auto;
+     height: 17px;
+     font-weight: bold;
+}
+
+/*BUTTON STYLE*/
+
+.button_style
+{
+    
+	background:#EEEEEE;
+	background:-moz-linear-gradient(top,#EEEEEE 0%,#EEEEEE 100%);
+	background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#EEEEEE),color-stop(100%,#EEEEEE));
+	background:-webkit-linear-gradient(top,#EEEEEE 0%,#EEEEEE 100%);
+	background:-o-linear-gradient(top,#EEEEEE 0%,#EEEEEE 100%);
+	background:-ms-linear-gradient(top,#EEEEEE 0%,#EEEEEE 100%);
+	background:#EEEEEE;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEEEEE',endColorstr='#EEEEEE',GradientType=0);
+	padding:4px 17px;
+	color:#2A2929;
+	font-family:'Helvetica Neue',sans-serif;
+	font-size:17px;
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border:1px solid #E0DEDE;
+    cursor: pointer;
+    margin-left: 0px;
+}
+.button_style:hover
+{
+    color:#FF5F00;
+    background:#D8DEED;
+}
+.button_style:active
+{
+    color:#E2DEDD;
+    background:#171616;
+    border:1px solid #E0DEDE;
+    border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+}
+
+.pointer
+{
+    cursor: pointer;
+}

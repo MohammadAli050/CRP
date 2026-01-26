@@ -1,0 +1,66 @@
+﻿body {
+}
+.inputText, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.btnSubmit {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btnSubmit:hover {
+    background-color: #45a049;
+}
+.pageNav
+{
+	margin-top:50px;
+}
+.pageNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+.pageNav li {
+    float: left;
+}
+.pageNav li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.pageNav li a:hover:not(.active) {
+    background-color: #ddd;
+}
+.pageNav li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+.examContainer
+{
+	background-color:#E7E7E7;
+	padding:5px;
+	margin: 15px 0px 15px 0px;
+}
+.col2{
+    float: left;
+  }
+.col2 {
+    width: 45%;
+	margin: 2.5%;
+  }

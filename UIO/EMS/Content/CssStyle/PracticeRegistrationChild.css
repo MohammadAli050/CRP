@@ -1,0 +1,1479 @@
+﻿
+body {
+    color: #5D5D5D;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+}
+
+a {
+    color: #5D5D5D;
+    outline: medium none;
+}
+
+textarea {
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+#branding {
+    height: 91px;
+    padding: 0 25px;
+}
+
+    #branding img {
+        margin: 14px 0 0;
+    }
+
+.noHeader .inner {
+    border: 1px solid #DEDEDE;
+    border-radius: 3px 3px 3px 3px;
+}
+
+#welcome {
+    background: url("../images/welcome-down.png") no-repeat scroll right center transparent;
+    color: #5D5D5D;
+    padding: 2px 32px 1px 1px;
+    position: absolute;
+    right: 35px;
+    text-decoration: none;
+    top: 55px;
+    z-index: 999;
+}
+
+#wrapper .activated-welcome {
+    background: url("../images/welcome-up.png") no-repeat scroll right center transparent;
+}
+
+
+
+
+#wrapper {
+    min-width: 940px;
+    overflow: hidden;
+}
+
+#content {
+    padding-top: 35px;
+}
+
+#footer {
+    color: #777777;
+    font-size: 12px;
+    padding: 0 0 30px;
+    text-align: center;
+}
+
+.box {
+    margin: 20px;
+    position: relative;
+}
+
+    .box a {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .box div.top {
+        border-bottom: 1px solid #DEDEDE;
+        margin-bottom: 10px;
+        overflow: hidden;
+        padding-bottom: 13px;
+        width: 100%;
+    }
+
+    .box .inner {
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        background: none repeat scroll 0 0 #F7F6F6;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-color: -moz-use-text-color #DEDEDE #DEDEDE;
+        border-image: none;
+        border-style: none solid solid;
+        border-width: medium 1px 1px;
+        margin-bottom: 19px;
+        overflow: hidden;
+        padding: 3px;
+    }
+
+    .box .head {
+        position: relative;
+    }
+
+        .box .head h1 {
+            background: url("../images/h1-bg.png") repeat-x scroll left bottom #F3F3F3;
+            border: 1px solid #DEDEDE;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            color: #5D5D5D;
+            font-size: 18px;
+            line-height: 20px;
+            padding: 9px 15px;
+            margin: 0;
+        }
+
+    .box h2 {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .box h3 {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .box .toggle {
+        background: url("../images/toggle-down.png") no-repeat scroll 99% 50% transparent;
+        display: block;
+        height: 40px;
+        left: 0;
+        position: absolute;
+        text-indent: -9999px;
+        top: 0;
+        width: 100%;
+    }
+
+        .box .toggle.activated {
+            background: url("../images/toggle-up.png") no-repeat scroll 99% 50% transparent;
+        }
+
+    .box ul.top {
+        float: right;
+        padding: 10px 0 0;
+    }
+
+    .box ul.bottom {
+        float: right;
+        padding: 15px 0 0;
+    }
+
+.miniList p {
+    margin-bottom: 10px;
+    padding-top: 0;
+}
+
+.normal {
+    border: medium none;
+    margin: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity 0.15s linear 0s;
+}
+
+.inputFormatHint {
+    color: #A9A9A9;
+}
+
+label.fieldHelpBottom {
+    clear: left;
+    color: #A9A9A9;
+    display: block;
+    float: left;
+    margin-left: 150px;
+    width: auto;
+}
+
+li.noLabel label.fieldHelpBottom {
+    margin-left: 0;
+}
+
+.fieldHelpRight {
+    margin-left: 5px;
+}
+
+.boldText {
+    font-weight: bold;
+}
+
+.required {
+    color: #AA4935;
+}
+
+.helpText {
+    color: #A9A9A9;
+}
+
+.borderBottom {
+    border-bottom: 1px solid #DEDEDE;
+    padding-bottom: 10px;
+}
+
+input:disabled, select:disabled, textarea:disabled {
+    background-color: #DDDDDD;
+}
+
+form ol {
+    border-bottom: 1px solid #DEDEDE;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+
+    form ol li {
+        float: left;
+        margin: 3px 0 12px;
+        position: relative;
+        width: 90%;
+    }
+
+        form ol li label {
+            color: #5D5D5D;
+            display: block;
+            float: left;
+            width: 150px;
+        }
+
+            form ol li label.line {
+                margin-right: 10px;
+                width: auto;
+            }
+
+            form ol li label.sublabel1 {
+                margin-left: 0;
+                margin-right: 10px;
+                width: auto;
+            }
+
+            form ol li label.sublabel2 {
+                margin-left: 20px;
+                margin-right: 10px;
+                width: auto;
+            }
+
+        form ol li input {
+            float: left;
+            width: 225px;
+        }
+
+form input, form select, form textarea {
+    background-color: #FFFFFF;
+    border: 1px solid #D2D1D1;
+    border-radius: 3px 3px 3px 3px;
+    color: #5D5D5D;
+    font-size: 13px;
+    outline: medium none;
+    padding: 4px 6px;
+}
+
+form ol li select {
+    float: left;
+    height: 25px;
+    margin-top: 1px;
+    padding: 3px 6px;
+    width: 239px;
+}
+
+    form ol li select.auto-width {
+        min-width: 239px;
+        width: auto;
+    }
+
+form ol li textarea {
+    float: left;
+    height: 80px;
+    width: 250px;
+}
+
+form ol li input[type="text"] {
+    height: 16px;
+}
+
+form ol li input[type="file"] {
+    margin-bottom: 5px;
+}
+
+form ol li input.calendar {
+    float: left;
+    width: 165px;
+}
+
+form ol li.line {
+    width: 100%;
+}
+
+form ol li.new {
+    clear: left;
+}
+
+form ol li.noLabel {
+    margin-left: 150px;
+}
+
+    form ol li.noLabel .fieldHelpBottom {
+        left: 0;
+    }
+
+form ol li.required {
+    color: #A9A9A9;
+    float: left;
+    font-size: 11px;
+    margin-top: 9px;
+    width: 425px;
+}
+
+div.searchForm ol li.required {
+    clear: both;
+}
+
+form ol li.required em {
+    color: #AA4935;
+}
+
+form ol li label em {
+    color: #AA4935;
+}
+
+form ol li.helpText {
+    color: #A9A9A9;
+    float: left;
+    font-size: 12px;
+    margin-top: 9px;
+}
+
+form.longLabels ol li label {
+    width: 180px;
+}
+
+form.longLabels ol li span.validation-error {
+    left: 180px;
+}
+
+form ol li.checkbox input {
+    border: medium none;
+    width: auto;
+}
+
+form ol li.checkbox label {
+    display: inline;
+    line-height: 20px;
+    margin-right: 25px;
+    width: 90%;
+}
+
+form ol li.labelRight {
+    padding-left: 150px;
+}
+
+    form ol li.labelRight label {
+        line-height: 20px;
+        width: 90%;
+    }
+
+form ol li.radio input {
+    border: medium none;
+    width: auto;
+}
+
+form ol li.radio label {
+    display: inline;
+    line-height: 20px;
+}
+
+form ol li.radio input[type="radio"] {
+    margin-left: 0;
+}
+
+form ol li.radio {
+    margin-bottom: 0;
+}
+
+    form ol li.radio label {
+        margin-top: 0;
+    }
+
+    form ol li.radio ul.radio_list li {
+        display: inline;
+        width: auto;
+    }
+
+        form ol li.radio ul.radio_list li label {
+            margin-right: 10px;
+            margin-top: 0;
+            width: auto;
+        }
+
+input[type="file"] {
+    height: 24px;
+}
+
+form p {
+    padding-top: 5px;
+    text-align: left;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"] {
+    border: medium none;
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+    font-size: 15px;
+    margin-right: 4px;
+    padding: 8px 20px;
+}
+
+input[type="submit"] {
+    background-color: #aa4935;
+}
+
+input[type="button"] {
+    background-color: #2e8b57;
+}
+
+input.reset, input.cancel, input[type="reset"] {
+    background: none repeat scroll 0 0 #848484;
+}
+
+input.delete {
+    background: none repeat scroll 0 0 #AA4935;
+}
+
+input[type="checkbox"] {
+    border: medium none;
+    margin: 3px 3px 0 0;
+    padding: 0;
+    width: auto;
+}
+
+input[type="radio"] {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    margin: 3px 3px 0 0;
+    padding: 0;
+}
+
+    input[type="radio"]:disabled {
+        background: none repeat scroll 0 0 transparent;
+    }
+
+form ol.fieldsInLine {
+    border: medium none;
+    margin: 0;
+    padding-bottom: 2px;
+    padding-top: 0;
+}
+
+    form ol.fieldsInLine li {
+        width: 218px;
+    }
+
+        form ol.fieldsInLine li input[type="text"] {
+            width: 192px;
+        }
+
+form ol li.nameContainer {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+form ol li ol.fieldsInLine li {
+    text-align: center;
+}
+
+form ol li label.hasTopFieldHelp {
+    margin-top: 20px;
+}
+
+form ol li div.fieldDescription {
+    color: #A9A9A9;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+    form ol li div.fieldDescription em {
+        color: #AA4935;
+    }
+
+form ol li ol.fieldsInLine li span.validation-error {
+    left: 0;
+    top: 38px;
+}
+
+input.hover[type="button"], input.hover[type="submit"] {
+    background-color: #086912;
+}
+
+input.cancel.hover[type="button"], input.cancel.hover[type="submit"] {
+    background-color: #4D4D4D;
+}
+
+input.cancel[type="button"], input.cancel[type="submit"] {
+    background-color: #848484;
+}
+
+input.delete.hover[type="button"], input.delete.hover[type="submit"] {
+    background-color: #782918;
+}
+
+input.delete[type="button"], input.delete[type="submit"] {
+    background-color: #AA4935;
+}
+
+input.reset.hover[type="button"], input.reset.hover[type="reset"], input.reset.hover[type="submit"] {
+    background-color: #4D4D4D;
+}
+
+input.reset[type="button"], input.reset[type="reset"], input.reset[type="submit"] {
+    background-color: #848484;
+}
+
+.searchForm form ol li {
+    margin: 0 0 15px;
+    width: 25%;
+}
+
+    .searchForm form ol li label {
+        color: #5D5D5D;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .searchForm form ol li input {
+        float: left;
+        width: 80%;
+    }
+
+    .searchForm form ol li select {
+        float: left;
+        width: 84%;
+    }
+
+    .searchForm form ol li input.calendar {
+        width: 165px;
+    }
+
+    .searchForm form ol li input[type="checkbox"] {
+        width: auto;
+    }
+
+.twoColumn form ol li {
+    width: 50%;
+}
+
+    .twoColumn form ol li.line {
+        width: 100%;
+    }
+
+.ui-datepicker-trigger {
+    display: block;
+    float: left;
+    margin: 0 0 0 5px;
+}
+
+.searchForm form ol li label.date_range_label {
+    clear: both;
+    margin-left: 0;
+    margin-right: 10px;
+    width: auto;
+}
+
+form ol li label.time_range_label {
+    margin-left: 20px;
+    margin-right: 10px;
+    width: auto;
+}
+
+form ol li select.timepicker {
+    margin-left: 0;
+    margin-right: 10px;
+    width: 70px;
+}
+
+form ol li input.time_range_duration {
+    margin-left: 0;
+    margin-right: 10px;
+    width: 60px;
+}
+
+.paging li {
+    display: inline;
+}
+
+.paging a {
+    border-radius: 3px 3px 3px 3px;
+    color: #5D5D5D;
+    float: left;
+    margin: 0 2px;
+    padding: 3px 8px;
+    text-decoration: none;
+}
+
+    .paging a:hover {
+        background: none repeat scroll 0 0 #EAEAEA;
+    }
+
+    .paging a.current {
+        background: none repeat scroll 0 0 #33AC3F;
+        color: #FFFFFF;
+    }
+
+.paging li.first a, .paging li.previous a, .paging li.next a, .paging li.last a {
+    padding: 1px 8px;
+    text-indent: -9999px;
+}
+
+.paging li.first a {
+    background: url("../images/paging-first.png") no-repeat scroll 0 0 transparent;
+    margin: 3px 0 0;
+}
+
+.paging li.previous a {
+    background: url("../images/paging-previous.png") no-repeat scroll 0 0 transparent;
+    margin: 2px 0 0 5px;
+}
+
+.paging li.next a {
+    background: url("../images/paging-next.png") no-repeat scroll 0 0 transparent;
+    margin: 2px 0 0 7px;
+}
+
+.paging li.last a {
+    background: url("../images/paging-last.png") no-repeat scroll 0 0 transparent;
+    margin: 3px 0 0;
+}
+
+.paging li.desc {
+    color: #666666;
+    float: left;
+    margin: 3px 0 0;
+    padding-right: 10px;
+}
+
+table.table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+    table.table th {
+        background: none repeat scroll 0 0 #F28C38;
+        border: 1px solid #FFFFFF;
+        color: #FFFFFF;
+        padding: 7px;
+        text-align: left;
+    }
+
+        table.table th a {
+            color: #FFFFFF;
+            display: inline-block;
+            text-decoration: none;
+            width: 100%;
+        }
+
+        table.table th.center, table.table td.center {
+            text-align: center;
+        }
+
+    table.table td {
+        background: none repeat scroll 0 0 #FFFFFF;
+        line-height: 20px;
+        padding: 5px;
+    }
+
+        table.table td.comments input {
+            float: left;
+        }
+
+        table.table td.comments img {
+            float: left;
+            margin: 2px 0 0 2px;
+        }
+
+table thead tr .header {
+    background-image: url("../images/tablesorter-bg.png");
+    background-position: 95% 55%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+table.nosort thead tr .header {
+    background-image: none;
+    cursor: default;
+}
+
+table tbody tr.odd td {
+    background-color: #EAEAEA;
+}
+
+table tbody tr.total td {
+    background-color: #555657;
+    color: #FFFFFF;
+}
+
+table tbody tr td strong {
+    color: #333333;
+    font-weight: bold;
+}
+
+table tbody tr.total td strong {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+table thead tr .headerSortUp {
+    background-image: url("../images/tablesorter-asc.png");
+}
+
+table thead tr .headerSortDown {
+    background-image: url("../images/tablesorter-dsc.png");
+}
+
+table.table th.checkbox-col {
+    width: 10px;
+}
+
+table.table td.right {
+    text-align: right;
+}
+
+table.table td left {
+    text-align: left;
+}
+
+table tfoot tr.total td {
+    background-color: #555657;
+    color: #FFFFFF;
+}
+
+table tfoot tr td strong {
+    color: #333333;
+    font-weight: bold;
+}
+
+table tfoot tr.total td strong {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+table.hover tr:hover, table.hover tr:hover td, table.hover tr:hover td table tbody tr, table.hover tr:hover td table tbody tr td {
+    background-color: #CCCCCC;
+}
+
+table.data th {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: medium none;
+    color: inherit;
+    font-weight: bold;
+}
+
+dl.search-params dt {
+    clear: left;
+    float: left;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px;
+    width: 150px;
+}
+
+dl.search-params dd {
+    margin-left: 150px;
+    padding: 5px;
+}
+
+dl.search-params dt.total {
+}
+
+dl.search-params dd.total {
+}
+
+ul.disc {
+    line-height: 25px;
+    list-style: disc outside none;
+    margin-left: 13px;
+}
+
+ul.helpList li {
+    color: #A9A9A9;
+    font-size: 12px;
+    margin: 5px 0 0;
+}
+
+.message {
+    border: 1px solid #D2D1D1;
+    border-radius: 3px 3px 3px 3px;
+    color: #5D5D5D;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    padding: 14px;
+    position: relative;
+}
+
+    .message a.messageCloseButton {
+        height: 23px;
+        position: absolute;
+        right: 12px;
+        text-indent: -9999px;
+        top: 10px;
+        width: 23px;
+    }
+
+.warning {
+    background-color: #FFF4C7;
+    border: 1px solid #F8E3A4;
+    color: #E79400;
+}
+
+    .warning a {
+        color: #E79400;
+    }
+
+        .warning a.messageCloseButton {
+            background: url("../images/warning-btn.png") no-repeat scroll 0 0 transparent;
+            color: #E79400;
+        }
+
+.error {
+    background-color: #F1C6BD;
+    border: 1px solid #D48574;
+    color: #AA4935;
+}
+
+a.error {
+    background-color: inherit;
+    border: 0 none;
+    color: #AA4935;
+}
+
+.error a {
+    background: url("../images/error-btn.png") no-repeat scroll 0 0 transparent;
+}
+
+.success {
+    background-color: #E0F2C7;
+    border: 1px solid #CDEBA4;
+    color: #6EA800;
+}
+
+    .success a {
+        background: url("../images/success-btn.png") no-repeat scroll 0 0 transparent;
+    }
+
+div.message ol {
+    border-bottom: 0 none;
+    margin: 0;
+    padding: 0;
+}
+
+    div.message ol li {
+        margin: 3px 0 10px;
+    }
+
+form select.validation-error, form input.validation-error, form textarea.validation-error {
+    background: none repeat scroll 0 0 #FFFFFE;
+    border-color: #AA4935;
+    color: #AA4935;
+}
+
+form span.validation-error {
+    color: #AA4935;
+}
+
+form ol li span.validation-error {
+    display: block;
+    font-size: 12px;
+    left: 150px;
+    margin-top: 6px;
+    position: absolute;
+    top: 21px;
+}
+
+form table span.validation-error {
+    color: #AA4935;
+    display: block;
+    font-size: 12px;
+}
+
+form ol li.largeTextBox span.validation-error {
+    top: 85px;
+}
+
+form ol li.fieldHelpContainer span.validation-error {
+    top: 33px;
+}
+
+form ol li.noLabel span.validation-error {
+    left: 0;
+}
+
+.searchForm form ol li span.validation-error {
+    color: #AA4935;
+    display: block;
+    float: left;
+    font-size: 12px;
+    left: 0;
+    margin-top: 1px;
+    top: 44px;
+}
+
+ul.error_list li {
+    color: #AA4935;
+}
+
+.score {
+    float: left;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 2px;
+    text-align: center;
+    width: 100px;
+}
+
+.scoreSec {
+    float: left;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 2px;
+    text-align: center;
+    width: 100px;
+}
+
+.close {
+    bottom: 80px;
+    display: none;
+    position: absolute;
+    right: 10px;
+}
+
+.modal-open .dropdown-menu {
+    z-index: 2050;
+}
+
+.modal-open .dropdown.open {
+}
+
+.modal-open .popover {
+    z-index: 2060;
+}
+
+.modal-open .tooltip {
+    z-index: 2070;
+}
+
+.modal-open form ol li span.validation-error {
+    color: #AA4935;
+    display: block;
+    font-size: 12px;
+    left: 115px;
+    margin-top: 6px;
+    position: absolute;
+    top: 21px;
+}
+
+.modal-open form ol li.largeTextBox span.validation-error {
+    color: #AA4935;
+    display: block;
+    font-size: 12px;
+    left: 115px;
+    margin-top: 6px;
+    position: absolute;
+    top: 105px;
+}
+
+.modal-backdrop {
+    background-color: #000000;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1040;
+}
+
+    .modal-backdrop.fade {
+        opacity: 0;
+    }
+
+        .modal-backdrop, .modal-backdrop.fade.in {
+            opacity: 0.8;
+        }
+
+.modal {
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    left: 55%;
+    margin: -250px 0 0 -280px;
+    overflow: auto;
+    position: fixed;
+    top: 50%;
+    width: 410px;
+    z-index: 9999;
+}
+
+    .modal.fade {
+        top: -25%;
+        transition: opacity 0.3s linear 0s, top 0.3s ease-out 0s;
+    }
+
+        .modal.fade.in {
+            top: 50%;
+        }
+
+    .modal.midsize {
+        left: 48%;
+        width: 600px;
+    }
+
+    .modal.large {
+        left: 40%;
+        width: 800px;
+    }
+
+.modal-header {
+    background-color: #F28C38;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 12px 15px;
+}
+
+    .modal-header .close {
+        background: url("../images/close.png") no-repeat scroll 0 0 transparent;
+        cursor: pointer;
+        display: block;
+        height: 22px;
+        position: absolute;
+        right: 10px;
+        text-indent: -9999px;
+        top: 9px;
+        width: 22px;
+    }
+
+.modal-body {
+    background-color: #F7F6F6;
+    color: #5D5D5D;
+    max-height: 400px;
+    min-height: 50px;
+    overflow-y: auto;
+    padding: 15px;
+}
+
+.modal-form {
+    margin-bottom: 0;
+}
+
+.modal-footer {
+    background-color: #F7F6F6;
+    border-radius: 0 0 6px 6px;
+    margin-bottom: 0;
+    padding: 0 15px 15px;
+    text-align: left;
+}
+
+    .modal-footer:before, .modal-footer:after {
+        content: "";
+        display: table;
+    }
+
+    .modal-footer:after {
+        clear: both;
+    }
+
+    .modal-footer .btn + .btn {
+        margin-bottom: 0;
+    }
+
+    .modal-footer .btn-group .btn + .btn {
+        margin-left: -1px;
+    }
+
+.modal form ol {
+    border-bottom: 1px solid #DEDEDE;
+    margin: 0;
+    padding: 0;
+}
+
+    .modal form ol li {
+        width: 360px;
+    }
+
+        .modal form ol li.line {
+            width: 100%;
+        }
+
+    .modal form ol label {
+        float: left;
+        padding-top: 3px;
+        width: 115px;
+    }
+
+        .modal form ol label.line {
+            width: auto;
+        }
+
+    .modal form ol input {
+        width: 220px;
+    }
+
+        .modal form ol input.calendar {
+            float: left;
+            width: 190px;
+        }
+
+    .modal form ol select {
+        width: 233px;
+    }
+
+    .modal form ol textarea {
+        height: 100px;
+        width: 220px;
+    }
+
+    .modal form ol li.required {
+        margin-top: 0;
+    }
+
+.modal form ul.checkList li label {
+    width: 95%;
+}
+
+.modal form input[type="checkbox"] {
+    border: medium none;
+    margin: 3px 3px 0 0;
+    padding: 0;
+    width: auto;
+}
+
+a.closeText {
+    color: #AA4935;
+    text-decoration: none;
+}
+
+.loading_message {
+    background: url("../images/loading.gif") no-repeat scroll right center transparent;
+    padding-right: 18px;
+}
+
+.timesheet table.table td.right {
+    padding-right: 1px;
+}
+
+    .timesheet table.table td.right.total {
+        padding-right: 17px;
+    }
+
+.timesheet table.table tr.total td.right {
+    padding-right: 17px;
+}
+
+.timesheet table.table td.right span.commentIcon {
+    display: inline-block;
+    margin-left: 2px;
+    width: 14px;
+}
+
+.timesheet .top h3 {
+    float: left;
+    font-size: 18px;
+    margin-top: 2px;
+}
+
+.editTimesheet .top h3 {
+    float: left;
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.timesheet .top select {
+    float: left;
+    height: 28px;
+    margin: 0 5px 0 10px;
+    width: 200px;
+}
+
+.timesheet .top button {
+    float: left;
+    margin: 0 0 5px 10px;
+}
+
+.timesheet .bottom {
+    border-top: 1px solid #DEDEDE;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+    .timesheet .bottom em {
+        float: left;
+        font-size: 14px;
+    }
+
+    .timesheet .bottom p {
+        text-align: right;
+    }
+
+input.timeBox {
+    width: 40px;
+}
+
+#projectColumn, #activityColumn {
+    min-width: 200px;
+}
+
+div#timesheet table.table tbody tr td.comments, div#edit-timesheet table.table tbody tr td.comments {
+    min-width: 70px;
+    white-space: nowrap;
+}
+
+.editTimesheet table.table td {
+    vertical-align: top;
+}
+
+.editTimesheet .toDelete {
+    margin-top: 6px;
+}
+
+.editTimesheet input[type="button"], .editTimesheet input[type="submit"] {
+    margin-left: 5px;
+}
+
+.editTimesheet select, .editTimesheet input, .editTimesheet .checkbox-input {
+    float: left;
+}
+
+.editTimesheet .checkbox-input {
+    clear: both;
+    margin: 0 0 10px 7px;
+}
+
+.editTimesheet .bottom {
+    border-top: 1px solid #DEDEDE;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+    .editTimesheet .bottom .required {
+        color: #A9A9A9;
+        float: left;
+        font-size: 11px;
+        text-align: left;
+        width: 425px;
+    }
+
+        .editTimesheet .bottom .required em {
+            color: #AA4935;
+        }
+
+.editTimesheet input.project {
+    width: 280px;
+}
+
+#sidebar {
+    float: left;
+    margin: 0 17px 0 0;
+    min-height: 300px;
+    width: 202px;
+}
+
+    #sidebar #sidenav {
+        background: url("../images/sidebar-nav-bg.png") repeat-y scroll right top #F28C38;
+        border-radius: 3px 3px 3px 3px;
+        margin: 19px 0 0;
+        padding: 7px;
+    }
+
+        #sidebar #sidenav a {
+            border-bottom: 1px solid #F19A52;
+            border-radius: 3px 3px 3px 3px;
+            color: #FFFFFF;
+            display: block;
+            margin-bottom: 5px;
+            padding: 7px;
+            text-decoration: none;
+            width: 174px;
+        }
+
+            #sidebar #sidenav a:hover {
+                background-color: #CE6D1D;
+            }
+
+            #sidebar #sidenav a.disabled {
+                background-color: #CE6D1D;
+            }
+
+        #sidebar #sidenav .selected a {
+            background-color: #555657;
+            border-bottom: medium none;
+            color: #FFFFFF;
+        }
+
+.pimPane {
+    float: left;
+    width: 97%;
+}
+
+    .pimPane .head, .pimPane .inner {
+        margin-left: 220px;
+    }
+
+    .pimPane #profile-pic h1 {
+        background: url("../images/h1-bg.png") repeat-x scroll left bottom #F3F3F3;
+        border: 1px solid #DEDEDE;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        color: #5D5D5D;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 9px 15px;
+    }
+
+    .pimPane #profile-pic img {
+        border-top: medium none;
+    }
+
+    .pimPane form p.normal {
+        float: left;
+    }
+
+    .pimPane form p.required {
+        color: #A9A9A9;
+        float: left;
+        font-size: 11px;
+        margin-top: 0;
+        width: 425px;
+    }
+
+        .pimPane form p.required em {
+            color: #AA4935;
+        }
+
+    .pimPane form ol li label {
+        margin-top: 0;
+    }
+
+    .pimPane div.imageHolder {
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-color: -moz-use-text-color #DEDEDE #DEDEDE;
+        border-image: none;
+        border-right: 1px solid #DEDEDE;
+        border-style: none solid solid;
+        border-width: medium 1px 1px;
+        height: 200px;
+        text-align: center;
+        width: 200px;
+    }
+
+div.personalDetails {
+    min-width: 1190px;
+}
+
+.personalDetails form ol {
+    margin-bottom: 9px;
+    padding-top: 5px;
+    position: relative;
+}
+
+    .personalDetails form ol li {
+        width: 435px;
+    }
+
+        .personalDetails form ol li input[type="text"] {
+            width: 192px;
+        }
+
+        .personalDetails form ol li select {
+            width: 206px;
+        }
+
+        .personalDetails form ol li input.calendar {
+            width: 165px;
+        }
+
+        .personalDetails form ol li.line {
+            float: left;
+            width: 100%;
+        }
+
+        .personalDetails form ol li.long, .personalDetails form ol li.new {
+            clear: both;
+        }
+
+            .personalDetails form ol li.long label {
+                margin-top: 0;
+            }
+
+        .personalDetails form ol li label {
+            width: 150px;
+        }
+
+        .personalDetails form ol li .block {
+            float: left;
+            margin-right: 12px;
+        }
+
+        .personalDetails form ol li .default {
+            color: #5D5D5D;
+        }
+
+        .personalDetails form ol li .defaulttext {
+            color: #A4A4A4;
+        }
+
+.personalDetails form p {
+    padding-top: 0;
+}
+
+.personalDetails form ol.fieldsInLine li {
+    margin-bottom: 0;
+    width: 218px;
+}
+
+.personalDetails form ol li label.hasTopFieldHelp {
+    margin-top: 23px;
+}
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none outside none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after, q:before, q:after {
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.msgPanel {
+    margin-top: 10px;
+    padding: 0px;
+    width: 888px;
+}

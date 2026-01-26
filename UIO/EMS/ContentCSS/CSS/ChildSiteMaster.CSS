@@ -1,0 +1,3604 @@
+﻿/*Start=========================Admin=========================Start*/
+
+/*Setup*/
+/*Start RoomInfoSetup-container Start*/
+/*RoomInfoSetup.aspx*/
+.RoomInfoSetup-container .div-margin {
+    margin: 10px 0;
+}
+.RoomInfoSetup-container .loadArea {
+    margin-top: 20px;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.RoomInfoSetup-container .loadedArea {
+    border-bottom: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.RoomInfoSetup-container .field-Title{
+    width: 90px;
+}
+.RoomInfoSetup-container .field-Title1{
+    width: 90px;
+    margin-left: 5px;
+}
+.RoomInfoSetup-container .field-Title2{
+    width: 90px;
+}
+.RoomInfoSetup-container .field-Title3{
+    padding: 0px 5px;
+}
+.RoomInfoSetup-container .input-Size {
+    width: 150px;
+}
+.RoomInfoSetup-container .input-Size1 {
+    width: 25px;
+    text-align: center;
+}
+.RoomInfoSetup-container .dropDownList {
+    width: 154px;
+}
+.RoomInfoSetup-container .btn-size {
+    width: 130px;
+    cursor: pointer;
+}
+.RoomInfoSetup-container .btn-size1 {
+    width: 130px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.RoomInfoSetup-container table, .RoomInfoSetup-container tr, .RoomInfoSetup-container th {
+    border: 1px solid #008080;
+}
+.RoomInfoSetup-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+.RoomInfoSetup-container .img-Loading {
+    vertical-align: middle;
+    padding-bottom: 3px;
+}
+.RoomInfoSetup-container .img-action {
+    height: 17px;
+}
+.RoomInfoSetup-container #ctl00_MainContainer_gvRoomInfoSetup {
+    min-width: 800px;
+    max-width: 900px;
+}
+/*End RoomInfoSetup-container End*/
+
+/*Start UserGenerateForStudent-container Start*/
+/*AllStudentUserGenerate.aspx*/
+/*---Internal CSS---*/
+/*End UserGenerateForStudent-container End*/
+
+/*Start ForgetPassword-container Start*/
+/*ForgetPassword.aspx*/
+.ForgetPassword-container .field-Title{
+    width: 60px;
+}
+.ForgetPassword-container .title-flag{
+    margin-bottom: 30px;
+}
+.ForgetPassword-container .input-Size {
+    width: 170px;
+}
+.ForgetPassword-container .div-margin {
+    margin: 10px 0;
+}
+.ForgetPassword-container .btn-size {
+    width: 130px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+.ForgetPassword-container .imgList {
+    height: auto;
+    width: 30px;
+}
+/*End ForgetPassword-container End*/
+
+/*Start PasswordChange-container Start*/
+/*PasswordChange.aspx*/
+.PasswordChange-container .field-Title{
+    width: 120px;
+}
+.PasswordChange-container .field-Title-Fix {
+    margin-left: 7px;
+}
+.PasswordChange-container .SearchKey {
+    margin-left: -6px;
+    padding: 2px;
+}
+.PasswordChange-container .input-Size {
+    width: 184px;
+}
+.PasswordChange-container .Day {
+    width: 55px;
+}
+.PasswordChange-container .Month {
+    width: 65px;
+}
+.PasswordChange-container .Year {
+    width: 60px;
+}
+.PasswordChange-container .div-margin {
+    margin: 10px 0;
+}
+.PasswordChange-container .btn-size {
+    width: 100px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+/*End PasswordChange-container End*/
+
+/*Start PasswordChangeByAdmin-container Start*/
+/*PasswordChangeByAdmin.aspx*/
+.PasswordChangeByAdmin-container .field-Title{
+    width: 50px;
+}
+.PasswordChangeByAdmin-container .SearchKey {
+    margin-left: -6px;
+    padding: 2px;
+}
+.PasswordChangeByAdmin-container .input-Size {
+    width: 120px;
+}
+.PasswordChangeByAdmin-container .dropDownList {
+    width: 123px;
+}
+.PasswordChangeByAdmin-container .div-margin {
+    margin: 10px 0;
+}
+.PasswordChangeByAdmin-container .btn-size {
+    width: 140px;
+    cursor: pointer;
+}
+/*End PasswordChangeByAdmin-container End*/
+
+/*Start PasswordChangeByUser-container Start*/
+/*PasswordChangeByUser.aspx*/
+.PasswordChangeByUser-container .field-Title{
+    width: 130px;
+}
+.PasswordChangeByUser-container .input-Size {
+    width: 150px;
+}
+.PasswordChangeByUser-container .div-margin {
+    margin: 10px 0;
+}
+.PasswordChangeByUser-container .btn-size {
+    width: 100px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+/*End PasswordChangeByUser-container End*/
+
+/*Start PersonUserRelation-container Start*/
+/*PersonUserRelation.aspx*/
+.PersonUserRelation-container .field-Title{
+    width: 105px;
+}
+.PersonUserRelation-container .field-Title2{
+    width: 111px;
+}
+.PersonUserRelation-container .input-Size {
+    width: 120px;
+}
+.PersonUserRelation-container .input-Size2 {
+    width: 160px;
+}
+.PersonUserRelation-container .dropDownList {
+    width: 123px;
+}
+.PersonUserRelation-container .SearchKey {
+    margin-left: -6px;
+    padding: 2px;
+}
+.PersonUserRelation-container .CommonPanel {
+    border: 1px solid #F2F2F2;
+    padding: 5px;
+    margin-right: 10px;
+}
+.PersonUserRelation-container .div-margin {
+    margin: 10px 0;
+}
+.PersonUserRelation-container .div-margin1 {
+    margin: 10px 0;
+    height: 18px;
+}
+.PersonUserRelation-container .btn-size {
+    width: 120px;
+    cursor: pointer;
+}
+.PersonUserRelation-container .img-Loading {
+    vertical-align: middle;
+    width: 120px;
+    display: inline-block;
+}
+/*End PersonUserRelation-container End*/
+
+/*Start SearchPerson-container Start*/
+/*SearchPersonProfile.aspx*/
+.SearchPerson-container .field-Title{
+    width: 80px;
+}
+.SearchPerson-container .input-Size {
+    width: 120px;
+}
+.SearchPerson-container .dropDownList {
+    width: 123px;
+}
+.SearchPerson-container .SearchKey {
+    margin-left: -6px;
+    padding: 2px;
+}
+.SearchPerson-container .div-margin {
+    margin: 10px 0;
+}
+.SearchPerson .mainTable {
+    width: 50%;
+    margin-top: 20px;
+}
+.SearchPerson table, tr, th {
+    border: 1px solid #008080;
+}
+.SearchPerson .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+/*End SearchPerson-container End*/
+
+/*Start UserAccessControl-container Start*/
+/*UserAccessControl.aspx*/
+.UserAccessControl-container .field-Title{
+    width: 156px;
+}
+.UserAccessControl-container .field-Title2 {
+    width: 100px;
+    margin-left: 20px;
+}
+.UserAccessControl-container .input-Size {
+    width: 120px;
+}
+.UserAccessControl-container .input-Size2 {
+    width: 160px;
+}
+.UserAccessControl-container .input-Size5 {
+    width: 500px;
+}
+.UserAccessControl-container .dropDownList {
+    width: 123px;
+}
+.UserAccessControl-container .dropDownList1 {
+    width: 163px;
+}
+.UserAccessControl-container .SearchKey {
+    margin-left: -6px;
+    padding: 2px;
+}
+.UserAccessControl-container .CommonPanel {
+    border: 3px solid #F2F2F2;
+    padding: 5px;
+    margin-right: 10px;
+}
+.UserAccessControl-container .RolePanel, .UserAccessControl-container .ButtonPanel {
+    width: 620px;
+}
+.UserAccessControl-container .div-margin {
+    margin: 10px 0;
+}
+.UserAccessControl-container .loadingPanel {
+    height: 18px;
+}
+.UserAccessControl-container .btn-size {
+    width: 120px;
+    cursor: pointer;
+}
+.UserAccessControl-container .tableStyle {
+    width: 100%;
+}
+    .UserAccessControl-container .tableStyle,
+    .UserAccessControl-container .tableStyle tr,
+    .UserAccessControl-container .tableStyle tr th,
+    .UserAccessControl-container .tableStyle tr td {
+        border: none;
+        text-align: center;
+    }
+.UserAccessControl-container .lblMsg {
+    color: red;
+}
+/*End UserAccessControl-container End*/
+
+/*Start UserProfile-container Start*/
+/*UserProfile.aspx*/
+.UserProfile-container .field-Title{
+    width: 100px;
+}
+.UserProfile-container .input-Size {
+    width: 170px;
+}
+.UserProfile-container #ctl00_MainContainer_txtCode {
+    width: 170px;
+}
+.UserProfile-container .dropDownList {
+    width: 123px;
+}
+.UserProfile-container .AvailableKey {
+    margin-left: -6px;
+    padding: 2px;
+}
+.UserProfile-container .radioButtonGroup input {
+    margin-left: 0px;
+}
+.UserProfile-container .radioButtonFlag input {
+    margin-left: 13px;
+}
+.UserProfile-container .div-margin {
+    margin: 10px 0;
+}
+.UserProfile-container .btn-size {
+    width: 120px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+/*End UserProfile-container End*/
+
+/*End=========================Admin=========================End*/
+
+
+
+/*Start=========================Bill=========================Start*/
+
+/*Start DiscountContinuationSetup-container Start*/
+/*DiscountContinuationSetup.aspx*/
+.DiscountContinuationSetup-container .field-Title{
+    width: 70px;	
+}
+.DiscountContinuationSetup-container .field-Title2 {
+    width: 75px;
+    margin-left: 5px;
+}
+.DiscountContinuationSetup-container .input-Size {
+    width: 40px;
+}
+.DiscountContinuationSetup-container .input-Size1 {
+    width: 40px;
+    text-align: center;
+}
+.DiscountContinuationSetup-container .dropDownList {
+    width: 123px;
+}
+.DiscountContinuationSetup-container .div-margin {
+    margin: 10px 0;
+}
+.DiscountContinuationSetup-container .btn-size {
+    width: 122px;
+    cursor: pointer;
+}
+.DiscountContinuationSetup-container .btn-size2 {
+    width: 60px;
+    padding: 2px 0px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.DiscountContinuationSetup-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.DiscountContinuationSetup-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.DiscountContinuationSetup-container table, tr, th {
+    border: 1px solid #008080;
+}
+.DiscountContinuationSetup-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+.DiscountContinuationSetup-container .action-container img{
+    padding: 1px;
+    height: auto;
+    width: 20px;
+}
+/*End DiscountContinuationSetup-container End*/
+
+/*Start FeeSetup-container Start*/
+/*FeeSetup.aspx*/
+/*---Inline CSS---*/
+/*End FeeSetup-container End*/
+
+/*Start GradeWiseRetakeDiscount-container Start*/
+/*GradeWiseRetakeDiscount.aspx*/
+/*---Inline CSS---*/
+/*End GradeWiseRetakeDiscount-container End*/
+
+/*Start TotalAmountOfCredit-container Start*/
+/*SetupMakeDuplicate.aspx*/
+.TotalAmountOfCredit-container .field-Title{
+    width: 70px;
+}
+.TotalAmountOfCredit-container .field-Title2 {
+    width: 75px;
+    margin-left: 15px;
+}
+.TotalAmountOfCredit-container .input-Size {
+    width: 40px;
+}
+.TotalAmountOfCredit-container .dropDownList {
+    width: 123px;
+}
+.TotalAmountOfCredit-container .div-margin {
+    margin: 10px 0;
+}
+.TotalAmountOfCredit-container .btn-size {
+    width: 122px;
+    cursor: pointer;
+}
+.TotalAmountOfCredit-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.TotalAmountOfCredit-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+/*End TotalAmountOfCredit-container End*/
+
+/*Start StudentDiscountCurrentMgt-container Start*/
+/*StudentDiscountCurrentMgt.aspx*/
+/*---Inline CSS---*/
+/*End StudentDiscountCurrentMgt-container End*/
+
+/*Start StudentDiscountForceMgt-container Start*/
+/*StudentDiscountForceMgt.aspx*/
+/*---Inline CSS---*/
+/*End StudentDiscountForceMgt-container End*/
+
+/*Start StudentDiscountInitialMgt-container Start*/
+/*StudentDiscountForceMgt.aspx*/
+/*---Inline CSS---*/
+/*End StudentDiscountInitialMgt-container End*/
+
+/*Start StudentDiscountMgt-container Start*/
+/*StudentDiscountForceMgt.aspx*/
+/*---Internal & Inline CSS---*/
+/*End StudentDiscountMgt-container End*/
+
+/*Start StudentList-container Start*/
+/*StudentList.aspx*/
+.StudentList-container .field-Title{
+    width: 80px;
+}
+.StudentList-container .field-Title2 {
+    width: 70px;
+    margin-left: 10px;
+}
+.StudentList-container .field-Title3 {
+    width: 20px;
+    margin-right: 5px;
+    font-weight: bold;
+    color: #008080;
+}
+.StudentList-container .field-Title4 {
+    width: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: bold;
+    color: #008080;
+}
+.StudentList-container .field-Title5 {
+    width: 84px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #b61111;
+    text-align: center;
+}
+.StudentList-container .field-Title6 {
+    width: 120px;
+    margin-right: 5px;
+    font-weight: bold;
+    color: #008080;
+}
+.StudentList-container .input-Size {
+    width: 40px;
+}
+.StudentList-container .input-Size1 {
+    width: 40px;
+    text-align: center;
+}
+.StudentList-container .dropDownList {
+    width: 150px;
+}
+.StudentList-container .disabledrowload1 .aspNetDisabled {
+    width: 150px;
+}
+.StudentList-container .disabledrowload2 .aspNetDisabled {
+    width: 84px;
+    margin-left: 10px;
+}
+.StudentList-container .div-margin {
+    margin: 10px 0;
+}
+.StudentList-container .btn-size {
+    width: 150px;
+    cursor: pointer;
+}
+.StudentList-container .btn-size2 {
+    width: 60px;
+    padding: 2px 0px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.StudentList-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.StudentList-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.StudentList-container #ctl00_MainContainer_PnlScholarship .mainTable {
+    width: 900px;
+}
+.StudentList-container table, tr, th {
+    border: 1px solid #008080;
+}
+.StudentList-container table, .StudentList-container tr, .StudentList-container td input {
+    width: 30px;
+    text-align: center;
+}
+.StudentList-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+/*End StudentList-container End*/
+
+/*Start TotalAmountOfCredit-container Start*/
+/*TotalAmountOfCredit.aspx*/
+.TotalAmountOfCredit-container .field-Title{
+    width: 70px;
+}
+.TotalAmountOfCredit-container .field-Title2 {
+    width: 75px;
+    margin-left: 15px;
+}
+.TotalAmountOfCredit-container .input-Size {
+    width: 40px;
+}
+.TotalAmountOfCredit-container .dropDownList {
+    width: 123px;
+}
+.TotalAmountOfCredit-container .div-margin {
+    margin: 10px 0;
+}
+.TotalAmountOfCredit-container .btn-size {
+    width: 122px;
+    cursor: pointer;
+}
+.TotalAmountOfCredit-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.TotalAmountOfCredit-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+/*End TotalAmountOfCredit-container End*/
+
+/*End=========================Bill=========================End*/
+
+
+
+/*Start=========================employee=========================Start*/
+
+/*Start EvaluationFormTheory-container Start*/
+/*EvaluationForm.aspx*/
+.EvaluationFormTheory-container .field-Title{
+    width: 70px;
+}
+.EvaluationFormTheory-container .field-Title1{
+    width: 100px;
+    margin-left: 40px;
+}
+.EvaluationFormTheory-container .field-Title2{
+    width: 70px;
+    margin-left: 40px;
+}
+.EvaluationFormTheory-container .dropDownList {
+    width: 400px;
+}
+.EvaluationFormTheory-container .dropDownList2 {
+    width: 70px;
+}
+.EvaluationFormTheory-container .div-margin {
+    margin: 10px 0;
+}
+.EvaluationFormTheory-container .div-margin1 {
+    margin: 30px 0;
+}
+.EvaluationFormTheory-container .btn-size {
+    width: 340px;
+    cursor: pointer;
+}
+.EvaluationFormTheory-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.EvaluationFormTheory-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.EvaluationFormTheory-container .field-Title-Fix {
+    display: inline-block;
+    width: 380px;
+}
+.EvaluationFormTheory-container .field-Title-Fix2 {
+    display: inline-block;
+    width: 100px;
+}
+.EvaluationFormTheory table {
+    width: 100%;
+}
+.EvaluationFormTheory-container .rdbOpinion input {
+    margin: 0px;
+}
+.EvaluationFormTheory-container .rdbOpinion label {
+    display: inline-block;
+    padding: 0 5px;
+}
+.EvaluationFormTheory-container .evaluationTable th {
+    background-color: #008080;
+    color: #d9eaf7;
+}
+.EvaluationFormTheory-container .evaluationTable .head-title {
+    text-align: left;
+}
+.EvaluationFormTheory-container .inquiresTitle {
+    font-weight: bold;
+}
+/*End EvaluationFormTheory-container End*/
+
+/*Start EvaluationSummary-container Start*/
+/*EvaluationGraph.aspx*/
+.EvaluationSummary-container .field-Title{
+    width: 70px;
+}
+.EvaluationSummary-container .field-Title2 {
+    width: 70px;
+    margin-left: 55px;
+}
+.EvaluationSummary-container .dropDownList {
+    width: 123px;
+}
+.EvaluationSummary-container .dropDownList2 {
+    width: 379px;
+}
+.EvaluationSummary-container .div-margin {
+    margin: 10px 0;
+}
+.EvaluationSummary-container .btn-size {
+    width: 100px;
+    cursor: pointer;
+}
+.EvaluationSummary-container .input-Size {
+    width: 160px;
+}
+.EvaluationSummary-container .SearchKey {
+    margin-left: -6px;
+    padding: 2px;
+}
+.EvaluationSummary-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.EvaluationSummary-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.EvaluationSummary-container table, tr, th {
+    border: 1px solid #008080;
+}
+.EvaluationSummary-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+/*End EvaluationSummary-container End*/
+
+/*Start EvaluationVarify-container Start*/
+.EvaluationVarify-container .field-Title{
+    width: 70px;
+}
+.EvaluationVarify-container .field-Title2 {
+    width: 70px;
+    margin-left: 55px;
+}
+.EvaluationVarify-container .dropDownList {
+    width: 123px;
+}
+.EvaluationVarify-container .dropDownList2 {
+    width: 379px;
+}
+.EvaluationVarify-container .div-margin {
+    margin: 10px 0;
+}
+.EvaluationVarify-container .btn-size {
+    width: 120px;
+    margin-left: 55px;
+    cursor: pointer;
+}
+.EvaluationVarify-container .input-Size {
+    width: 118px;
+}
+.EvaluationVarify-container .SearchKey {
+    margin-left: -6px;
+    padding: 2px;
+}
+.EvaluationVarify-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.EvaluationVarify-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.EvaluationVarify-container table, tr, th {
+    border: 1px solid #008080;
+}
+.EvaluationVarify-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+
+/*End EvaluationVarify-container End*/
+
+/*End=========================employee=========================End*/
+
+
+
+/*Start=========================registration=========================Start*/
+
+/*Start AutoAssign-container Start*/
+/*AutoAssignCourse.aspx*/
+/*---Inline CSS---*/
+/*End AutoAssign-container End*/
+
+/*Start AutoMandatoryCourse-container Start*/
+/*AutoMandatoryCourse.aspx*/
+/*---Inline CSS---*/
+/*End AutoMandatoryCourse-container End*/
+
+/*Start AutoOpenCourse-container Start*/
+/*AutoOpenCourse.aspx*/
+/*---Inline CSS---*/
+/*End AutoOpenCourse-container End*/
+
+/*Start AutoPreregistrationCount-container Start*/
+/*AutoPreregistrationCount.aspx*/
+/*---Inline CSS---*/
+/*End AutoPreregistrationCount-container End*/
+
+/*Start CourseAddRemoveAfterRegistration-container Start*/
+/*CourseAddRemoveAfterRegistration.aspx*/
+/*---Inline CSS---*/
+/*End CourseAddRemoveAfterRegistration-container End*/
+
+/*Start CourseDrop-container Start*/
+/*CourseDropApprove.aspx*/
+.CourseDrop-container .field-Title{
+    width: 80px;
+}
+.CourseDrop-container .field-Title2{
+    width: 80px;
+    margin-left: 55px;
+}
+.CourseDrop-container .input-Size {
+    width: 150px;
+}
+.CourseDrop-container .input-Size2 {
+    width: 253px;
+}
+.CourseDrop-container .input-Size3 {
+    width: 80px;
+}
+    .CourseDrop-container .text-format input {
+        text-align: center;
+    }
+.CourseDrop-container .dropDownList {
+    width: 156px;
+}
+.CourseDrop-container .div-margin {
+    margin: 10px 0;
+}
+.CourseDrop-container .btn-size {
+    width: 100px;
+    cursor: pointer;
+}
+.CourseDrop-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.CourseDrop-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.CourseDrop-container table, tr, th {
+    border: 1px solid #008080;
+}
+.CourseDrop-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+.CourseDrop-container table a {
+    text-decoration: none;
+    cursor: pointer;
+}
+.CourseDrop-container table tr td .input-Size4 {
+    width: 150px;
+}
+.CourseDrop-container .requestButton {
+    width: 100px;
+}
+.CourseDrop-container .aspNetDisabled {
+    width: 100%;
+}
+/*End CourseDrop-container End*/
+
+/*Start CourseDrop-container Start*/
+/*CourseDropRequest.aspx*/
+.CourseDrop-container .field-Title{
+    width: 80px;
+}
+.CourseDrop-container .field-Title2{
+    width: 80px;
+    margin-left: 55px;
+}
+.CourseDrop-container .input-Size {
+    width: 150px;
+}
+.CourseDrop-container .input-Size2 {
+    width: 253px;
+}
+.CourseDrop-container .input-Size3 {
+    width: 80px;
+}
+    .CourseDrop-container .text-format input {
+        text-align: center;
+    }
+.CourseDrop-container .dropDownList {
+    width: 156px;
+}
+.CourseDrop-container .div-margin {
+    margin: 10px 0;
+}
+.CourseDrop-container .btn-size {
+    width: 100px;
+    cursor: pointer;
+}
+.CourseDrop-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.CourseDrop-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.CourseDrop-container table, tr, th {
+    border: 1px solid #008080;
+}
+.CourseDrop-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+.CourseDrop-container table a {
+    text-decoration: none;
+    cursor: pointer;
+}
+.CourseDrop-container table tr td .input-Size4 {
+    width: 150px;
+}
+.CourseDrop-container .requestButton {
+    width: 100px;
+}
+.CourseDrop-container .aspNetDisabled {
+    width: 100%;
+}
+/*End CourseDrop-container End*/
+
+/*Start CourseOfferAndCount-container Start*/
+/*CourseOfferAndCount.aspx*/
+/*---Inline CSS---*/
+/*End CourseOfferAndCount-container End*/
+
+/*Start CourseWiseStudentList-container Start*/
+/*CourseWiseStudentListCH.aspx*/
+/*---Inline CSS---*/
+/*End CourseWiseStudentList-container End*/
+
+/*Start CourseWiseStudentListRW-container Start*/
+/*CourseWiseStudentListRW.aspx*/
+.CourseWiseStudentListRW-container label,  
+.CourseWiseStudentListRW-container  select, 
+.CourseWiseStudentListRW-container input{
+    font-size: 11px;
+}
+.CourseWiseStudentListRW-container .div-margin {
+    margin: 10px 0;
+}
+.CourseWiseStudentListRW-container .loadArea {
+    margin-top: 20px;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.CourseWiseStudentListRW-container .field-Title{
+    padding: 0px 5px 0px 0px;
+}
+.CourseWiseStudentListRW-container .field-Title1{
+    padding: 0px 5px;
+}
+.CourseWiseStudentListRW-container .dropDownList {
+    padding: 0px 5px;
+}
+.CourseWiseStudentListRW-container .btn-size {
+    padding: 0px 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.CourseWiseStudentListRW-container .img-Loading {
+    vertical-align: middle;
+    padding-bottom: 3px;
+}
+.CourseWiseStudentListRW-container table, tr, th {
+    border: 1px solid #008080;
+}
+.CourseWiseStudentListRW-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+.CourseWiseStudentListRW-container #ctl00_MainContainer_gvStudentList {
+    min-width: 600px;
+    max-width: 750px;
+}
+/*End CourseWiseStudentListRW-container End*/
+
+/*Start CourseDrop-container Start*/
+/*CourseWithdrawApprove.aspx*/
+/*---Already Exist For CourseDropRequest.aspx---*/
+/*End CourseDrop-container End*/
+
+/*Start CourseDrop-container Start*/
+/*CourseWithdrawRequest.aspx*/
+/*---Already Exist For CourseDropRequest.aspx---*/
+/*End CourseDrop-container End*/
+
+/*Start DeptSetUp-container Start*/
+/*DeptSetUp.aspx*/
+/*---Inline CSS---*/
+/*End DeptSetUp-container End*/
+
+/*Start ForceOperation-container Start*/
+.ForceOperation-container .field-Title{
+    width: 70px;
+}
+.ForceOperation-container .field-Title2{
+    width: 70px;
+    margin-left: 55px;
+}
+.ForceOperation-container .field-Title3{
+    width: 70px;
+    margin-left: 10px;
+}
+.ForceOperation-container .field-Title4{
+    width: 145px;
+    margin-left: 10px;
+}
+.ForceOperation-container .input-Size {
+    width: 150px;
+}
+.ForceOperation-container .input-Size2 {
+    width: 200px;
+}
+.ForceOperation-container .input-Size3 {
+    width: 70px;
+}
+.ForceOperation-container .input-Size4 {
+    width: 30px;
+}
+.ForceOperation-container .dropDownList {
+    width: 153px;
+}
+.ForceOperation-container .dropDownList2 {
+    width: 50px;
+}
+.ForceOperation-container .div-margin {
+    margin: 10px 0;
+}
+.ForceOperation-container .btn-size {
+    width: 340px;
+    cursor: pointer;
+}
+.ForceOperation-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ForceOperation-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ForceOperationWorkSheetGenerate table, tr, th {
+    border: 1px solid #008080;
+}
+.ForceOperationWorkSheetGenerate .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+/*End ForceOperation-container End*/
+
+/*Start GenerateWorkSheet-container Start*/
+/*GenerateWorksheet.aspx*/
+/*---Inline CSS---*/
+/*End GenerateWorkSheet-container End*/
+
+/*Start MajorMinorDepartmentSetup-container Start*/
+/*MajorMinorDepartmentSetup.aspx*/
+/*---Inline CSS---*/
+/*End MajorMinorDepartmentSetup-container End*/
+
+/*Start OpenAndAssignCourse-container Start*/
+/*OpenAndAssignCourse.aspx*/
+/*---Inline CSS---*/
+/*End OpenAndAssignCourse-container End*/
+
+/*Start PreAdvising-container Start*/
+/*PreAdvising.aspx*/
+/*---Inline CSS---*/
+/*End PreAdvising-container End*/
+
+/*Start PreAdmisingRetake-container Start*/
+/*PreAdvisingRetake.aspx*/
+/*---Inline CSS---*/
+/*End PreAdmisingRetake-container End*/
+
+/*Start PrepareStudentWorkSheet-container Start*/
+/*PrepareStudentWorksheet.aspx*/
+/*---Inline CSS---*/
+/*End PrepareStudentWorkSheet-container End*/
+
+/*Start PreRegistration-container Start*/
+/*PreRegistration.aspx*/
+/*---Inline CSS---*/
+/*End PreRegistration-container End*/
+
+/*Start PreRegistrationByCourse-container Start*/
+/*PreRegistrationByCourse.aspx*/
+/*---Inline CSS---*/
+/*End PreRegistrationByCourse-container End*/
+
+/*Start Registration-container Start*/
+/*Registration.aspx*/
+/*---Inline CSS---*/
+/*End Registration-container End*/
+
+/*Start RegistrationAdminAutoOpen-container Start*/
+/*RegistrationAdminAutoOpen.aspx*/
+/*---Inline CSS---*/
+/*End RegistrationAdminAutoOpen-container End*/
+
+/*Start RegistrationHome-container Start*/
+/*RegistrationHome.aspx*/
+/*---Inline CSS---*/
+/*End RegistrationHome-container End*/
+
+/*Start RequisitionByCourse-container Start*/
+/*RequisitionByCourse.aspx*/
+/*---Inline CSS---*/
+/*End RequisitionByCourse-container End*/
+
+/*Start Section-container Start*/
+/*Section.aspx*/
+/*---Inline CSS---*/
+/*End Section-container End*/
+
+/*Start SectionSelection-container Start*/
+/*SectionSelection.aspx*/
+/*---Inline CSS---*/
+/*End SectionSelection-container End*/
+
+/*Start StudentGeneralBill-container Start*/
+/*StudentGeneralBill.aspx*/
+/*---Inline CSS---*/
+/*End StudentGeneralBill-container End*/
+
+/*Start StudentResultHistory-container Start*/
+/*StudentResultHistory.aspx*/
+/*---Inline CSS---*/
+/*End StudentResultHistory-container End*/
+
+/*Start StudentSectionChange-container Start*/
+/*StudentSectionChange.aspx*/
+/*---Inline CSS---*/
+/*End StudentSectionChange-container End*/
+
+/*Start ThesisAndProjectRegistration-container Start*/
+/*ThesisAndProjectRegistration.aspx*/
+/*---Inline CSS---*/
+/*End ThesisAndProjectRegistration-container End*/
+
+/*Start TransferStudent-container Start*/
+/*TransferStudent.aspx*/
+/*---Inline CSS---*/
+/*End TransferStudent-container End*/
+
+/*Start ViewStudentCourse-container Start*/
+/*ViewStudentCourse.aspx*/
+/*---Inline CSS---*/
+/*End ViewStudentCourse-container End*/
+
+/*End=========================registration=========================End*/
+
+
+
+/*Start=========================result=========================Start*/
+
+/*Start ExamManagement-container Start*/
+/*Exam.aspx*/
+.ExamManagement-container label, .ExamManagement-container input{
+    font-size: 11px;
+}
+.ExamManagement-container .field-Title{
+    padding-right: 10px;
+}
+.ExamManagement-container .field-Title1{
+    padding: 0 10px;
+}
+.ExamManagement-container .input-Size {
+    width: 136px;
+}
+.ExamManagement-container .div-margin {
+    margin: 10px 0;
+}
+.ExamManagement-container .btn-size {
+    padding: 0 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.ExamManagement-container .loadArea {
+    margin-top: 20px;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamManagement-container .img-Loading {
+    vertical-align: middle;
+    padding-bottom: 3px;
+}
+/*End ExamManagement-container End*/
+
+/*Start ExamHome-container Start*/
+/*ExamHome.aspx*/
+/*---Inline CSS---*/
+/*End ExamHome-container End*/
+
+/*Start ExamResultApprove-container Start*/
+/*ExamResultApprove.aspx*/
+.ExamResultApprove-container label,  .ExamResultApprove-container  select, .ExamResultApprove-container  input {
+    font-size: 11px;
+}
+.ExamResultApprove-container .field-Title{
+    padding-right: 5px;
+}
+.ExamResultApprove-container .field-Title1{
+    padding: 0 5px;
+}
+.ExamResultApprove-container .dropDownList {
+    min-width: 110px;
+}
+.ExamResultApprove-container .div-margin {
+    margin: 10px 0;
+}
+.ExamResultApprove-container .btn-size {
+    padding: 0 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.ExamResultApprove-container .loadArea {
+    margin-top: 20px;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamResultApprove-container .loadedArea {
+    border-bottom: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamResultApprove-container table, tr, th {
+    border: 1px solid #008080;
+    font-size: 12px;
+}
+.ExamResultApprove-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+.ExamResultApprove-container #ctl00_MainContainer_gvFinalExamResult {
+    min-width: 600px;
+    max-width: 800px;
+}
+/*End ExamResultReport-container End*/
+
+/*Start ExamResultApproveByExamController-container Start*/
+/*ExamResultApproveByExamController.aspx*/
+.ExamResultApproveByExamController-container label,  
+.ExamResultApproveByExamController-container  select, 
+.ExamResultApproveByExamController-container  input {
+    font-size: 11px;
+}
+.ExamResultApproveByExamController-container .div-margin {
+    margin: 10px 0;
+}
+.ExamResultApproveByExamController-container .loadArea {
+    margin-top: 20px;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamResultApproveByExamController-container .loadedArea {
+    border-bottom: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamResultApproveByExamController-container .field-Title{
+    padding-right: 5px;
+}
+.ExamResultApproveByExamController-container .dropDownList {
+    min-width: 110px;
+}
+.ExamResultApproveByExamController-container .btn-size {
+    padding: 0 20px;
+    cursor: pointer;
+}
+.ExamResultApproveByExamController-container .btn-size2 {
+    width: 200px;
+    cursor: pointer;
+}
+.ExamResultApproveByExamController-container table, .ExamResultApproveByExamController-container tr, .ExamResultApproveByExamController-container th {
+    border: 1px solid #008080;
+    font-size: 12px;
+}
+.ExamResultApproveByExamController-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+.ExamResultApproveByExamController-container #ctl00_MainContainer_gvExamMarkApprove {
+    min-width: 800px;
+    max-width: 980px;
+}
+/*End ExamResultApproveByExamController-container End*/
+
+/*Start ExamResultReport-container Start*/
+/*ExamResultReport.aspx*/
+.ExamResultReport-container label,  .ExamResultReport-container  select, .ExamResultReport-container  input {
+    font-size: 11px;
+}
+.ExamResultReport-container .field-Title{
+    padding-right: 5px;
+}
+.ExamResultReport-container .field-Title1{
+    padding: 0 5px;
+}
+.ExamResultReport-container .dropDownList {
+    min-width: 110px;
+}
+.ExamResultReport-container .div-margin {
+    margin: 10px 0;
+}
+.ExamResultReport-container .btn-size {
+    padding: 0 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.ExamResultReport-container .loadArea {
+    margin-top: 20px;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamResultReport-container .loadedArea {
+    border-bottom: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamResultReport-container table, tr, th {
+    border: 1px solid #008080;
+    font-size: 12px;
+}
+.ExamResultReport-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+.ExamResultReport-container #ctl00_MainContainer_gvFinalExamResult {
+    min-width: 600px;
+    max-width: 800px;
+}
+/*End ExamResultReport-container End*/
+
+/*Start ExamResultChangeGrade-container Start*/
+/*ExamResultChangeGrade.aspx*/
+.ExamResultChangeGrade-container label,  .ExamResultChangeGrade-container  select, .ExamResultChangeGrade-container input {
+    font-size: 11px;
+}
+.ExamResultChangeGrade-container .field-Title{
+    padding-right: 5px;
+}
+.ExamResultChangeGrade-container .field-Title1{
+    padding: 0 5px;
+}
+.ExamResultChangeGrade-container .field-Title2{
+    padding: 0 5px;
+}
+.ExamResultChangeGrade-container .input-Size {
+    width: 40px;
+    text-align: center;
+}
+.ExamResultChangeGrade-container .input-Size1 {
+    width: 50px;
+    text-align: center;
+    height: 10px;
+}
+.ExamResultChangeGrade-container .input-Size2 {
+    width: 160px;
+    letter-spacing: 2px;
+}
+.ExamResultChangeGrade-container .aspNetDisabled {
+    width: 60px;
+    text-align: center;
+}
+.ExamResultChangeGrade-container .dropDownList {
+    width: 105px;
+}
+.ExamResultChangeGrade-container .dropDownList1 {
+    width: 370px;
+}
+.ExamResultChangeGrade-container .dropDownList2 {
+    width: 75px;
+}
+.ExamResultChangeGrade-container .dropDownList3 {
+    width: 150px;
+}
+.ExamResultChangeGrade-container .dropDownList4 {
+    padding: 0px;
+}
+.ExamResultChangeGrade-container .div-margin {
+    margin: 10px 0;
+}
+.ExamResultChangeGrade-container .btn-size {
+    padding: 0 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.ExamResultChangeGrade-container .btn-size1 {
+    padding: 0 5px;
+    cursor: pointer;
+}
+.ExamResultChangeGrade-container .btn-size2 {
+    padding: 0 5px;
+    cursor: pointer;
+    margin-left: -5px;
+}
+.ExamResultChangeGrade-container .loadArea {
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamResultChangeGrade-container .loadedArea {
+    border-bottom: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamResultChangeGrade-container table, .ExamResultChangeGrade-container tr, .ExamResultChangeGrade-container th {
+    border: 1px solid #008080;
+    font-size: 12px;
+}
+.ExamResultChangeGrade-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+.ExamResultChangeGrade-container #ctl00_MainContainer_gvExamResultSubmit,  .ExamResultChangeGrade-container .SpecialForButton{
+    min-width: 800px;
+    max-width: 960px;
+}
+/*End ExamResultChangeGrade-container End*/
+
+
+/*Start StudentGradeChange-container Start*/
+/*StudentGradeChange.aspx*/
+.StudentGradeChange-container label,  .StudentGradeChange-container  select, .StudentGradeChange-container span, .StudentGradeChange-container input {
+    font-size: 11px;
+}
+.StudentGradeChange-container .field-Title{
+    padding-right: 5px;
+    width: 80px;
+}
+.StudentGradeChange-container .field-Title1{
+    padding: 0px 5px;
+}
+.StudentGradeChange-container .input-Size {
+    width: 140px;
+    text-align: center;
+}
+.StudentGradeChange-container .dropDownList {
+    width: 105px;
+}
+.StudentGradeChange-container .dropDownList1 {
+    width: 327px;
+}
+.StudentGradeChange-container .div-margin {
+    margin: 10px 0;
+}
+.StudentGradeChange-container .btn-size {
+    padding: 0 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    width: 100px;
+    height: 17px;
+}
+.StudentGradeChange-container .loadArea {
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.StudentGradeChange-container .loadedArea {
+    border-bottom: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.StudentGradeChange-container table, .StudentGradeChange-container tr, .StudentGradeChange-container th {
+    border: 1px solid #008080;
+    font-size: 12px;
+}
+.StudentGradeChange-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+.StudentGradeChange-container #ctl00_MainContainer_gvGradeChange_ctl02_txtObtainedGrade {
+    width: 50px;
+}
+.StudentGradeChange-container #ctl00_MainContainer_gvGradeChange {
+    min-width: 650px;
+    max-width: 800px;
+}
+/*End ExamResultChangeGrade-container End*/
+
+
+/*Start ExamResultEntry-container Start*/
+/*ExamResultEntry.aspx*/
+.ExamResultEntry-container label,  .ExamResultEntry-container  select, .ExamResultEntry-container input {
+    font-size: 11px;
+}
+.ExamResultEntry-container .field-Title{
+    padding-right: 5px;
+}
+.ExamResultEntry-container .field-Title1{
+    padding: 0 5px;
+}
+.ExamResultEntry-container .field-Title2{
+    padding: 0 5px;
+}
+.ExamResultEntry-container .input-Size {
+    width: 40px;
+    text-align: center;
+}
+.ExamResultEntry-container .input-Size1 {
+    width: 50px;
+    text-align: center;
+    height: 10px;
+}
+.ExamResultEntry-container .aspNetDisabled {
+    width: 60px;
+    text-align: center;
+}
+.ExamResultEntry-container .dropDownList {
+    width: 105px;
+}
+.ExamResultEntry-container .dropDownList1 {
+    width: 370px;
+}
+.ExamResultEntry-container .dropDownList2 {
+    width: 75px;
+}
+.ExamResultEntry-container .dropDownList3 {
+    width: 150px;
+}
+.ExamResultEntry-container .dropDownList4 {
+    padding: 0px;
+}
+.ExamResultEntry-container .div-margin {
+    margin: 10px 0;
+}
+.ExamResultEntry-container .btn-size {
+    padding: 0 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.ExamResultEntry-container .btn-size1 {
+    padding: 0 5px;
+    cursor: pointer;
+}
+.ExamResultEntry-container .btn-size2 {
+    padding: 0 5px;
+    cursor: pointer;
+    margin-left: -5px;
+}
+.ExamResultEntry-container .loadArea {
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamResultEntry-container .loadedArea {
+    border-bottom: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamResultEntry-container table, .ExamResultEntry-container tr, .ExamResultEntry-container th {
+    border: 1px solid #008080;
+    font-size: 12px;
+}
+.ExamResultEntry-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+.ExamResultEntry-container #ctl00_MainContainer_gvExamResultSubmit,  .ExamResultEntry-container .SpecialForButton{
+    min-width: 800px;
+    max-width: 960px;
+}
+/*End ExamResultEntry-container End*/
+
+/*Start ExamSetManagement-container Start*/
+/*ExamSet.aspx*/
+.ExamSetManagement-container label, .ExamSetManagement-container input{
+    font-size: 11px;
+}
+.ExamSetManagement-container .field-Title{
+    padding-right: 10px;
+}
+.ExamSetManagement-container .field-Title1{
+    padding: 0 10px;
+}
+.ExamSetManagement-container .input-Size {
+    width: 136px;
+}
+.ExamSetManagement-container .dropDownList {
+    width: 140px;
+}
+.ExamSetManagement-container .div-margin {
+    margin: 10px 0;
+}
+.ExamSetManagement-container .btn-size {
+    padding: 0 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.ExamSetManagement-container .loadArea {
+    margin-top: 20px;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+/*End ExamSetManagement-container End*/
+
+/*Start ExamSetItem-container Start*/
+/*ExamSetItem.aspx*/
+.ExamSetItem-container label,  .ExamSetItem-container  select, .ExamSetItem-container input{
+    font-size: 11px;
+}
+.ExamSetItem-container .field-Title{
+    padding-right: 10px;
+}
+.ExamSetItem-container .field-Title1{
+    padding: 0 10px;
+}
+.ExamSetItem-container .input-Size {
+    width: 136px;
+}
+.ExamSetItem-container .dropDownList {
+    min-width: 110px;
+}
+.ExamSetItem-container .div-margin {
+    margin: 10px 0;
+}
+.ExamSetItem-container .btn-size {
+    padding: 0 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.ExamSetItem-container .loadArea {
+    margin-top: 20px;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+/*End ExamSetItem-container End*/
+
+/*Start ExamTemplate-container Start*/
+/*ExamTemplate.aspx*/
+.ExamTemplate-container label, .ExamTemplate-container input{
+    font-size: 11px;
+}
+.ExamTemplate-container .field-Title{
+    padding-right: 10px;
+}
+.ExamTemplate-container .field-Title1{
+    padding: 0 10px;
+}
+.ExamTemplate-container .input-Size {
+    width: 136px;
+}
+.ExamTemplate-container .div-margin {
+    margin: 10px 0;
+}
+.ExamTemplate-container .btn-size {
+    padding: 0 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.ExamTemplate-container .loadArea {
+    margin-top: 20px;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+/*End ExamTemplate-container End*/
+
+/*Start ExamTemplateItem-container Start*/
+/*ExamTemplateItem.aspx*/
+.ExamTemplateItem-container label,  .ExamTemplateItem-container  select, .ExamTemplateItem-container input{
+    font-size: 11px;
+}
+.ExamTemplateItem-container .field-Title{
+    padding-right: 5px;
+}
+.ExamTemplateItem-container .field-Title1{
+    padding: 0 5px;
+}
+.ExamTemplateItem-container #ctl00_MainContainer_txtExamTemplateMark {
+    width: 60px;
+    text-align: center;
+}
+.ExamTemplateItem-container .dropDownList {
+    min-width: 110px;
+}
+.ExamTemplateItem-container .div-margin {
+    margin: 10px 0;
+}
+.ExamTemplateItem-container .btn-size {
+    padding: 0 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.ExamTemplateItem-container .loadArea {
+    margin-top: 20px;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamTemplateItem-container .loadedArea {
+    border-bottom: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+/*End ExamTemplateItem-container End*/
+
+/*Start gradeSheet-container Start*/
+/*GradeSheet.aspx*/
+.gradeSheet-container .gradeSheetBoard {
+    width: 490px;
+}
+.gradeSheet-container table{
+    border: 1px solid #008080; 
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    width: 100%;
+}
+.gradeSheet-container table, tr, th {
+    border: 1px solid #008080;
+}
+.gradeSheet-container table .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+/*End gradeSheet-container End*/
+
+/*Start gradeSheetTransfer-container Start*/
+/*GradeSheetTransfer.aspx*/
+.gradeSheetTransfer-container .gradeSheetBoard {
+    width: 490px;
+}
+.gradeSheetTransfer-container table{
+    border: 1px solid #008080; 
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    width: 100%;
+}
+.gradeSheetTransfer-container table, tr, th {
+    border: 1px solid #008080;
+}
+.gradeSheetTransfer-container table .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+/*End gradeSheetTransfer-container End*/
+
+/*Start Result-container Start*/
+/*Result.aspx*/
+/*---Inline CSS---*/
+/*End Result-container End*/
+
+/*Start ExamResultPrint-container Start*/
+/*ExamResultPrint.aspx*/
+.ExamResultPrint-container label,  .ExamResultPrint-container  select, .ExamResultPrint-container  input {
+    font-size: 11px;
+}
+.ExamResultPrint-container .field-Title{
+    padding-right: 5px;
+}
+.ExamResultPrint-container .field-Title1{
+    padding: 0 5px;
+}
+.ExamResultPrint-container .dropDownList {
+    min-width: 110px;
+}
+.ExamResultPrint-container .div-margin {
+    margin: 10px 0;
+}
+.ExamResultPrint-container .btn-size {
+    padding: 0 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.ExamResultPrint-container .loadArea {
+    margin-top: 20px;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+/*End ExamResultPrint-container End*/
+
+/*End=========================result=========================End*/
+
+
+
+/*Start=========================schedular=========================Start*/
+
+/*Start Attendance-container Start*/
+/*Attendance.aspx*/
+/*---Inline CSS---*/
+/*End Attendance-container End*/
+
+/*Start ReportClassRoutine-container Start*/
+/*ReportClassRoutine.aspx*/
+/*---Inline CSS---*/
+/*End ReportClassRoutine-container End*/
+
+/*Start RptClassRoutine-container Start*/
+/*RptClassRoutine.aspx*/
+/*---Inline CSS---*/
+/*End RptClassRoutine-container End*/
+
+/*Start RptCourseListBySemester-container Start*/
+/*RptCourseListBySemester.aspx*/
+/*---Inline CSS---*/
+/*End RptCourseListBySemester-container End*/
+
+/*Start RptExamRoutine-container Start*/
+/*RptExamRoutine.aspx*/
+/*---Inline CSS---*/
+/*End RptExamRoutine-container End*/
+
+/*Start RptExamSeatPlan-container Start*/
+/*RptExamSeatPlan.aspx*/
+/*---Inline CSS---*/
+/*End RptExamSeatPlan-container End*/
+
+/*Start RptTotalStudentByCourseWise-container Start*/
+/*RptTotalStudentByCourseWise.aspx*/
+/*---Inline CSS---*/
+/*End RptTotalStudentByCourseWise-container End*/
+
+/*Start ClassRoutine-container Start*/
+/*ClassRoutine.aspx*/
+.ClassRoutine-container .field-Title{
+    width: 70px;
+}
+.ClassRoutine-container .field-Title-First{
+    padding-right: 5px;
+}
+.ClassRoutine-container .field-Title-Others{
+    padding: 0px 5px 0px 2px;
+}
+.ClassRoutine-container .field-width-size-L {
+    margin: 2px;
+    width: 200px;
+}
+.ClassRoutine-container .field-width-size-M {
+    margin: 2px;
+    width: 150px;
+}
+.ClassRoutine-container .field-width-size-S {
+    margin: 2px;
+    width: 100px;
+}
+.ClassRoutine-container .field-width-size-Ss {
+    margin: 2px;
+    width: 50px;
+}
+.ClassRoutine-container .field-Title2 {
+    width: 70px;
+    margin-left: 30px;
+}
+.ClassRoutine-container .dropDownList {
+    width: 140px;
+}
+.ClassRoutine-container .dropDownList2 {
+    width: 388px;
+}
+.ClassRoutine-container .div-margin {
+    margin: 10px 0;
+}
+.ClassRoutine-container .btn-size {
+    width: 140px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.ClassRoutine-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    border-left: none;
+    border-right: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ClassRoutine-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ClassRoutine-container table, tr, th {
+    border: 1px solid #008080;
+    font-size: 11px;
+}
+.ClassRoutine-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+.ClassRoutine-container .tableBanner {
+    font-weight: bold;
+    font-size: 14px;
+    word-spacing: 2px;
+    margin: 20px 0px 10px 0px;
+    display: inline-block;
+}
+.ClassRoutine-container .action-container img{
+    padding: 1px;
+    height: auto;
+    width: 20px;
+}
+.ClassRoutine-container .updatePanel-Wrapper {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #005782;            
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    /*color: #5d5d5d;
+    left: 37%;
+    padding: 15px;
+    position: fixed;
+    top: 5%;
+    width: 350px;
+    z-index: 1000;
+    box-shadow: 0 0 15px 10px #808080;
+    border-radius: 20px;*/
+}
+.ClassRoutine-container .combo-width {
+    margin: 2px;
+    width: 150px;
+    height: 22px;
+}
+.ClassRoutine-container .combo-width-sp {
+    margin: 2px;
+    width: 150px;
+    height: 22px;
+    margin-left: 6px;
+}
+.ClassRoutine-container .field-width {
+    margin: 2px;
+    width: 196px;
+}
+.ClassRoutine-container .field-width-popUp {
+    margin: 2px;
+    width: 147px;
+}
+.ClassRoutine-container .field-width-popUp-textArea {
+    margin: 2px;
+    width: 144px;
+}
+.ClassRoutine-container .label-width {
+    width: 100px;
+    display: inline-block;
+    text-align: left;
+}
+.ClassRoutine-container .label-width-popUp {
+    width: 110px;
+    display: inline-block;
+    text-align: left;
+}
+/*End ClassRoutine-container End*/
+
+/*Start ClassRoutineManage-container Start*/
+/*ClassRoutineManage.aspx*/
+/*---Inline CSS---*/
+/*End ClassRoutineManage-container End*/
+
+/*Start ConflictCheck-container Start*/
+/*ConflickCheck.aspx*/
+.ConflickCheck-container .field-Title{
+    width: 70px;
+}
+.ConflictCheck-container .field-Title2 {
+    width: 70px;
+    margin-left: 55px;
+}
+.ConflictCheck-container .input-Size {
+    width: 120px;
+}
+.ConflictCheck-container .dropDownList {
+    width: 153px;
+}
+.ConflictCheck-container .div-margin {
+    margin: 10px 0;
+}
+.ConflictCheck-container .btn-size {
+    width: 150px;
+    margin-left: 55px;
+    cursor: pointer;
+}
+.ConflictCheck-container .btn-size2 {
+    width: 120px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.ConflictCheck-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ConflictCheck-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ConflictCheck-container .checkPanel {
+    width: 300px;
+}
+.ConflictCheck-container .studentIdPanel {
+    width: 170px;
+}
+.ConflictCheck-container .coursePanel {
+    width: 170px;
+}
+/*End ConflickCheck-container End*/
+
+/*Start CoursePredict-container Start*/
+/*CoursePredict.aspx*/
+.CoursePredict-container .field-Title{
+    width: 100px;
+}
+.CoursePredict-container .field-Title2 {
+    width: 115px;
+    margin-left: 15px;
+}
+.CoursePredict-container .dropDownList {
+    width: 135px;
+}
+.CoursePredict-container .div-margin {
+    margin: 10px 0;
+}
+.CoursePredict-container .btn-size {
+    width: 134px;
+    cursor: pointer;
+}
+.CoursePredict-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.CoursePredict-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.CoursePredict-container .img-Loading {
+    vertical-align: middle;
+    padding-bottom: 3px;
+}
+/*End CoursePredict-container End*/
+
+/*Start ExamScheduleCreate-container Start*/
+/*ExamScheduleCreate.aspx*/
+.ExamScheduleCreate-container label,  .ExamScheduleCreate-container  select, .ExamScheduleCreate-container input{
+    font-size: 11px;
+}
+.ExamScheduleCreate-container .field-Title{
+    width: 70px;
+}
+.ExamScheduleCreate-container .field-Title2 {
+    width: 95px;
+    margin-left: 5px;
+}
+.ExamScheduleCreate-container .field-Title3 {
+    width: 60px;
+    margin-left: 5px;
+}
+.ExamScheduleCreate-container .input-Size {
+    width: 132px;
+}
+.ExamScheduleCreate-container .dropDownList {
+    width: 140px;
+}
+.ExamScheduleCreate-container .dropDownList2 {
+    width: 250px;
+}
+.ExamScheduleCreate-container .dropDownList3 {
+    width: 300px;
+}
+.ExamScheduleCreate-container .div-margin {
+    margin: 10px 0;
+}
+.ExamScheduleCreate-container .btn-size {
+    width: 134px;
+    cursor: pointer;
+}
+.ExamScheduleCreate-container .btn-size1 {
+    width: 134px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.ExamScheduleCreate-container .loadArea {
+    margin-top: 20px;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamScheduleCreate-container .loadedArea {
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamScheduleCreate-container .loadedArea1 {
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+    height: 40px;
+}
+.ExamScheduleCreate-container .img-Loading {
+    vertical-align: middle;
+    padding-bottom: 3px;
+}
+.ExamScheduleCreate-container .img-action {
+    height: 17px;
+}
+.ExamScheduleCreate-container #ctl00_MainContainer_cblSection, .ExamScheduleCreate-container #ctl00_MainContainer_cblSection tbody {
+    display: block;
+    border: none;
+}
+    .ExamScheduleCreate-container .loadedArea1 #ctl00_MainContainer_cblSection tbody tr {
+        float: left;
+        border: none;
+    }
+    .ExamScheduleCreate-container #ctl00_MainContainer_PnlExamScheduleCreate table {
+        width: 100%;
+    }
+.ExamScheduleCreate-container table, tr, th {
+    border: 1px solid #008080;
+    font-size: 12px;
+}
+.ExamScheduleCreate-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+/*End ExamScheduleCreate-container End*/
+
+/*Start ExamScheduleDayCreate-container Start*/
+/*ExamScheduleDayCreate.aspx*/
+.ExamScheduleDayCreate-container label, .ExamScheduleDayCreate-container  select, .ExamScheduleDayCreate-container input{
+    font-size: 11px;
+}
+.ExamScheduleDayCreate-container .field-Title{
+    width: 100px;
+}
+.ExamScheduleDayCreate-container .field-Title2 {
+    width: 115px;
+    margin-left: 15px;
+}
+.ExamScheduleDayCreate-container .input-Size {
+    width: 132px;
+}
+.ExamScheduleDayCreate-container .dropDownList {
+    width: 135px;
+}
+.ExamScheduleDayCreate-container .dropDownList2 {
+    width: 250px;
+}
+.ExamScheduleDayCreate-container .div-margin {
+    margin: 10px 0;
+}
+.ExamScheduleDayCreate-container .btn-size {
+    width: 134px;
+    margin-left: 104px;
+    cursor: pointer;
+}
+.ExamScheduleDayCreate-container .btn-size1 {
+    width: 134px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.ExamScheduleDayCreate-container .loadArea {
+    margin-top: 10px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamScheduleDayCreate-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamScheduleDayCreate-container .img-Loading {
+    vertical-align: middle;
+    padding-bottom: 3px;
+}
+/*End ExamScheduleDayCreate-container End*/
+
+/*Start ExamScheduleDayList-container Start*/
+/*ExamScheduleDayList.aspx*/
+.ExamScheduleDayList-container label, .ExamScheduleDayList-container  select, .ExamScheduleDayList-container input{
+    font-size: 11px;
+}
+.ExamScheduleDayList-container .field-Title{
+    width: 70px;
+}
+.ExamScheduleDayList-container .field-Title2 {
+    width: 95px;
+    margin-left: 5px;
+}
+.ExamScheduleDayList-container .field-Title3 {
+    width: 60px;
+    margin-left: 5px;
+}
+.ExamScheduleDayList-container .dropDownList {
+    width: 135px;
+}
+.ExamScheduleDayList-container .dropDownList2 {
+    width: 250px;
+}
+.ExamScheduleDayList-container .div-margin {
+    margin: 10px 0;
+}
+.ExamScheduleDayList-container .btn-size {
+    margin-left: 5px;
+    height: 19px;
+    width: 85px;
+    cursor: pointer;
+}
+.ExamScheduleDayList-container .btn-size1 {
+    width: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.ExamScheduleDayList-container .loadArea {
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 2px 5px;
+}
+.ExamScheduleDayList-container table, tr, th {
+    border: 1px solid #008080;
+    font-size: 12px;
+}
+.ExamScheduleDayList-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+.ExamScheduleDayList-container #ctl00_MainContainer_gvExamScheduleDayList {
+    min-width: 700px;
+    max-width: 900px;
+}
+.ExamScheduleDayList-container .img-Loading {
+    vertical-align: middle;
+    padding-bottom: 3px;
+}
+.ExamScheduleDayList-container .img-action {
+    height: 17px;
+}
+/*End ExamScheduleDayList-container End*/
+
+/*Start ExamScheduleDayUpdate-container Start*/
+/*ExamScheduleDayUpdate.aspx*/
+.ExamScheduleDayUpdate-container label, .ExamScheduleDayUpdate-container  select, .ExamScheduleDayUpdate-container input{
+    font-size: 11px;
+}
+.ExamScheduleDayUpdate-container .field-Title{
+    width: 75px;
+}
+.ExamScheduleDayUpdate-container .field-Title2 {
+    width: 75px;
+    margin-left: 15px;
+}
+.ExamScheduleDayUpdate-container .input-Size {
+    width: 132px;
+}
+.ExamScheduleDayUpdate-container .dropDownList {
+    width: 135px;
+}
+.ExamScheduleDayUpdate-container .dropDownList2 {
+    width: 250px;
+}
+.ExamScheduleDayUpdate-container .div-margin {
+    margin: 10px 0;
+}
+.ExamScheduleDayUpdate-container .btn-size {
+    width: 100px;
+    margin-left: 79px;
+    cursor: pointer;
+}
+.ExamScheduleDayUpdate-container .btn-size1 {
+    width: 100px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.ExamScheduleDayUpdate-container .loadArea {
+    margin-top: 10px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamScheduleDayUpdate-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+/*End ExamScheduleDayUpdate-container End*/
+
+/*Start ExamScheduleList-container Start*/
+/*ExamScheduleList.aspx*/
+.ExamScheduleList-container .field-Title{
+    width: 100px;
+}
+.ExamScheduleList-container .field-Title2 {
+    width: 115px;
+    margin-left: 15px;
+}
+.ExamScheduleList-container .dropDownList {
+    width: 135px;
+}
+.ExamScheduleList-container .dropDownList2 {
+    width: 250px;
+}
+.ExamScheduleList-container .div-margin {
+    margin: 10px 0;
+}
+.ExamScheduleList-container .btn-size {
+    width: 134px;
+    cursor: pointer;
+}
+.ExamScheduleList-container .loadArea {
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamScheduleList-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamScheduleList-container table, tr, th {
+    border: 1px solid #008080;
+    font-size: 12px;
+}
+.ExamScheduleList-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+.ExamScheduleList-container #ctl00_MainContainer_gvExamScheduleTimeSlot {
+    min-width: 800px;
+    max-width: 900px;
+}
+.ExamScheduleList-container .img-Loading {
+    vertical-align: middle;
+    padding-bottom: 3px;
+}
+/*End ExamScheduleList-container End*/
+
+/*Start ExamScheduleSeatPlan-container Start*/
+/*ExamScheduleSeatPlan.aspx*/
+.ExamScheduleSeatPlan-container label,  .ExamScheduleSeatPlan-container  select, .ExamScheduleSeatPlan-container input{
+    font-size: 11px;
+}
+.ExamScheduleSeatPlan-container .field-Title{
+    width: 70px;
+}
+.ExamScheduleSeatPlan-container .field-Title2 {
+    width: 95px;
+    margin-left: 5px;
+}
+.ExamScheduleSeatPlan-container .field-Title3 {
+    width: 60px;
+    margin-left: 5px;
+}
+.ExamScheduleSeatPlan-container .field-Title4 {
+    padding-right: 5px;
+}
+.ExamScheduleSeatPlan-container .field-Title5 {
+    padding: 0 5px;
+}
+.ExamScheduleSeatPlan-container #ctl00_MainContainer_pnMaleFemaleCount {
+    display: inline-block;
+    margin-left: 10px;
+}
+.ExamScheduleSeatPlan-container #ctl00_MainContainer_txtEvenRow,  
+.ExamScheduleSeatPlan-container #ctl00_MainContainer_txtOddRow,
+.ExamScheduleSeatPlan-container #ctl00_MainContainer_txtMaleCount,
+.ExamScheduleSeatPlan-container #ctl00_MainContainer_txtFemaleCount {
+    width: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+.ExamScheduleSeatPlan-container .dropDownList {
+    width: 140px;
+}
+.ExamScheduleSeatPlan-container .dropDownList2 {
+    width: 250px;
+}
+.ExamScheduleSeatPlan-container .dropDownList3 {
+    width: 300px;
+}
+.ExamScheduleSeatPlan-container .div-margin {
+    margin: 10px 0;
+}
+.ExamScheduleSeatPlan-container .btn-size {
+    width: 134px;
+    cursor: pointer;
+}
+.ExamScheduleSeatPlan-container .btn-size2 {
+    width: 100px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.ExamScheduleSeatPlan-container .btn-size3 {
+    cursor: pointer;
+    vertical-align: top;
+}
+.ExamScheduleSeatPlan-container .information-Zone {
+    width: 475px;
+    float: left;
+    margin-right: 10px;
+}
+.ExamScheduleSeatPlan-container .information-Zone2 {
+    width: 475px;
+    float: left;
+    margin-right: 10px;
+}
+.ExamScheduleSeatPlan-container .loadArea {
+    margin-top: 20px;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamScheduleSeatPlan-container .loadedArea {
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamScheduleSeatPlan-container .maleListBoxStyle {
+    width: 175px;
+    height: 82px;
+}
+.ExamScheduleSeatPlan-container .img-Loading {
+    vertical-align: middle;
+    padding-bottom: 3px;
+}
+.ExamScheduleSeatPlan-container .img-action {
+    height: 17px;
+}
+.ExamScheduleSeatPlan-container #ctl00_MainContainer_cblSection, .ExamScheduleSeatPlan-container #ctl00_MainContainer_cblSection tbody {
+    display: block;
+    border: none;
+}
+    .ExamScheduleSeatPlan-container .loadedArea1 #ctl00_MainContainer_cblSection tbody tr {
+        float: left;
+        border: none;
+    }
+    .ExamScheduleSeatPlan-container #ctl00_MainContainer_PnlExamScheduleSeatPlan table {
+        width: 100%;
+    }
+.ExamScheduleSeatPlan-container table, tr, th {
+    border: 1px solid #008080;
+    font-size: 12px;
+}
+.ExamScheduleSeatPlan-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+/*End ExamScheduleSeatPlan-container End*/
+
+/*Start ExamScheduleSetCreate-container Start*/
+/*ExamScheduleSetCreate.aspx*/
+.ExamScheduleSetCreate-container .field-Title{
+    width: 100px;
+}
+.ExamScheduleSetCreate-container .field-Title2 {
+    width: 115px;
+    margin-left: 15px;
+}
+.ExamScheduleSetCreate-container .field-Title3 {
+    width: 55px;
+    margin-left: 10px;
+}
+.ExamScheduleSetCreate-container .field-Title4 {
+    width: 90px;
+    margin-left: 10px;
+}
+.ExamScheduleSetCreate-container .input-Size {
+    width: 70px;
+}
+.ExamScheduleSetCreate-container .input-Size2 {
+    width: 257px;
+}
+.ExamScheduleSetCreate-container .dropDownList {
+    width: 135px;
+}
+.ExamScheduleSetCreate-container .div-margin {
+    margin: 10px 0;
+}
+.ExamScheduleSetCreate-container .btn-size {
+    width: 134px;
+    margin-left: 104px;
+    cursor: pointer;
+}
+.ExamScheduleSetCreate-container .btn-size1 {
+    width: 134px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.ExamScheduleSetCreate-container .loadArea {
+    margin-top: 10px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamScheduleSetCreate-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamScheduleSetCreate-container .img-Loading {
+    vertical-align: middle;
+    padding-bottom: 3px;
+}
+/*End ExamScheduleSetCreate-container End*/
+
+/*Start ExamScheduleSetList-container Start*/
+/*ExamScheduleSetList.aspx*/
+.ExamScheduleSetList-container .field-Title{
+    width: 100px;
+}
+.ExamScheduleSetList-container .field-Title2 {
+    width: 115px;
+    margin-left: 15px;
+}
+.ExamScheduleSetList-container .dropDownList {
+    width: 135px;
+}
+.ExamScheduleSetList-container .div-margin {
+    margin: 10px 0;
+}
+.ExamScheduleSetList-container .btn-size {
+    width: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.ExamScheduleSetList-container .loadArea {
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamScheduleSetList-container table, tr, th {
+    border: 1px solid #008080;
+    font-size: 12px;
+}
+.ExamScheduleSetList-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+.ExamScheduleSetList-container #ctl00_MainContainer_gvExamScheduleSetList {
+    min-width: 700px;
+    max-width: 900px;
+}
+.ExamScheduleSetList-container .img-Loading {
+    vertical-align: middle;
+    padding-bottom: 3px;
+}
+.ExamScheduleSetList-container .img-action {
+    height: 17px;
+}
+/*End ExamScheduleSetList-container End*/
+
+/*Start ExamScheduleSetUpdate-container Start*/
+/*ExamScheduleSetUpdate.aspx*/
+.ExamScheduleSetUpdate-container .field-Title{
+    width: 100px;
+}
+.ExamScheduleSetUpdate-container .field-Title3 {
+    width: 55px;
+    margin-left: 10px;
+}
+.ExamScheduleSetUpdate-container .field-Title4 {
+    width: 90px;
+    margin-left: 10px;
+}
+.ExamScheduleSetUpdate-container .input-Size {
+    width: 70px;
+}
+.ExamScheduleSetUpdate-container .input-Size2 {
+    width: 257px;
+}
+.ExamScheduleSetUpdate-container .div-margin {
+    margin: 10px 0;
+}
+.ExamScheduleSetUpdate-container .btn-size {
+    width: 100px;
+    margin-left: 104px;
+    cursor: pointer;
+}
+.ExamScheduleSetUpdate-container .btn-size1 {
+    width: 100px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.ExamScheduleSetUpdate-container .loadArea {
+    margin-top: 10px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamScheduleSetUpdate-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+/*End ExamScheduleSetCreate-container End*/
+
+/*Start ExamScheduleTimeSlotCreate-container Start*/
+/*ExamScheduleTimeSlotCreate.aspx*/
+.ExamScheduleTimeSlotCreate-container label, .ExamScheduleTimeSlotCreate-container  select, .ExamScheduleTimeSlotCreate-container input{
+    font-size: 11px;
+}
+.ExamScheduleTimeSlotCreate-container .field-Title{
+    width: 100px;
+}
+.ExamScheduleTimeSlotCreate-container .field-Title2 {
+    width: 115px;
+    margin-left: 15px;
+}
+.ExamScheduleTimeSlotCreate-container .input-Size {
+    width: 132px;
+}
+.ExamScheduleTimeSlotCreate-container .dropDownList {
+    width: 135px;
+}
+.ExamScheduleTimeSlotCreate-container .dropDownList2 {
+    width: 250px;
+}
+.ExamScheduleTimeSlotCreate-container .dropDownList3 {
+    width: 41px;
+}
+.ExamScheduleTimeSlotCreate-container .dropDownList4 {
+    width: 46px;
+}
+.ExamScheduleTimeSlotCreate-container .div-margin {
+    margin: 10px 0;
+}
+.ExamScheduleTimeSlotCreate-container .btn-size {
+    width: 134px;
+    cursor: pointer;
+}
+.ExamScheduleTimeSlotCreate-container .btn-size1 {
+    width: 134px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.ExamScheduleTimeSlotCreate-container .loadArea {
+    margin-top: 10px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamScheduleTimeSlotCreate-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamScheduleTimeSlotCreate-container .img-Loading {
+    vertical-align: middle;
+    padding-bottom: 3px;
+}
+/*End ExamScheduleTimeSlotCreate-container End*/
+
+/*Start ExamScheduleTimeSlotList-container Start*/
+/*ExamScheduleTimeSlotList.aspx*/
+.ExamScheduleTimeSlotList-container label, .ExamScheduleTimeSlotList-container  select, .ExamScheduleTimeSlotList-container input{
+    font-size: 11px;
+}
+.ExamScheduleTimeSlotList-container .field-Title{
+    width: 70px;
+}
+.ExamScheduleTimeSlotList-container .field-Title2 {
+    width: 95px;
+    margin-left: 5px;
+}
+.ExamScheduleTimeSlotList-container .field-Title3 {
+    width: 60px;
+    margin-left: 5px;
+}
+.ExamScheduleTimeSlotList-container .dropDownList {
+    width: 135px;
+}
+.ExamScheduleTimeSlotList-container .dropDownList2 {
+    width: 250px;
+}
+.ExamScheduleTimeSlotList-container .div-margin {
+    margin: 10px 0;
+}
+.ExamScheduleTimeSlotList-container .btn-size {
+    margin-left: 5px;
+    height: 19px;
+    width: 85px;
+    cursor: pointer;
+}
+.ExamScheduleTimeSlotList-container .btn-size1 {
+    width: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.ExamScheduleTimeSlotList-container .loadArea {
+    margin-top: 10px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 2px 5px;
+}
+.ExamScheduleTimeSlotList-container table, tr, th {
+    border: 1px solid #008080;
+    font-size: 12px;
+}
+.ExamScheduleTimeSlotList-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+.ExamScheduleTimeSlotList-container #ctl00_MainContainer_gvExamScheduleTimeSlot {
+    min-width: 800px;
+    max-width: 900px;
+}
+.ExamScheduleTimeSlotList-container .img-Loading {
+    vertical-align: middle;
+    padding-bottom: 3px;
+}
+.ExamScheduleTimeSlotList-container .img-action {
+    height: 17px;
+}
+/*End ExamScheduleDayList-container End*/
+
+/*Start ExamScheduleTimeSlotUpdate-container Start*/
+/*ExamScheduleTimeSlotUpdate.aspx*/
+.ExamScheduleTimeSlotUpdate-container label, .ExamScheduleTimeSlotUpdate-container  select, .ExamScheduleTimeSlotUpdate-container input{
+    font-size: 11px;
+}
+.ExamScheduleTimeSlotUpdate-container .field-Title{
+    width: 100px;
+}
+.ExamScheduleTimeSlotUpdate-container .field-Title2 {
+    width: 90px;
+    margin-left: 15px;
+}
+.ExamScheduleTimeSlotUpdate-container #ctl00_MainContainer_ddlTimeSlot,
+.ExamScheduleTimeSlotUpdate-container #ctl00_MainContainer_ddlProgram{
+    width: 135px;
+}
+.ExamScheduleTimeSlotUpdate-container #ctl00_MainContainer_ddlExamScheduleSet {
+    width: 250px;
+}
+.ExamScheduleTimeSlotUpdate-container .dropDownList3 {
+    width: 41px;
+}
+.ExamScheduleTimeSlotUpdate-container .dropDownList4 {
+    width: 46px;
+}
+.ExamScheduleTimeSlotUpdate-container .div-margin {
+    margin: 10px 0;
+}
+.ExamScheduleTimeSlotUpdate-container .btn-size {
+    width: 100px;
+    margin-left: 104px;
+    cursor: pointer;
+}
+.ExamScheduleTimeSlotUpdate-container .btn-size1 {
+    width: 100px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.ExamScheduleTimeSlotUpdate-container .loadArea {
+    margin-top: 10px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamScheduleTimeSlotUpdate-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+/*End ExamScheduleTimeSlotUpdate-container End*/
+
+/*Start ExamScheduleUpdate-container Start*/
+/*ExamScheduleUpdate.aspx*/
+.ExamScheduleUpdate-container .field-Title{
+    width: 80px;
+}
+.ExamScheduleUpdate-container .field-Title2 {
+    width: 56px;
+    margin-left: 15px;
+}
+.ExamScheduleUpdate-container #ctl00_MainContainer_ddlExamScheduleSet {
+    width: 250px;
+}
+.ExamScheduleUpdate-container .dropDownList {
+    width: 170px;
+}
+.ExamScheduleUpdate-container .dropDownList2 {
+    width: 250px;
+}
+.ExamScheduleUpdate-container .dropDownList3 {
+    width: 300px;
+}
+.ExamScheduleUpdate-container .div-margin {
+    margin: 10px 0;
+}
+.ExamScheduleUpdate-container .btn-size {
+    width: 100px;
+    cursor: pointer;
+}
+.ExamScheduleUpdate-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamScheduleUpdate-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamScheduleUpdate-container .loadedArea1 {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+    height: 26px;
+}
+.ExamScheduleUpdate-container #ctl00_MainContainer_cblSection, .ExamScheduleUpdate-container tbody {
+    display: block;
+    border: none;
+}
+    .ExamScheduleUpdate-container #ctl00_MainContainer_cblSection tr {
+        float: left;
+        border: none;
+    }
+/*End ExamScheduleTimeSlotUpdate-container End*/
+
+
+/*Start ExamStudentPresent-container Start*/
+/*ExamStudentPresent.aspx*/
+.ExamStudentPresent-container label, .ExamStudentPresent-container  select, .ExamStudentPresent-container input{
+    font-size: 11px;
+}
+.ExamStudentPresent-container .div-margin {
+    margin: 10px 0;
+}
+.ExamStudentPresent-container .loadArea {
+    margin-top: 20px;
+    border-top: 1px solid #a2df86;
+    border-bottom: 1px solid #a2df86;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamStudentPresent-container .loadedArea {
+    border-bottom: 1px solid #a2df86;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ExamStudentPresent-container .field-Title1{
+    width: 75px;
+}
+.ExamStudentPresent-container .field-Title2{
+    width: 95px;
+    margin-left: 5px;
+}
+.ExamStudentPresent-container .field-Title3{
+    width: 60px;
+    margin-left: 5px;
+}
+.ExamStudentPresent-container .dropDownList1 {
+    width: 170px;
+}
+.ExamStudentPresent-container .dropDownList2 {
+    width: 240px;
+}
+.ExamStudentPresent-container .btn-size {
+    width: 170px;
+    cursor: pointer;
+}
+.ExamStudentPresent-container table, .ExamStudentPresent-container tr, .ExamStudentPresent-container th {
+    border: 1px solid #008080;
+    font-size: 12px;
+}
+.ExamStudentPresent-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+.ExamStudentPresent-container #ctl00_MainContainer_gvExamStudentPresent {
+    width: 700px;
+}
+/*End ExamScheduleTimeSlotUpdate-container End*/
+
+/*End=========================schedular=========================End*/
+
+
+
+/*Start=========================student=========================Start*/
+
+/*Start ProvisionTranscript-container Start*/
+/*ProvisionTranscript.aspx*/
+/*---Inline CSS---*/
+/*End ProvisionTranscript-container End*/
+
+/*Start RptBatchWiseStudent-container Start*/
+/*RptBatchWiseStudent.aspx*/
+/*---Inline CSS---*/
+/*End RptBatchWiseStudent-container End*/
+
+/*Start RptCourseListByProgram-container Start*/
+/*RptCourseListByProgram.aspx*/
+/*---Inline CSS---*/
+/*End RptCourseListByProgram-container End*/
+
+/*Start RptFlatCourseList-container Start*/
+/*RptFlatCourseList.aspx*/
+/*---Inline CSS---*/
+/*End RptFlatCourseList-container End*/
+
+/*Start studentProbationList-container Start*/
+/*RptProbationStudentList.aspx*/
+.studentProbationList-container .field-Title{
+    width: 165px;	
+}
+.studentProbationList-container .field-Title2 {
+    width: 80px;
+    margin-left: 5px;
+}
+.studentProbationList-container .field-Title4 img{
+    width: 13px;
+    height: auto;
+}
+.studentProbationList-container .field-Title3 {
+    width: 25px;
+    margin-left: 5px;
+}
+.studentProbationList-container .field-Title4 {
+    width: 260px;
+}
+.studentProbationList-container .input-Size {
+    width: 40px;
+}
+.studentProbationList-container .dropDownList {
+    width: 150px;
+}
+.studentProbationList-container .div-margin {
+    margin: 10px 0;
+}
+.studentProbationList-container .btn-size {
+    width: 150px;
+    cursor: pointer;
+}
+.studentProbationList-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.studentProbationList-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.studentProbationList-container .StudentList-container table, tr, th {
+    border: none;
+}
+/*End studentProbationList-container End*/
+
+/*Start RptStudentActive-container Start*/
+/*RptStudentActive.aspx*/
+/*---Inline CSS---*/
+/*End RptStudentActive-container End*/
+
+/*Start RptStudentCGPAList-container Start*/
+/*RptStudentCGPAList.aspx*/
+/*---Inline CSS---*/
+/*End RptStudentCGPAList-container End*/
+
+/*Start RptStudentClassExamSum-container Start*/
+/*RptStudentClassExamSum.aspx*/
+/*---Inline CSS---*/
+/*End RptStudentClassExamSum-container End*/
+
+/*Start RptStudentClassRoutine-container Start*/
+/*RptStudentClassRoutine.aspx*/
+/*---Inline CSS---*/
+/*End RptStudentClassRoutine-container End*/
+
+/*Start RptStudentResultHistoryList-container Start*/
+/*RptStudentResultHistoryList.aspx*/
+/*---Inline CSS---*/
+/*End RptStudentResultHistoryList-container End*/
+
+/*Start RptStudentRoadmap-container Start*/
+/*RptStudentRoadmap.aspx*/
+/*---Inline CSS---*/
+/*End RptStudentRoadmap-container End*/
+
+/*Start RptStudentTranscript-container Start*/
+/*RptStudentTranscript.aspx*/
+/*---Inline CSS---*/
+/*End RptStudentTranscript-container End*/
+
+/*Start ActiveInActiveForRegStudent-container Start*/
+/*ActiveInActiveForRegStudent.aspx*/
+/*---Inline CSS and Used studentProbationList---*/
+/*End ActiveInActiveForRegStudent-container End*/
+
+/*Start ActiveStudentSummary-container Start*/
+/*ActiveStudentSummary.aspx*/
+/*---Inline CSS---*/
+/*End ActiveStudentSummary-container End*/
+
+/*Start AssignCourseTree-container Start*/
+/*AssignCourseTree.aspx*/
+.AssignCourseTree-container label, .AssignCourseTree-container  select, .AssignCourseTree-container input{
+    font-size: 11px;
+}
+.AssignCourseTree-container .div-margin {
+    margin: 10px 0;
+}
+.AssignCourseTree-container .loadArea {
+    margin-top: 20px;
+    border-top: 1px solid #a2df86;
+    border-bottom: 1px solid #a2df86;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.AssignCourseTree-container .loadedArea {
+    border-bottom: 1px solid #a2df86;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.AssignCourseTree-container .field-Title{
+    width: 90px;
+}
+.AssignCourseTree-container .dropDownList {
+    width: 170px;
+}
+.AssignCourseTree-container #ctl00_MainContainer_ucProgram_UpdatePanel1 {
+    display: inline-block;
+}
+.AssignCourseTree-container #ctl00_MainContainer_ucBatch_UpdatePanel1 {
+    display: inline-block;
+}
+/*End AssignCourseTree-container End*/
+
+/*Start AssignPreCourse-container Start*/
+/*AssignPreCourse.aspx*/
+/*---Inline CSS---*/
+/*End AssignPreCourse-container End*/
+
+/*Start CalculateResult-container Start*/
+/*CalculateResult.aspx*/
+/*---CSS missing---*/
+/*End CalculateResult-container End*/
+
+/*Start CalculateResultProcess-container Start*/
+/*CalculateResultProcess.aspx*/
+.ResultProcess-container .tableBanner
+{
+	font-weight: bold;
+	font-size: 14px;
+	word-spacing: 2px;
+	margin: 10px 0px 10px 0px;
+	display: inline-block;
+}
+.ResultProcess-container table, .ResultProcess-container tr, .ResultProcess-container th
+{
+	border: 1px solid #008080;
+}
+.ResultProcess-container .tableHead
+{
+	background-color: #008080;
+	color: #d9eaf7;
+	position: relative;
+}
+/*End CalculateResultProcess-container End*/
+
+/*Start CalculateResultProcessBulk-container Start*/
+/*CalculateResultProcessBulk.aspx*/
+/*---CSS missing---*/
+/*End CalculateResultProcessBulk-container End*/
+
+/*Start CalculateResultProcessByBatch-container Start*/
+/*CalculateResultProcessByBatch.aspx*/
+/*---CSS missing---*/
+/*End CalculateResultProcessByBatch-container End*/
+
+/*Start LinkPage-container Start*/
+/*LinkPage.aspx*/
+/*---Inline CSS---*/
+/*End LinkPage-container End*/
+
+/*Start personalProfile-container Start*/
+/*PersonalProfile.aspx*/
+.personalProfile-container .div-margin {
+    margin: 5px 0;
+}
+.personalProfile-container .information-Zone {
+    width: 401px;
+    float: left;
+    margin-right: 10px;
+}
+.personalProfile-container #ctl00_MainContainer_imgPhoto {
+    width: 150px;
+    height: auto;
+}
+.personalProfile-container .loadArea {
+    margin-top: 5px;
+    border-top: 1px solid #a2df86;
+    border-bottom: 1px solid #a2df86;
+    padding: 5px;
+}
+.personalProfile-container .loadAreaOdd {
+    margin-top: 5px;
+    border-top: 1px solid #a2df86;
+    border-bottom: 1px solid #a2df86;
+    background-color: #f9f9f9;
+    padding: 5px;
+    width: 377px;
+}
+.personalProfile-container .loadAreaEven {
+    margin-top: 5px;
+    border-top: 1px solid #a2df86;
+    border-bottom: 1px solid #a2df86;
+    padding: 5px;
+}
+.personalProfile-container .loadedArea {
+    border-bottom: 1px solid #a2df86;
+    padding: 5px;
+}
+.personalProfile-container .loadedAreaOdd {
+    border-bottom: 1px solid #a2df86;
+    padding: 5px;
+    width: 379px;
+}
+.personalProfile-container .loadedAreaEven {
+    border-bottom: 1px solid #a2df86;
+    background-color: #f9f9f9;
+    padding: 5px;
+    width: 379px;
+}
+.personalProfile-container .field-Title{
+    width: 107px;
+}
+.personalProfile-container .field-Title2{
+    width: 82px;
+    vertical-align: top;
+}
+.personalProfile-container .input-Size {
+    width: 200px;
+}
+.personalProfile-container .input-Size1 {
+    width: 100px;
+}
+.personalProfile-container .input-Size2 {
+    width: 190px;
+}
+.personalProfile-container .input-Size3 {
+    width: 190px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    padding: 0 5px;
+}
+.personalProfile-container .dropDownList {
+    width: 104px;
+    height: 22px;
+}
+/*End personalProfile-container End*/
+
+/*Start PreCourseAdd-container Start*/
+/*PreCourseAdd.aspx*/
+/*---Inline CSS---*/
+/*End PreCourseAdd-container End*/
+
+/*Start preMandatoryCourse-container Start*/
+/*PreCourseAssign.aspx*/
+.preMandatoryCourse-container .field-Title{
+    width: 110px;	
+}
+.preMandatoryCourse-container .field-Title2 {
+    width: 75px;
+    margin-left: 5px;
+}
+.preMandatoryCourse-container .field-Title3 {
+    width: 350px;
+    margin-left: 5px;
+    color: #f00;
+    font-weight: bold;
+}
+.preMandatoryCourse-container .input-Size {
+    width: 40px;
+}
+.preMandatoryCourse-container .dropDownList {
+    width: 230px;
+}
+.preMandatoryCourse-container .div-margin {
+    margin: 10px 0;
+}
+.preMandatoryCourse-container .btn-size {
+    width: 230px;
+    cursor: pointer;
+}
+.preMandatoryCourse-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.preMandatoryCourse-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.preMandatoryCourse-container table, tr, th {
+    border: 1px solid #008080;
+}
+.preMandatoryCourse-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+/*End preMandatoryCourse-container End*/
+
+/*Start ProbationStudentBlock-container Start*/
+/*ProbationStudentBlock.aspx*/
+/*---Already Exist Please Solve---*/
+/*End ProbationStudentBlock-container End*/
+
+/*Start StudentActive-container Start*/
+/*StudentActive.aspx*/
+/*---Use two CSS reference MUST be solve and COMMENTED BY SAJIB---*/
+/*End StudentActive-container End*/
+
+/*Start StudentBlock-container Start*/
+/*StudentBlock.aspx*/
+/*---Inline CSS---*/
+/*End StudentBlock-container End*/
+
+/*Start StudentCourseHistory-container Start*/
+/*StudentCourseHistory.aspx*/
+.StudentCourseHistory-container .field-Title{
+    width: 100px;
+}
+.StudentCourseHistory-container .field-Title-Fix {
+    width: 220px;
+    margin-right: 15px;
+    font-weight: bold;
+}
+.StudentCourseHistory-container .input-Size {
+    width: 160px;
+    letter-spacing: 2px;
+}
+.StudentCourseHistory-container .div-margin {
+    margin: 10px 0;
+}
+.StudentCourseHistory-container .btn-size {
+    width: 80px;
+    cursor: pointer;
+}
+.StudentCourseHistory-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.StudentCourseHistory-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.LoadStudentCourseHistory table, tr, th {
+    border: 1px solid #008080;
+}
+.LoadStudentCourseHistory .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+.LoadStudentCourseHistory .tableBanner {
+    font-weight: bold;
+    font-size: 14px;
+    word-spacing: 2px;
+    margin: 20px 0px 10px 0px;
+    display: inline-block;
+}
+/*End StudentCourseHistory-container End*/
+
+/*Start StudentInformationEdit-container Start*/
+/*StudentInfoEdit.aspx*/
+.StudentInformationEdit-container .field-Title{
+    width: 90px;
+}
+.StudentInformationEdit-container .field-Title2{
+    width: 90px;
+    margin-left: 10px;
+}
+.StudentInformationEdit-container .field-Title3{
+    width: 90px;
+    vertical-align: top;
+}
+.StudentInformationEdit-container .field-Title4{
+    width: 90px;
+    vertical-align: top;
+    margin-left: 10px;
+}
+.StudentInformationEdit-container .field-Title5{
+    width: 200px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+.StudentInformationEdit-container .input-Size {
+    width: 160px;
+    letter-spacing: 2px;
+}
+.StudentInformationEdit-container .input-Size1 {
+    width: 158px;
+    letter-spacing: 2px;
+}
+.StudentInformationEdit-container .div-margin {
+    margin: 10px 0;
+}
+.StudentInformationEdit-container .dropDownList {
+    width: 164px;
+}
+.StudentInformationEdit-container .btn-size {
+    margin-left: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+.StudentInformationEdit-container .btn-size1 {
+    margin-left: 94px;
+    width: 100px;
+    cursor: pointer;
+}
+.StudentInformationEdit-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.StudentInformationEdit-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+/*End StudentCourseHistory-container End*/
+
+/*Start StudentProfile-container Start*/
+/*StudentProfile.aspx*/
+/*---Inline CSS---*/
+/*End StudentProfile-container End*/
+
+/*Start StudentUnBlockByProgram-container Start*/
+/*StudentUnBlockByProgram.aspx*/
+/*---Inline CSS---*/
+/*End StudentUnBlockByProgram-container End*/
+
+/*Start TeacherManagement-container Start*/
+/*TeacherManagement.aspx*/
+/*---Inline CSS---*/
+.TeacherManagement-container .div-margin {
+    margin: 10px 0;
+}
+.TeacherManagement-container .div-Image-Area {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 45px;
+}
+.TeacherManagement-container .loadArea {
+    margin-top: 10px;
+    border-top: 1px solid #a2df86;
+    border-bottom: 1px solid #a2df86;
+    background-color: #f9f9f9;
+    padding: 3px;
+}
+.TeacherManagement-container .loadedArea {
+    border-bottom: 1px solid #a2df86;
+    background-color: #f9f9f9;
+    padding: 3px;
+}
+.TeacherManagement-container .loadedArea-Font-Size {
+    font-family: Garamond;
+    font-weight: bold;
+    text-align: center;
+}
+.TeacherManagement-container .loadedArea-divided {
+    background-color: #a2df86;
+}
+.TeacherManagement-container .field-Title{
+    margin-right: 10px;
+}
+.TeacherManagement-container .field-Title1{
+    margin: 0px 10px 0px 5px;
+}
+.TeacherManagement-container .field-Title2{
+    width: 120px;
+}
+.TeacherManagement-container .field-Title3{
+    width: 110px;
+    margin-left: 10px;
+}
+.TeacherManagement-container .field-Title41 {
+    width: 150px;
+    border: 1px solid #008080;
+}
+.TeacherManagement-container .field-Title42 {
+    width: 75px;
+    border: 1px solid #008080;
+}
+.TeacherManagement-container .field-Title43 {
+    width: 110px;
+    border: 1px solid #008080;
+}
+.TeacherManagement-container .field-Title44 {
+    width: 50px;
+    border: 1px solid #008080;
+}
+.TeacherManagement-container .field-Title45 {
+    width: 287px;
+    border: 1px solid #008080;
+}
+.TeacherManagement-container .input-Size {
+    width: 160px;
+    letter-spacing: 2px;
+}
+.TeacherManagement-container .input-Size2 {
+    letter-spacing: 2px;
+}
+.TeacherManagement-container .input-Size3 {
+    width: 804px;
+    letter-spacing: 2px;
+}
+.TeacherManagement-container .input-Size41 {
+    width: 108px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.TeacherManagement-container .input-Size42 {
+    width: 48px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.TeacherManagement-container .input-Size43 {
+    width: 285px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.TeacherManagement-container .input-Size44 {
+    width: 73px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.TeacherManagement-container .btn-size {
+    margin-left: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+.TeacherManagement-container .btn-size1 {
+    margin-left: 78px;
+    width: 164px;
+    cursor: pointer;
+}
+.TeacherManagement-container .dropDownList {
+    width: 184px;
+    padding: 1px;
+}
+.TeacherManagement-container .dropDownList41 {
+    width: 152px;
+    padding: 1px;
+}
+.TeacherManagement-container .dropDownList42 {
+    width: 77px;
+    padding: 1px;
+}
+.TeacherManagement-container .empty-span41 {
+    display: inline-block;
+    width: 152px;
+}
+.TeacherManagement-container .empty-span42 {
+    display: inline-block;
+    width: 112px;
+}
+/*End TeacherManagement-container End*/
+
+/*Start UserCreate-container Start*/
+/*UserCreate.aspx*/
+.UserCreate-container .field-Title{
+    width: 80px;
+}
+.UserCreate-container .input-Size {
+    width: 120px;
+}
+.UserCreate-container .AvailableKey {
+    margin-left: -6px;
+    padding: 2px;
+}
+.UserCreate-container .dropDownList {
+    width: 123px;
+}
+.UserCreate-container .div-margin {
+    margin: 10px 0;
+}
+.UserCreate-container .loadArea {
+    margin-top: 10px;
+    border-top: 1px solid #a2df86;
+    border-bottom: 1px solid #a2df86;
+    background-color: #f9f9f9;
+    padding: 3px;
+}
+.UserCreate-container .loadedArea {
+    border-bottom: 1px solid #a2df86;
+    background-color: #f9f9f9;
+    padding: 3px;
+}
+.UserCreate-container .ActiveUser input {
+    margin: 0px;
+}
+.UserCreate-container .btn-size {
+    width: 100px;
+    cursor: pointer;
+}
+/*End UserCreate-container End*/
+
+/*End=========================student=========================End*/

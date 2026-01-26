@@ -1,0 +1,326 @@
+﻿/*Common CSS*/
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #5d5d5d;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+
+.cleaner {
+    clear: both;
+}
+
+.display-inline {
+    display: inline-block;
+}
+
+.margin-zero {
+    margin: 0px;
+}
+/*Master Page CSS*/
+#MasterBody .mainBodyContainer {
+    margin: 0px 20px;
+}
+
+#MasterBody .ContainWrapper {
+    min-width: 980px;
+    /*width: 980px;*/
+    margin: 0 auto;
+    /*background-color: orchid;*/
+}
+
+#MasterBody .notice-wrapper {
+    display: inline-block;
+    min-width: 930px;
+    max-width: 96%;
+}
+
+#MasterBody .Header-Container {
+    padding: 0 25px 0 25px;
+    /*background-color: #1b8ebf;*/
+}
+
+#MasterBody .Banner-Container {
+    /*margin-top: 10px;*/
+}
+
+#MasterBody .loginStatusPanel {
+    margin-top: 5px;
+    text-align: right;
+    font-size: 12px;
+    color: black;
+}
+
+    #MasterBody .loginStatusPanel .StatusPanelContainer {
+        margin-top: -25px;
+    }
+
+        #MasterBody .loginStatusPanel .StatusPanelContainer .StatusPanel #ctl00_lblAvatarName {
+            display: inline-block;
+            margin: 6px 0px;
+            letter-spacing: 1px;
+            word-spacing: 3px;
+            font-weight: bold;
+            color: #1d0909;
+        }
+
+        #MasterBody .loginStatusPanel .StatusPanelContainer .StatusPanel #ctl00_lbtnUserName {
+            color: black;
+        }
+
+        #MasterBody .loginStatusPanel .StatusPanelContainer .AvatarStatusPanel #ctl00_imgAvatar {
+            /*height: 95px;*/
+            width: 80px;
+            margin-left: 5px;
+            overflow: hidden;
+            padding: 1px;
+        }
+
+    #MasterBody .loginStatusPanel .StatusPanel {
+    }
+
+    #MasterBody .loginStatusPanel .AvatarStatusPanel {
+    }
+
+    #MasterBody .loginStatusPanel .semesterStatusLabel {
+        display: inline-block;
+        width: 110px;
+        text-align: right;
+        color: #1f6c14;
+        font-weight: bolder;
+        letter-spacing: 1px;
+    }
+
+    #MasterBody .loginStatusPanel .semesterStatusLabel1 {
+        display: inline-block;
+        width: 110px;
+        text-align: right;
+        color: #cf6c6c;
+        font-weight: bolder;
+        letter-spacing: 1px;
+    }
+
+    #MasterBody .loginStatusPanel .semesterStatus {
+        display: inline-block;
+        text-align: end;
+        font-weight: bold;
+        margin-left: 12px;
+        color: #cf6c6c;
+    }
+
+    #MasterBody .loginStatusPanel .semesterStatus1 {
+        display: inline-block;
+        text-align: end;
+        font-weight: bold;
+        margin-left: 12px;
+        color: #1f6c14;
+    }
+
+#MasterBody .loginStyle {
+    cursor: pointer;
+    display: inline-block;
+    width: 300px;
+    text-align: right;
+    padding-right: 3px;
+    color: #5d5d5d;
+    text-decoration: none;
+}
+
+#MasterBody .logoutStyle {
+    cursor: pointer;
+    display: inline-block;
+    width: 40px;
+    text-align: right;
+    color: black;
+    text-decoration: none;
+}
+
+    #MasterBody .loginStyle:hover, #MasterBody .logoutStyle:hover {
+        font-weight: bold;
+    }
+
+/*Menu*/
+#MasterBody .navMenu {
+    background-color: #F2F2F2;
+    height: 40px;
+    border-bottom: 4px solid #39b54a;
+    margin-top: 0px;
+}
+
+    #MasterBody .navMenu .staticHome {
+        list-style: none;
+        display: inline-block;
+        float: left;
+        padding: 0px;
+    }
+
+        #MasterBody .navMenu .staticHome li a {
+            cursor: pointer;
+            /*height: 28px;*/
+            padding: 13px 30px 12px 30px;
+            color: #5d5d5d;
+            text-decoration: initial;
+            font-weight: bold;
+        }
+
+            #MasterBody .navMenu .staticHome li a:hover {
+                color: white;
+                background-color: black;
+            }
+
+    #MasterBody .navMenu a img {
+        display: none;
+    }
+
+    #MasterBody .navMenu #ctl00_menuMain tr td table tr td a {
+        padding: 0 20px;
+        cursor: pointer;
+        height: 40px;
+        padding-top: 10px;
+        color: #5d5d5d;
+        display: inline-block;
+    }
+
+    #MasterBody .navMenu #ctl00_menuMain tr td table tr td img {
+        display: none;
+    }
+
+    #MasterBody .navMenu #ctl00_menuMain tr td table tr td a:hover {
+        color: white;
+        background-color: black;
+    }
+
+    #MasterBody .navMenu > div {
+        border-bottom: 2px solid #2c2cff;
+        /*background-color: #F2F2F2;*/
+    }
+
+        #MasterBody .navMenu > div tr td a {
+            padding: 0 20px;
+            cursor: pointer;
+            height: 28px;
+            padding-top: 12px;
+            color: #5d5d5d;
+            display: inline-block;
+            /*width: 100%;*/
+            min-width: 150px;
+        }
+
+            #MasterBody .navMenu > div tr td a:hover {
+                color: white;
+                background-color: black;
+            }
+/*navMenu*/
+
+/*Footer*/
+#MasterBody .footer {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-top: 1px solid #4fadff;
+    padding-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+/*Footer*/
+
+/*Message and Page Title*/
+.ContainWrapper .Message-Area {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 3px;
+}
+
+    .ContainWrapper .Message-Area .msgTitle {
+        font-weight: bold;
+        font-size: 9pt;
+    }
+
+    .ContainWrapper .Message-Area #MainContainer_lblMsg {
+        color: red;
+    }
+
+.ContainWrapper .PageTitle {
+    margin-top: 10px;
+}
+
+    .ContainWrapper .PageTitle label {
+        font-weight: 500;
+        font-family: Segoe;
+        font-size: 10pt;
+        letter-spacing: 1px;
+        color: green;
+    }
+
+/*login page div gradient*/
+
+.gradient_div {
+    width: 100%;
+    margin: 150px auto;
+    border: 0px solid #B5C7DE;
+    text-align: left;
+    padding-bottom: 4px;
+    background: -webkit-radial-gradient(red, green, blue); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(red, green, blue); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(red, green, green); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(#c1e6b2, #d0f0c3, #defad2); /* Standard syntax (must be last) */
+}
+
+.Padding {
+    padding: 0 10px 0 10px;
+}
+
+input.button {
+    color: #127817;
+    font-weight: normal;
+    font-size: 9pt;
+    font-family: Tahoma;
+    vertical-align: middle;
+    border: solid 1px #fab564;
+    background: #eab434 50% top;
+    padding: 1px 1px 1px 1px;
+    cursor: pointer;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+    input.button:hover {
+        background: #B5D7DB top;
+        border: solid 1px #71ACB4;
+    }
+
+hr {
+    /*color: #74c166;*/
+    background-color: #4fadff;
+    height: 1px;
+    border: 0px solid;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.glow_text {
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    to {
+        text-shadow: 0 0 2px red;
+    }
+}
+
+.glow_text {
+    font-family: sans-serif;
+    font-weight: bold;
+}

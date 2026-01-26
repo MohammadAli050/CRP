@@ -1,0 +1,279 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="CommonMasterPage" CodeBehind="CommonMasterPage.master.cs" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        <asp:ContentPlaceHolder runat="server" ID="Title" />
+    </title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <style>
+        :root {
+            /* BHPI Brand Colors */
+            --bhpi-green: #006a4e;
+            --bhpi-dark-green: #004d38;
+            --bhpi-light-green: #e8f5e9;
+        }
+
+        /* Fix Select2 Height to match AdminLTE inputs */
+        .select2-container .select2-selection--single {
+            height: 38px !important;
+            border: 1px solid #ced4da !important;
+        }
+
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            line-height: 24px !important;
+            padding-left: 0 !important;
+        }
+
+        .select2-container--default .select2-selection--single .select2-selection__arrow {
+            height: 36px !important;
+        }
+
+        .select2-container {
+            width: 100% !important;
+            display: block;
+        }
+
+        /* Sidebar Styling - BHPI Green */
+        .main-sidebar {
+            background-color: var(--bhpi-green);
+        }
+
+        /* Sidebar Links Text Color */
+        .sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link {
+            color: #ffffff;
+        }
+
+            .sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link:hover {
+                background-color: rgba(255,255,255,0.1);
+            }
+
+        .sidebar-dark-primary .nav-treeview > .nav-item > .nav-link {
+            color: #e0e0e0;
+        }
+
+            .sidebar-dark-primary .nav-treeview > .nav-item > .nav-link:hover {
+                background-color: rgba(255,255,255,0.1);
+                color: #ffffff;
+            }
+
+        /* Brand Logo Area */
+        .brand-link {
+            background-color: var(--bhpi-dark-green) !important;
+            color: #ffffff !important;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .nav-treeview .nav-treeview {
+            margin-left: 10px;
+        }
+
+        /* Active Menu Item Styling */
+        .sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active,
+        .sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active:hover {
+            background-color: #ffffff;
+            color: var(--bhpi-green);
+            font-weight: bold;
+        }
+
+        /* Navbar Styling */
+        .main-header {
+            border-bottom: 2px solid var(--bhpi-green);
+        }
+
+        /* AdminLTE GridView Styling */
+        .table-responsive-wrapper {
+            overflow-x: auto;
+            width: 100%;
+        }
+
+        /* Targeted Green Header Styling for BHPI */
+        .table thead th {
+            background-color: var(--bhpi-green) !important;
+            color: #ffffff !important;
+            border-bottom: 2px solid var(--bhpi-dark-green) !important;
+            vertical-align: middle;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+        }
+
+        .table td {
+            vertical-align: middle;
+            padding: 0.75rem;
+        }
+
+        /* Alternate Row Color */
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: rgba(0, 106, 78, 0.05); /* Very light green tint */
+        }
+
+        /* Hover Effect */
+        .table-hover tbody tr:hover {
+            background-color: rgba(0, 106, 78, 0.1);
+        }
+
+        /* GridView specific overrides */
+        .gridview-style {
+            border: 1px solid #dee2e6;
+            width: 100% !important;
+        }
+
+        .content-wrapper {
+            background-color: #f4f6f9;
+        }
+
+        .modalBackground {
+            background-color: rgba(0, 0, 0, 0.5); /* Black w/ 50% opacity */
+            backdrop-filter: blur(5px); /* Blurs the content behind */
+            -webkit-backdrop-filter: blur(5px); /* Safari support */
+            /* Optional: positioning ensures full coverage if AJAX script lags */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000000;
+        }
+
+        /* Force Select2 dropdown to appear above AJAX Modals */
+.select2-container--open {
+    z-index: 999999999 !important;
+}
+
+    </style>
+
+    <asp:ContentPlaceHolder runat="server" ID="head" />
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+    <form id="form" runat="server">
+        <ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" />
+
+        <div class="wrapper">
+            <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars" style="color: var(--bhpi-green);"></i></a>
+                    </li>
+                    <li class="nav-item d-none d-sm-inline-block">
+                        <span class="nav-link font-weight-bold" style="color: var(--bhpi-green);">Bangladesh Health Professions Institute</span>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown user-menu">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            <asp:Image runat="server" ID="imgAvatar" CssClass="user-image img-circle elevation-2" alt="User Image" />
+                            <asp:LinkButton runat="server" ID="lbtnUserName" CssClass="d-none d-md-inline text-dark mr-2"></asp:LinkButton>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <asp:LinkButton runat="server" ID="lblLogout" CssClass="nav-link text-danger" OnClick="lbtnLogOut_Click" title="Logout">
+                            <i class="fas fa-power-off"></i>
+                        </asp:LinkButton>
+                    </li>
+                </ul>
+            </nav>
+
+            <aside class="main-sidebar sidebar-dark-primary elevation-4">
+                <a href='<%= Page.ResolveUrl("~/Security/Home.aspx") %>' class="brand-link text-center">
+                    <img src='<%= Page.ResolveUrl("~/Images/coverImage.jpg") %>' alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                    <span class="brand-text font-weight-light">BHPI Portal</span>
+                </a>
+
+                <div class="sidebar">
+                    <nav class="mt-2">
+                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                            <li class="nav-item">
+                                <a href='<%= Page.ResolveUrl("~/Security/Home.aspx") %>' class="nav-link" id="lnkHome">
+                                    <i class="nav-icon fas fa-home"></i>
+                                    <p>Home</p>
+                                </a>
+                            </li>
+                            <asp:Literal ID="litDynamicMenu" runat="server" />
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+
+            <div class="content-wrapper">
+                <div class="content-header"></div>
+                <section class="content">
+                    <div class="container-fluid">
+                        <asp:ContentPlaceHolder runat="server" ID="MainContainer" />
+                    </div>
+                </section>
+            </div>
+
+            <footer class="main-footer">
+                <strong>Copyright &copy; 2025 <a href="https://www.bhpi.edu.bd/" style="color: var(--bhpi-green);">BHPI</a>.</strong>
+                All rights reserved.
+               
+                <div class="float-right d-none d-sm-inline-block">
+                    <b>Powered by</b> <a href="https://www.edusoftconsultants.com/" style="color: #666;">Edusoft Consultants Ltd</a>
+                </div>
+            </footer>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+        <script type="text/javascript">
+            // Function to make GridView compliant with AdminLTE Table classes
+            function makeTableAdminLTE() {
+                $('.table').each(function () {
+                    var $table = $(this);
+                    if ($table.find('thead').length === 0) {
+                        var $header = $table.find('tr:first');
+                        if ($header.length > 0) {
+                            $header.wrap('<thead></thead>');
+                            var $thead = $table.find('thead');
+                            $thead.prependTo($table);
+                        }
+                    }
+                });
+            }
+
+
+            function initNavigation() {
+                var currentUrl = window.location.pathname.toLowerCase();
+                $('.nav-sidebar a').each(function () {
+                    var href = $(this).attr('href');
+                    if (href && href !== "#" && href !== "javascript:void(0);") {
+                        var linkPath = href.split('?')[0].toLowerCase();
+                        if (currentUrl.indexOf(linkPath) !== -1) {
+                            $(this).addClass('active');
+                            $(this).parents('.nav-item').addClass('menu-is-opening menu-open');
+                            $(this).parents('.nav-item').children('a').addClass('active');
+                        }
+                    }
+                });
+            }
+
+            $(document).ready(function () {
+                makeTableAdminLTE();
+                initNavigation();
+            });
+
+            // Re-bind after UpdatePanel Partial Postback
+            var prm = Sys.WebForms.PageRequestManager.getInstance();
+            if (prm != null) {
+                prm.add_endRequest(function (sender, e) {
+                    makeTableAdminLTE();
+                });
+            }
+        </script>
+    </form>
+</body>
+</html>

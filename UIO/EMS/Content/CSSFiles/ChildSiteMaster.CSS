@@ -1,0 +1,759 @@
+﻿/*Start ConflictCheck-container Start*/
+.ConflickCheck-container .field-Title{
+    width: 70px;
+}
+.ConflictCheck-container .field-Title2 {
+    width: 70px;
+    margin-left: 55px;
+}
+.ConflictCheck-container .input-Size {
+    width: 120px;
+}
+.ConflictCheck-container .dropDownList {
+    width: 153px;
+}
+.ConflictCheck-container .div-margin {
+    margin: 10px 0;
+}
+.ConflictCheck-container .btn-size {
+    width: 150px;
+    margin-left: 55px;
+}
+.ConflictCheck-container .btn-size2 {
+    width: 120px;
+    margin-left: 10px;
+}
+.ConflictCheck-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ConflictCheck-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ConflictCheck-container .checkPanel {
+    width: 300px;
+}
+.ConflictCheck-container .studentIdPanel {
+    width: 170px;
+}
+.ConflictCheck-container .coursePanel {
+    width: 170px;
+}
+/*End ConflickCheck-container End*/
+
+/*Start ClassRoutine-container Start*/
+.ClassRoutine-container .field-Title{
+    width: 70px;
+}
+.ClassRoutine-container .field-Title2 {
+    width: 70px;
+    margin-left: 30px;
+}
+.ClassRoutine-container .dropDownList {
+    width: 140px;
+}
+.ClassRoutine-container .dropDownList2 {
+    width: 388px;
+}
+.ClassRoutine-container .div-margin {
+    margin: 10px 0;
+}
+.ClassRoutine-container .btn-size {
+    width: 140px;
+    margin-left: 30px;
+}
+.ClassRoutine-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ClassRoutine-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ClassRoutine-container table, tr, th {
+    border: 1px solid #008080;
+    font-size: 11px;
+}
+.ClassRoutine-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+.ClassRoutine-container .tableBanner {
+    font-weight: bold;
+    font-size: 14px;
+    word-spacing: 2px;
+    margin: 20px 0px 10px 0px;
+    display: inline-block;
+}
+.ClassRoutine-container .action-container img{
+    padding: 1px;
+    height: auto;
+    width: 20px;
+}
+.ClassRoutine-container .updatePanel-Wrapper {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #005782;            
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    /*color: #5d5d5d;
+    left: 37%;
+    padding: 15px;
+    position: fixed;
+    top: 5%;
+    width: 350px;
+    z-index: 1000;
+    box-shadow: 0 0 15px 10px #808080;
+    border-radius: 20px;*/
+}
+.ClassRoutine-container .combo-width {
+    margin: 2px;
+    width: 200px;
+    height: 22px;
+}
+.ClassRoutine-container .field-width {
+    margin: 2px;
+    width: 196px;
+}
+.ClassRoutine-container .label-width {
+    width: 125px;
+    display: inline-block;
+    text-align: left;
+}
+/*End ClassRoutine-container End*/
+
+/*Start ForceOperation-container Start*/
+.ForceOperation-container .field-Title{
+    width: 70px;
+}
+.ForceOperation-container .field-Title2{
+    width: 70px;
+    margin-left: 55px;
+}
+.ForceOperation-container .field-Title3{
+    width: 70px;
+    margin-left: 10px;
+}
+.ForceOperation-container .field-Title4{
+    width: 145px;
+    margin-left: 10px;
+}
+.ForceOperation-container .input-Size {
+    width: 150px;
+}
+.ForceOperation-container .input-Size2 {
+    width: 200px;
+}
+.ForceOperation-container .input-Size3 {
+    width: 70px;
+}
+.ForceOperation-container .input-Size4 {
+    width: 30px;
+}
+.ForceOperation-container .dropDownList {
+    width: 153px;
+}
+.ForceOperation-container .dropDownList2 {
+    width: 50px;
+}
+.ForceOperation-container .div-margin {
+    margin: 10px 0;
+}
+.ForceOperation-container .btn-size {
+    width: 340px;
+}
+.ForceOperation-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ForceOperation-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.ForceOperationWorkSheetGenerate table, tr, th {
+    border: 1px solid #008080;
+}
+.ForceOperationWorkSheetGenerate .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+/*End ForceOperation-container End*/
+
+/*Start CourseDrop-container Start*/ 
+.CourseDrop-container .field-Title{
+    width: 80px;
+}
+.CourseDrop-container .field-Title2{
+    width: 80px;
+    margin-left: 55px;
+}
+.CourseDrop-container .input-Size {
+    width: 150px;
+}
+.CourseDrop-container .input-Size2 {
+    width: 253px;
+}
+.CourseDrop-container .input-Size3 {
+    width: 80px;
+}
+    .CourseDrop-container .text-format input {
+        text-align: center;
+    }
+.CourseDrop-container .dropDownList {
+    width: 156px;
+}
+.CourseDrop-container .div-margin {
+    margin: 10px 0;
+}
+.CourseDrop-container .btn-size {
+    width: 100px;
+}
+.CourseDrop-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.CourseDrop-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.CourseDrop-container table, tr, th {
+    border: 1px solid #008080;
+}
+.CourseDrop-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+.CourseDrop-container table a {
+    text-decoration: none;
+    cursor: pointer;
+}
+.CourseDrop-container table tr td .input-Size4 {
+    width: 150px;
+}
+.CourseDrop-container .requestButton {
+    width: 100px;
+}
+.CourseDrop-container .aspNetDisabled {
+    width: 100%;
+}
+/*End CourseDrop-container End*/
+
+/*Start CourseDropApproved-container Start*/
+.CourseDropApproved-container .field-Title{
+    width: 80px;
+}
+.CourseDropApproved-container .field-Title2{
+    width: 80px;
+    margin-left: 55px;
+}
+.CourseDropApproved-container .dropDownList {
+    width: 156px;
+}
+.CourseDropApproved-container .div-margin {
+    margin: 10px 0;
+}
+.CourseDropApproved-container .btn-size {
+    width: 157px;
+}
+.CourseDropApproved-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.CourseDropApproved-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.CourseDropApproved-container table, tr, th {
+    border: 1px solid #008080;
+}
+.CourseDropApproved-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+.CourseDropApproved-container table a {
+    text-decoration: none;
+    cursor: pointer;
+}
+.CourseDropApproved-container table tr td .input-Size4 {
+    width: 150px;
+}
+.CourseDropApproved-container .approveButton, .CourseDropApproved-container .rejectButton {
+    width: 70px;
+}
+/*End CourseDropApproved-container End*/
+
+
+
+
+/*Start DiscountContinuationSetup-container Start*/
+.DiscountContinuationSetup-container .field-Title{
+    width: 70px;	
+}
+.DiscountContinuationSetup-container .field-Title2 {
+    width: 75px;
+    margin-left: 5px;
+}
+.DiscountContinuationSetup-container .input-Size {
+    width: 40px;
+}
+.DiscountContinuationSetup-container .input-Size1 {
+    width: 40px;
+    text-align: center;
+}
+.DiscountContinuationSetup-container .dropDownList {
+    width: 123px;
+}
+.DiscountContinuationSetup-container .div-margin {
+    margin: 10px 0;
+}
+.DiscountContinuationSetup-container .btn-size {
+    width: 122px;
+}
+.DiscountContinuationSetup-container .btn-size2 {
+    width: 60px;
+    padding: 2px 0px;
+    margin-left: 5px;
+}
+.DiscountContinuationSetup-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.DiscountContinuationSetup-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+} 
+.DiscountContinuationSetup-container table, tr, th {
+    border: 1px solid #008080;
+}
+.DiscountContinuationSetup-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+.DiscountContinuationSetup-container .action-container img{
+    padding: 1px;
+    height: auto;
+    width: 20px;
+}
+/*End DiscountContinuationSetup-container End*/
+
+/*Start SetupMakeDuplicate-container Start*/
+.SetupMakeDuplicate-container .field-Title{
+    width: 70px;
+}
+.SetupMakeDuplicate-container .field-Title2 {
+    width: 75px;
+    margin-left: 15px;
+}
+.SetupMakeDuplicate-container .field-Title3 {
+    width: 140px;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+.SetupMakeDuplicate-container .field-Title4 {
+    margin-left: 25px;
+}
+.SetupMakeDuplicate-container .input-Size {
+    width: 40px;
+}
+.SetupMakeDuplicate-container .input-Size1 {
+    width: 40px;
+    text-align: center;
+}
+.SetupMakeDuplicate-container .dropDownList {
+    width: 123px;
+}
+.SetupMakeDuplicate-container .dropDownList1 {
+    width: 160px;
+}
+.SetupMakeDuplicate-container .div-margin {
+    margin: 10px 0;
+}
+.SetupMakeDuplicate-container .btn-size {
+    width: 122px;
+}
+.SetupMakeDuplicate-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.SetupMakeDuplicate-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+/*End SetupMakeDuplicate-container End*/
+
+/*Start TotalAmountOfCredit-container Start*/
+.TotalAmountOfCredit-container .field-Title{
+    width: 70px;
+}
+.TotalAmountOfCredit-container .field-Title2 {
+    width: 75px;
+    margin-left: 15px;
+}
+.TotalAmountOfCredit-container .input-Size {
+    width: 40px;
+}
+.TotalAmountOfCredit-container .dropDownList {
+    width: 123px;
+}
+.TotalAmountOfCredit-container .div-margin {
+    margin: 10px 0;
+}
+.TotalAmountOfCredit-container .btn-size {
+    width: 122px;
+}
+.TotalAmountOfCredit-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.TotalAmountOfCredit-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+/*End TotalAmountOfCredit-container End*/
+
+/*Start StudentList-container Start*/
+.StudentList-container .field-Title{
+    width: 160px;
+}
+.StudentList-container .field-Title2 {
+    width: 70px;
+    margin-left: 10px;
+}
+.StudentList-container .field-Title3 {
+    width: 20px;
+    margin-right: 5px;
+    font-weight: bold;
+    color: #008080;
+}
+.StudentList-container .field-Title4 {
+    width: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: bold;
+    color: #008080;
+}
+.StudentList-container .field-Title5 {
+    width: 84px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #b61111;
+    text-align: center;
+}
+.StudentList-container .field-Title6 {
+    width: 120px;
+    margin-right: 5px;
+    font-weight: bold;
+    color: #008080;
+}
+.StudentList-container .input-Size {
+    width: 40px;
+}
+.StudentList-container .input-Size1 {
+    width: 40px;
+    text-align: center;
+}
+.StudentList-container .dropDownList {
+    width: 150px;
+}
+.StudentList-container .disabledrowload1 .aspNetDisabled {
+    width: 150px;
+}
+.StudentList-container .disabledrowload2 .aspNetDisabled {
+    width: 84px;
+    margin-left: 10px;
+}
+.StudentList-container .div-margin {
+    margin: 10px 0;
+}
+.StudentList-container .btn-size {
+    width: 150px;
+}
+.StudentList-container .btn-size2 {
+    width: 60px;
+    padding: 2px 0px;
+    margin-left: 5px;
+}
+.StudentList-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.StudentList-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.StudentList-container .div-margin .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.StudentList-container .div-margin .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.StudentList-container #MainContainer_PnlScholarship .mainTable {
+    width: 900px;
+}
+.StudentList-container table, tr, th {
+    border: 1px solid #008080;
+}
+.StudentList-container table, tr, td input {
+    text-align: center;
+    margin-left: 0px;
+}
+.StudentList-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+/*End StudentList-container End*/
+
+/*Start preMandatoryCourse-container Start*/
+.preMandatoryCourse-container .field-Title{
+    width: 110px;	
+}
+.preMandatoryCourse-container .field-Title2 {
+    width: 75px;
+    margin-left: 5px;
+}
+.preMandatoryCourse-container .field-Title3 {
+    width: 350px;
+    margin-left: 5px;
+    color: #f00;
+    font-weight: bold;
+}
+.preMandatoryCourse-container .input-Size {
+    width: 40px;
+}
+.preMandatoryCourse-container .dropDownList {
+    width: 230px;
+}
+.preMandatoryCourse-container .div-margin {
+    margin: 10px 0;
+}
+.preMandatoryCourse-container .btn-size {
+    width: 230px;
+}
+.preMandatoryCourse-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.preMandatoryCourse-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.preMandatoryCourse-container table, tr, th {
+    border: 1px solid #008080;
+}
+.preMandatoryCourse-container .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+/*End preMandatoryCourse-container End*/
+
+/*Start studentProbationList-container Start*/
+.studentProbationList-container .field-Title{
+    width: 165px;	
+}
+.studentProbationList-container .field-Title2 {
+    width: 80px;
+    margin-left: 5px;
+}
+.studentProbationList-container .field-Title4 img{
+    width: 13px;
+    height: auto;
+}
+.studentProbationList-container .field-Title3 {
+    width: 25px;
+    margin-left: 5px;
+}
+.studentProbationList-container .field-Title4 {
+    width: 260px;
+}
+.studentProbationList-container .input-Size {
+    width: 40px;
+}
+.studentProbationList-container .dropDownList {
+    width: 150px;
+}
+.studentProbationList-container .div-margin {
+    margin: 10px 0;
+}
+.studentProbationList-container .btn-size {
+    width: 150px;
+}
+.studentProbationList-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.studentProbationList-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.studentProbationList-container .StudentList-container table, tr, th {
+    border: none;
+}
+/*End studentProbationList-container End*/
+
+/*Start StudentCourseHistory-container Start*/
+.StudentCourseHistory-container .field-Title{
+    padding-right: 5px;
+}
+.StudentCourseHistory-container .field-Title1{
+    padding: 0px 5px;
+}
+.StudentCourseHistory-container .field-Title-Fix {
+    padding: 0px 5px;
+    font-weight: bold;
+    text-align: left;
+}
+.StudentCourseHistory-container .input-Size {
+    width: 160px;
+    letter-spacing: 2px;
+}
+.StudentCourseHistory-container .div-margin {
+    margin: 10px 0;
+}
+.StudentCourseHistory-container .btn-size {
+    width: 80px;
+}
+.StudentCourseHistory-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.StudentCourseHistory-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.LoadStudentCourseHistory table, tr, th {
+    border: 1px solid #008080;
+}
+.LoadStudentCourseHistory .tableHead {
+    background-color: #008080;
+    color: #d9eaf7;
+    position: relative;
+}
+.LoadStudentCourseHistory .tableBanner {
+    font-weight: bold;
+    font-size: 14px;
+    word-spacing: 2px;
+    margin: 20px 0px 10px 0px;
+    display: inline-block;
+}
+/*End StudentCourseHistory-container End*/
+
+/*Start StudentInformationEdit-container Start*/
+.StudentInformationEdit-container .field-Title{
+    width: 90px;
+}
+.StudentInformationEdit-container .field-Title2{
+    width: 90px;
+    margin-left: 10px;
+}
+.StudentInformationEdit-container .field-Title3{
+    width: 90px;
+    vertical-align: top;
+}
+.StudentInformationEdit-container .field-Title4{
+    width: 90px;
+    vertical-align: top;
+    margin-left: 10px;
+}
+.StudentInformationEdit-container .field-Title5{
+    width: 200px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+.StudentInformationEdit-container .input-Size {
+    width: 160px;
+    letter-spacing: 2px;
+}
+.StudentInformationEdit-container .input-Size1 {
+    width: 158px;
+    letter-spacing: 2px;
+}
+.StudentInformationEdit-container .div-margin {
+    margin: 10px 0;
+}
+.StudentInformationEdit-container .dropDownList {
+    width: 164px;
+}
+.StudentInformationEdit-container .btn-size {
+    margin-left: 10px;
+    width: 100px;
+}
+.StudentInformationEdit-container .btn-size1 {
+    margin-left: 94px;
+    width: 100px;
+}
+.StudentInformationEdit-container .loadArea {
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+.StudentInformationEdit-container .loadedArea {
+    border: 1px solid #aaa;
+    border-top: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+/*End StudentCourseHistory-container End*/

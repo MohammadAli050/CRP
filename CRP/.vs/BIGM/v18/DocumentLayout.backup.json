@@ -1,0 +1,84 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Workstation\\BIGM\\BIGM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F332E362-17FB-493E-9C6A-D0752A656369}|..\\UIO\\EMS\\EMS.csproj|e:\\workstation\\bigm\\uio\\ems\\masterpage\\mainmasterpage.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F332E362-17FB-493E-9C6A-D0752A656369}|..\\UIO\\EMS\\EMS.csproj|e:\\workstation\\bigm\\uio\\ems\\masterpage\\mainmasterpage.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F332E362-17FB-493E-9C6A-D0752A656369}|..\\UIO\\EMS\\EMS.csproj|e:\\workstation\\bigm\\uio\\ems\\masterpage\\common\\commonmasterpage.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F332E362-17FB-493E-9C6A-D0752A656369}|..\\UIO\\EMS\\EMS.csproj|e:\\workstation\\bigm\\uio\\ems\\masterpage\\common\\commonmasterpage.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainMasterPage.master.cs",
+              "DocumentMoniker": "E:\\Workstation\\BIGM\\UIO\\EMS\\MasterPage\\MainMasterPage.master.cs",
+              "RelativeDocumentMoniker": "..\\UIO\\EMS\\MasterPage\\MainMasterPage.master.cs",
+              "ToolTip": "E:\\Workstation\\BIGM\\UIO\\EMS\\MasterPage\\MainMasterPage.master.cs",
+              "RelativeToolTip": "..\\UIO\\EMS\\MasterPage\\MainMasterPage.master.cs",
+              "ViewState": "AgIAAFABAAAAAAAAAAAAAF0BAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T13:31:28.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainMasterPage.master",
+              "DocumentMoniker": "E:\\Workstation\\BIGM\\UIO\\EMS\\MasterPage\\MainMasterPage.master",
+              "RelativeDocumentMoniker": "..\\UIO\\EMS\\MasterPage\\MainMasterPage.master",
+              "ToolTip": "E:\\Workstation\\BIGM\\UIO\\EMS\\MasterPage\\MainMasterPage.master",
+              "RelativeToolTip": "..\\UIO\\EMS\\MasterPage\\MainMasterPage.master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-12-30T13:31:10.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CommonMasterPage.master.cs",
+              "DocumentMoniker": "E:\\Workstation\\BIGM\\UIO\\EMS\\MasterPage\\Common\\CommonMasterPage.master.cs",
+              "RelativeDocumentMoniker": "..\\UIO\\EMS\\MasterPage\\Common\\CommonMasterPage.master.cs",
+              "ToolTip": "E:\\Workstation\\BIGM\\UIO\\EMS\\MasterPage\\Common\\CommonMasterPage.master.cs",
+              "RelativeToolTip": "..\\UIO\\EMS\\MasterPage\\Common\\CommonMasterPage.master.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAA9wBEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T13:07:56.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CommonMasterPage.master",
+              "DocumentMoniker": "E:\\Workstation\\BIGM\\UIO\\EMS\\MasterPage\\Common\\CommonMasterPage.master",
+              "RelativeDocumentMoniker": "..\\UIO\\EMS\\MasterPage\\Common\\CommonMasterPage.master",
+              "ToolTip": "E:\\Workstation\\BIGM\\UIO\\EMS\\MasterPage\\Common\\CommonMasterPage.master",
+              "RelativeToolTip": "..\\UIO\\EMS\\MasterPage\\Common\\CommonMasterPage.master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-12-30T13:07:55.82Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

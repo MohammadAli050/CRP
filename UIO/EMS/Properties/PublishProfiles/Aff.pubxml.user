@@ -1,0 +1,2345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Publish\CRP</_PublishTargetUrl>
+    <History>True|2026-01-25T10:28:08.1507345Z||;False|2026-01-03T10:09:36.2748289+06:00||;False|2026-01-03T10:07:12.4873564+06:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Accounts/AccountsHead.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Accounts/AccountsHome.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Accounts/TempVoucherShow.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Admin/AdminHome.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Admin/ChangePassword.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Admin/Menu.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Admin/Role.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Admin/User.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Admin/UserPassword.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="BasicSetup/AcademicCalendarInfo.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="BasicSetup/BasicSetUpHome.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="BasicSetup/BillableCourse.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="BasicSetup/BillableCourseNew.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="BasicSetup/Department.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="BasicSetup/DiscountContinuationSetup.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="BasicSetup/EquivalentCourseSetup.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="BasicSetup/ExamBreakup.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="BasicSetup/FeeSetup.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="BasicSetup/GradeDetails.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="BasicSetup/LateFineSetup.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="BasicSetup/PreRequisiteSetup.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="BasicSetup/Program.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="BasicSetup/RelationBetweenDiscountCourse.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="BasicSetup/RelationBetweenDiscountRetake.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="BasicSetup/RelationBetweenDiscountSection.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="BasicSetup/RelationDiscountPage.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="BasicSetup/RoomInfo.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="BasicSetup/RoomType.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="BasicSetup/School.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="BasicSetup/Teacher.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="BasicSetup/TimeSlotPlan.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="BasicSetup/TypeDefinition.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bill/BillCollection.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bill/BillHome.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bill/RegistrationBill.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>09/20/2012 13:13:04</publishTime>
+    </File>
+    <File Include="bin/ar/AjaxControlToolkit.resources.dll">
+      <publishTime>01/02/2026 09:04:22</publishTime>
+    </File>
+    <File Include="bin/BAOEMS.dll">
+      <publishTime>01/25/2026 16:27:50</publishTime>
+    </File>
+    <File Include="bin/BAOEMS.dll.config">
+      <publishTime>12/30/2025 11:17:34</publishTime>
+    </File>
+    <File Include="bin/BAOEMS.pdb">
+      <publishTime>01/25/2026 16:27:50</publishTime>
+    </File>
+    <File Include="bin/CAOEMS.dll">
+      <publishTime>01/25/2026 16:27:46</publishTime>
+    </File>
+    <File Include="bin/CAOEMS.dll.config">
+      <publishTime>12/30/2025 11:17:34</publishTime>
+    </File>
+    <File Include="bin/CAOEMS.pdb">
+      <publishTime>01/25/2026 16:27:46</publishTime>
+    </File>
+    <File Include="bin/ClosedXML.dll">
+      <publishTime>12/16/2020 15:59:12</publishTime>
+    </File>
+    <File Include="bin/ClosedXML.pdb">
+      <publishTime>12/16/2020 15:59:12</publishTime>
+    </File>
+    <File Include="bin/CommonUtility.dll">
+      <publishTime>01/25/2026 16:27:46</publishTime>
+    </File>
+    <File Include="bin/CommonUtility.pdb">
+      <publishTime>01/25/2026 16:27:46</publishTime>
+    </File>
+    <File Include="bin/cs/AjaxControlToolkit.resources.dll">
+      <publishTime>01/02/2026 09:04:22</publishTime>
+    </File>
+    <File Include="bin/DAO.dll">
+      <publishTime>01/25/2026 16:27:46</publishTime>
+    </File>
+    <File Include="bin/DAO.pdb">
+      <publishTime>01/25/2026 16:27:46</publishTime>
+    </File>
+    <File Include="bin/de/AjaxControlToolkit.resources.dll">
+      <publishTime>01/02/2026 09:04:22</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Data.v9.2.dll">
+      <publishTime>09/22/2009 17:27:44</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Utils.v9.2.dll">
+      <publishTime>09/22/2009 17:28:00</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.ASPxEditors.v9.2.dll">
+      <publishTime>09/22/2009 17:30:04</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.ASPxGridView.v9.2.dll">
+      <publishTime>09/22/2009 17:31:44</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.ASPxGridView.v9.2.Export.dll">
+      <publishTime>09/22/2009 17:31:44</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.ASPxTreeList.v9.2.dll">
+      <publishTime>09/22/2009 17:32:04</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.v9.2.dll">
+      <publishTime>09/22/2009 17:29:59</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraBars.v9.2.dll">
+      <publishTime>09/22/2009 17:28:47</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraEditors.v9.2.dll">
+      <publishTime>09/22/2009 17:28:10</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraPrinting.v9.2.dll">
+      <publishTime>09/22/2009 17:28:53</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraRichEdit.v9.2.dll">
+      <publishTime>09/22/2009 17:28:29</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraTreeList.v9.2.dll">
+      <publishTime>09/22/2009 17:28:39</publishTime>
+    </File>
+    <File Include="bin/DocumentFormat.OpenXml.dll">
+      <publishTime>03/06/2025 03:55:00</publishTime>
+    </File>
+    <File Include="bin/DocumentFormat.OpenXml.Framework.dll">
+      <publishTime>03/06/2025 03:55:00</publishTime>
+    </File>
+    <File Include="bin/EMS.dll">
+      <publishTime>01/25/2026 16:27:57</publishTime>
+    </File>
+    <File Include="bin/EMS.pdb">
+      <publishTime>01/25/2026 16:27:57</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>12/30/2025 11:17:34</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>12/30/2025 11:17:34</publishTime>
+    </File>
+    <File Include="bin/EnvDTE.dll">
+      <publishTime>10/05/2013 02:38:22</publishTime>
+    </File>
+    <File Include="bin/EPPlus.dll">
+      <publishTime>01/30/2020 13:13:00</publishTime>
+    </File>
+    <File Include="bin/EPPlus.Interfaces.dll">
+      <publishTime>01/02/2026 09:04:22</publishTime>
+    </File>
+    <File Include="bin/EPPlus.System.Drawing.dll">
+      <publishTime>01/02/2026 09:04:22</publishTime>
+    </File>
+    <File Include="bin/es/AjaxControlToolkit.resources.dll">
+      <publishTime>01/02/2026 09:04:22</publishTime>
+    </File>
+    <File Include="bin/ExcelNumberFormat.dll">
+      <publishTime>10/02/2020 14:42:28</publishTime>
+    </File>
+    <File Include="bin/ExcelPackage.dll">
+      <publishTime>05/18/2025 18:24:02</publishTime>
+    </File>
+    <File Include="bin/fr/AjaxControlToolkit.resources.dll">
+      <publishTime>01/02/2026 09:04:22</publishTime>
+    </File>
+    <File Include="bin/he/AjaxControlToolkit.resources.dll">
+      <publishTime>01/02/2026 09:04:22</publishTime>
+    </File>
+    <File Include="bin/hi/AjaxControlToolkit.resources.dll">
+      <publishTime>01/02/2026 09:04:22</publishTime>
+    </File>
+    <File Include="bin/HtmlAgilityPack.dll">
+      <publishTime>09/20/2012 13:13:04</publishTime>
+    </File>
+    <File Include="bin/it/AjaxControlToolkit.resources.dll">
+      <publishTime>01/02/2026 09:04:22</publishTime>
+    </File>
+    <File Include="bin/ja/AjaxControlToolkit.resources.dll">
+      <publishTime>01/02/2026 09:04:22</publishTime>
+    </File>
+    <File Include="bin/ko/AjaxControlToolkit.resources.dll">
+      <publishTime>01/02/2026 09:04:22</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="bin/LogicLayer.dll">
+      <publishTime>01/25/2026 16:27:49</publishTime>
+    </File>
+    <File Include="bin/LogicLayer.dll.config">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="bin/LogicLayer.pdb">
+      <publishTime>01/25/2026 16:27:49</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.ServiceLocation.dll">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.Configuration.dll">
+      <publishTime>05/18/2025 18:24:02</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.dll">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.Interception.Configuration.dll">
+      <publishTime>05/18/2025 18:24:02</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.Interception.dll">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.Common.dll">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WebForms.DLL">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>03/08/2023 07:09:56</publishTime>
+    </File>
+    <File Include="bin/nl/AjaxControlToolkit.resources.dll">
+      <publishTime>01/02/2026 09:04:22</publishTime>
+    </File>
+    <File Include="bin/PdfSharp.dll">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="bin/pt/AjaxControlToolkit.resources.dll">
+      <publishTime>01/02/2026 09:04:22</publishTime>
+    </File>
+    <File Include="bin/ru/AjaxControlToolkit.resources.dll">
+      <publishTime>01/02/2026 09:04:22</publishTime>
+    </File>
+    <File Include="bin/SanitizerProviders.dll">
+      <publishTime>09/20/2012 13:13:04</publishTime>
+    </File>
+    <File Include="bin/SpellNumber.dll">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="bin/stdole.dll">
+      <publishTime>10/05/2013 02:38:22</publishTime>
+    </File>
+    <File Include="bin/TimePicker.dll">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="bin/tr-TR/AjaxControlToolkit.resources.dll">
+      <publishTime>01/02/2026 09:04:22</publishTime>
+    </File>
+    <File Include="bin/UCAMDAL.dll">
+      <publishTime>01/25/2026 16:27:45</publishTime>
+    </File>
+    <File Include="bin/UCAMDAL.dll.config">
+      <publishTime>12/30/2025 11:17:33</publishTime>
+    </File>
+    <File Include="bin/UCAMDAL.pdb">
+      <publishTime>01/25/2026 16:27:45</publishTime>
+    </File>
+    <File Include="bin/zh-CHS/AjaxControlToolkit.resources.dll">
+      <publishTime>01/02/2026 09:04:22</publishTime>
+    </File>
+    <File Include="bin/zh-CHT/AjaxControlToolkit.resources.dll">
+      <publishTime>01/02/2026 09:04:22</publishTime>
+    </File>
+    <File Include="Bootstrap/css/bootstrap-theme.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/css/bootstrap-theme.css.map">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/css/bootstrap-theme.min.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/css/bootstrap-theme.min.css.map">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/css/bootstrap.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/css/bootstrap.css.map">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/css/bootstrap.min.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/css/bootstrap.min.css.map">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/css/bootstrap4.min.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/css/font-awesome.min.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/css/font-awesome4.7.min.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/css/font-awesome5.8.min.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/css/fontcss.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/css/fontforall.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/css/mdb.min.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/js/accessibility.js">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/js/bootstrap.js">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/js/bootstrap.min.js">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/js/bootstrap4.min.js">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/js/export-data.js">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/js/exporting.js">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/js/highcharts.js">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/js/jquery.min.js">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/js/moment.min.js">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/js/npm.js">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Bootstrap/js/popper.min.js">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Add.gif">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Add.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/AddCalender.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/AddCourse.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/AddCourseS.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/AddNode.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/AddNodeS.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/AddRootS.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/AddSetS.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Add_Button.png">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Blank.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/BtnAdd.png">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/BtnCancel.png">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/BtnDelete.png">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/BtnEdit.png">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/BtnFind.png">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/BtnSave.png">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Button_Add_Hober.png">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Button_Add_Normal.png">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Button_CLOSE_Hober.png">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Button_Close_Normal.png">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Button_DELETE_Hober.png">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Button_Delete_Normal.png">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Button_Load_Hober.png">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Button_Load_Normal.png">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Button_PRINT_Hober.png">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Button_Print_Normal.png">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Button_ShowAll_Hober.png">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Button_ShowAll_Normal.png">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Cancel.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Clear.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Delete.gif">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Delete.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/DeleteS.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Edit.gif">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Edit.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/EditS.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Export.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Find.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Import.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/LogIn.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/OK.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/PickCourse.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Save.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Set.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Shiny_Add_Button.gif">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/ShowAll.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ButtonImages/Version.gif">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ConnectionStrings.config">
+      <publishTime>01/25/2026 14:36:22</publishTime>
+    </File>
+    <File Include="Content/CSSFiles/ChildSiteMaster.CSS">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/CSSFiles/SiteMaster.CSS">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/CssStyle/ForceOperation.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/CssStyle/PracticeRegistrationChild.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/CssStyle/PracticeStudentRegistration.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/CssStyle/StudentRegistration.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/jquery-ui.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/jquery.ui.accordion.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/jquery.ui.all.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/jquery.ui.autocomplete.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/jquery.ui.base.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/jquery.ui.button.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/jquery.ui.core.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/jquery.ui.datepicker.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/jquery.ui.dialog.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/jquery.ui.progressbar.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/jquery.ui.resizable.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/jquery.ui.selectable.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/jquery.ui.slider.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/jquery.ui.tabs.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/jquery.ui.theme.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/minified/jquery-ui.min.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/minified/jquery.ui.accordion.min.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/minified/jquery.ui.autocomplete.min.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/minified/jquery.ui.button.min.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/minified/jquery.ui.core.min.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/minified/jquery.ui.datepicker.min.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/minified/jquery.ui.dialog.min.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/minified/jquery.ui.progressbar.min.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/minified/jquery.ui.resizable.min.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/minified/jquery.ui.selectable.min.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/minified/jquery.ui.slider.min.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/minified/jquery.ui.tabs.min.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Content/thems/base/minified/jquery.ui.theme.min.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ContentCSS/CSS/ChildSiteMaster.CSS">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="ContentCSS/CSS/SiteMaster.CSS">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="CSS/Accounts/Accounts.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="CSS/Admin/Admin.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="CSS/Admission/Admission.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="CSS/BasicSetUp/BasicSetUp.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="CSS/Bill/Bill.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="CSS/CSSFiles/ChildSiteMaster.CSS">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="CSS/CSSFiles/SiteMaster.CSS">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="CSS/menu.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="CSS/Registration/Registration.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="CSS/StudentManagement/bup.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="CSS/StudentManagement/StdManagement.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="CSS/Sylabus/Sylabus.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="CSS/UIUMS.css">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Employee/EmployeeHome.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="GradeSheet/GradeSheetEntry.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="GradeSheet/GradeSheetEntryReg.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="GradeSheet/GradeSheetHome.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Images/avatarFemale.png">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Images/avatarMale.png">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Images/coverImage.jpg">
+      <publishTime>01/25/2026 14:31:25</publishTime>
+    </File>
+    <File Include="Images/favicon.ico">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Images/JalalSignature.png">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Images/Loading.gif">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Images/Loading_Animation.Gif">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Images/Male.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="JavaScript/CandidateValidation.js">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="JavaScript/JQModal.js">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="JavaScript/jquery-1.4.2.min.js">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="JavaScript/jquery-1.6.1.min.js">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="JavaScript/jquery-1.7.1.js">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="JavaScript/jquery.validate.js">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="JavaScript/jquery_dip.min.js">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="JavaScript/JSBarcode.js">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="JavaScript/jspdf.debug.js">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="MasterPage/Common/CommonMasterPage.master">
+      <publishTime>01/25/2026 15:47:44</publishTime>
+    </File>
+    <File Include="MasterPage/Common/CommonMasterPageByLTE.master">
+      <publishTime>01/02/2026 09:17:49</publishTime>
+    </File>
+    <File Include="MasterPage/Common/PublicMasterPage.master">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="MasterPage/MainMasterPage.master">
+      <publishTime>01/02/2026 09:04:23</publishTime>
+    </File>
+    <File Include="Module/admin/AdmissionForm.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/AllStudentUserGenerate.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/ForgetPassword.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/GenerateStudentIdCardInfo.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/MenuSearch.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/PasswordChange.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/PasswordChangeByAdmin.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/PasswordChangeByUser.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/PersonalProfileFillUpPage.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/PersonUserRelation.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/report/CertificateGeneration.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/report/ConsolidatedCreditAssessment.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/report/DegreeCompletedViewer.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/report/FinalMeritList.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/report/RptConsolidatedCreditAssessment.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/report/RptDegreeCompletion.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/report/RptEmployeeInfo.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/report/RptEmployeeInfo.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/report/RptFinalMeritList.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/SearchPersonProfile.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/Setup/AcademicCalenderInformation.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/Setup/AcademicCalenderSchedule.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/Setup/Batch.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/Setup/DateTimeSetupNew.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/Setup/InstituteProgramRelationSetup.aspx">
+      <publishTime>01/25/2026 16:24:49</publishTime>
+    </File>
+    <File Include="Module/admin/Setup/RoomInfoSetup.aspx">
+      <publishTime>05/18/2025 18:24:01</publishTime>
+    </File>
+    <File Include="Module/admin/Setup/SystemImageConfiguration.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/Setup/UserInstituteProgramAccessSetup.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/SMSService.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/SmsSetup.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/StudenIdCard.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/StudentBulkCourseAssign.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/StudentBulkForceRegistration.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/StudentCreate.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/StudentEnrollment.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/StudentForceRegAnyTree.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/StudentForceRegistration.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/TeacherManagement.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/UserAccessControl.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/UserAndPassword.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/UserControl.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/UserCreate.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/admin/UserProfile.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/BillCollection.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/BillDelete.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/BillPosting.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/BillPrint.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/Excel_File_Templete/StudentListTemplete.xlsx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/FeeGroupSetup.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/FeeSetup.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/FeeTypeSetup.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/GradeWiseRetakeDiscount.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/LateFineEntry.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/LateRegistrationFinePost.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/PaymentPosting.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/AccountTypeAndStudentWiseBill.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/AccountTypeAndStudentWiseBill.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/AccountTypeStudentWiseBill2.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/DiscountContinuation.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/GradeWiseRetake.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/GradeWiseRetakeDiscount.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/MoneyReceipt.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/ProbationStudent.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptAccountStatement.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptAccountStatement.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptAdmissionRegistrationCount.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptBillCollection.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptDailyBillHistory.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptDailyBillHistory.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptDailyCollection.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptDailyCollection.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptDailyOrPeriodicaCollection.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptDailyOrPeriodicaCollectionCreationDateWise.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptDailyOrPeriodicalCollection.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptDiscountContinuationSetup.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptFeeSetup.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptFeeSetup.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptGradeWiseRetakeDiscount.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptPeriodicalOrDaily .aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptProgramWiseDue.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptProgramWiseDue.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptStudentBill.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptStudentBill.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptStudentBillPaymentDue.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptStudentBillPaymentDue.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptStudentDiscountCurrentDetails.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptStudentDiscountInitialDetails.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptStudentDueDefaulters.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptStudentDueDefaulters.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptStudentWiseDue.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptStudentWiseDue.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptStudentWithExcessAmount.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptStudentWithExcessAmount.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptStudentWithMinimumDueAmount.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/RptStudentWithMinimumDueAmount.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/StudentDiscounts.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/StudentDiscounts.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/report/XlStudentMeritListForScholarship.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/SetupMakeDuplicate.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/StudentBillHistory.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/StudentDiscountCurrentPage.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/StudentDiscountInitialPage.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/StudentList.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/StudentScholarship.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/StudentScholarship2.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/bill/TotalAmountOfCredit.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/ClassAttendance/ClassAttendanceDelete.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/ClassAttendance/ClassAttendanceEntry.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/ClassAttendance/Reports/RptAttendanceDatewise.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/ClassAttendance/Reports/RptClassAttendance.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/ClassAttendance/Reports/RptClassAttendance.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/ClassAttendance/Reports/RptClassAttendanceDatewise.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/Dashboard/MainDashboard.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/Dashboard/SemesterDashboard.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/Dashboard/SemesterDashboard.js">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/employee/EvaluationForm.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/employee/EvaluationGraph.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/employee/EvaluationSummary.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/employee/EvaluationVarify.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/employee/report/RptCourseEvaluation.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/employee/report/RptCourseEvaluationByTeacher.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/employee/report/RptCourseEvaluationResult.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/help/FAQAnswer.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/help/FAQList.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/help/FAQPage.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/log/AccountAccessDetails.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/log/LogGeneralPage.aspx">
+      <publishTime>01/20/2026 18:09:06</publishTime>
+    </File>
+    <File Include="Module/log/LogSMSPage.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/Approval/CourseRegistrationApprovedByCOE.aspx">
+      <publishTime>01/20/2026 18:09:07</publishTime>
+    </File>
+    <File Include="Module/registration/Approval/CourseRegistrationForwardByInstitute.aspx">
+      <publishTime>01/20/2026 18:09:07</publishTime>
+    </File>
+    <File Include="Module/registration/AutoAssignCourse.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/AutoMandatoryCourse.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/AutoOpenCourse.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/AutoPreregistrationCount.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/BillManualEntry.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/BulkRegistration.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/BulkSectionAssignAfterReg.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/CourseDropApprove.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/CourseDropRequest.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/CourseOfferAndCount.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/CourseWiseStudentListCH.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/CourseWiseStudentListRW.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/CourseWithdrawApprove.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/CourseWithdrawRequest.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/DateTimeSetUp.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/DeptSetUp.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/DiagonsticPage.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/ForceOperationForCourse.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/GenerateWorksheet.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/MajorMinorDepartmentSetup.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/OpenAndAssignCourse.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/PreAdvising.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/PreAdvisingRetake.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/PreRegistration.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/PreRegistrationByCourse.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/Registration.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/RegistrationHome.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/AdmittedStudentCount.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/OfferedCourseCount.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/OfferedCourseCount.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RegisteredStudentListReport.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptAdmitCard.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptAdmitCard.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptAdmitCardNew.rdlc">
+      <publishTime>01/20/2026 18:09:07</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptAdmittedRegisteredCount.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptAdmittedRegisteredCount.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptAdmittedRegisteredCount3.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptAdmittedStudentCount.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptClassRoutineExamRoutineConflict.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptClassRoutineExamRoutineConflict.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptDeptWiseRegisteredStudent.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptDeptWiseRegisteredStudent.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptExamSeatPlanByRoom.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptExamSeatPlanByRoom.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptMajorMinor.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptMajorMinorDeptSetup.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptOfferedCourse.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptOfferedCourse.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptPreAdvising.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptPreAdvising.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptProgramWiseRegistrationCount.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptRegisterdStudentList.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptRegisterdStudentList.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptRegisteredStudentList.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptRegistrationCountSummary.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptRegistrationInSemesterYear.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptRegistrationInSemesterYear.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptRegistrationPrintOut - Copy.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptRegistrationPrintOut.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptRegistrationPrintOutRetake.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptRegistrationPrintOutRetakeV2.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptRegistrationPrintOutRetakeV3.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptRegistrationStatusReport.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptRegistrationStatusReport.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptRegistrationSummary.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptStudentProfileRegSummary.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptStudentProfileRegSummary.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptStudentRegisterdCourseList.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/RptStudentRegisterdCourseList.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/Transcript.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/report/Transcript.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/RequisitionByCourse.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/StudentBulkRegistration.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/StudentBulkSectionAssign.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/StudentFreshBill.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/StudentGeneralBill.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/StudentResultHistory.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/StudentSectionChange.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/ThesisAndProjectRegistration.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/TransferStudent.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/UnRegistration.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/registration/ViewStudentCourse.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/report/RptRequiredCreditDistributions.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/report/RptRequiredCreditDistributions.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/ReportDataSet.xsc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/ReportDataSet.xss">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/AttendanceSheetDownload.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/AttendanceSheetDownloadNew.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/Attendance_Sheet_Files/101_Bangladesh Studies.xlsx">
+      <publishTime>05/18/2025 18:24:01</publishTime>
+    </File>
+    <File Include="Module/result/Attendance_Sheet_Files/301_Bangla.xlsx">
+      <publishTime>05/18/2025 18:24:01</publishTime>
+    </File>
+    <File Include="Module/result/Exam.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/ExamHome.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/ExamMarksPublishAndUnsubmit.aspx">
+      <publishTime>01/20/2026 18:09:07</publishTime>
+    </File>
+    <File Include="Module/result/ExamMarksUploadAndDownload.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/ExamResultApprove.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/ExamResultApproveByExamController.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/ExamResultChangeGrade.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/ExamResultChangeGradeSingle.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/ExamResultEntry.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/ExamResultProcess.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/ExamResultPublish.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/ExamResultPublishIndividualStudent.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/ExamResultReport.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/ExamResultSubmit.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/ExamResultUnSubmit.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/ExamResultUnSubmitBySection.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/ExamResultView.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/ExamResultViewConverted.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/ExamSet.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/ExamSetItem.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/ExamStatusEntry.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/ExamTemplateCalculativeItemSetup.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/ExamTemplateItemSetup.aspx">
+      <publishTime>01/20/2026 18:09:07</publishTime>
+    </File>
+    <File Include="Module/result/ExamTemplateSetup.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/ExcelFiles/AttendanceSheetTemplate.xlsx">
+      <publishTime>01/20/2026 18:09:07</publishTime>
+    </File>
+    <File Include="Module/result/ExcelFiles/GradeSheetTemplate.xlsx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/ExcelFiles/MarksEntrySampleExcel.xlsx">
+      <publishTime>01/20/2026 18:09:07</publishTime>
+    </File>
+    <File Include="Module/result/GradeSheet.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/GradeSheetDownload.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/GradeSheetDownloadNew.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/GradeSheetTransfer.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/ManualGradeChange.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/MarksTemplateAndPersonAssign.aspx">
+      <publishTime>01/20/2026 18:09:07</publishTime>
+    </File>
+    <File Include="Module/result/report/Copy of RptTabulationSheet.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/report/ExamResultPrint.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/report/ExamResultPrintSpecial.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/report/ExamResultPrintTheory.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/report/ExamResultPrintTheorySpecial.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/report/RptConsolidatedCrAssessment.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/report/RptConsolidatedCrAssessment.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/report/RptDegreeCompletedStudents.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/report/RptDegreeCompletedStudents.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/report/RptExamResultPrintGradeOnly.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/report/RptExamResultPrintLab.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/report/RptExamResultReport.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/report/RptExamResultReport.rdlc">
+      <publishTime>01/20/2026 18:09:07</publishTime>
+    </File>
+    <File Include="Module/result/report/RptMeritList.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/report/RptMeritList.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/report/RptSemesterResultSummary.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/report/RptSemesterResultSummary.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/report/RptStudentGPACGPAProgramWise.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/report/RptStudentGPACGPAProgramWise.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/report/RptStudentRollSheet.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/report/RptStudentRollSheet.rdlc">
+      <publishTime>01/20/2026 18:09:07</publishTime>
+    </File>
+    <File Include="Module/result/report/RptTabulationSheet.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/report/RptTabulationSheet.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/report/RptTabulationSheetV2.aspx">
+      <publishTime>01/20/2026 18:09:07</publishTime>
+    </File>
+    <File Include="Module/result/report/RptTotalMarkResult.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/Result.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/ResultProcess.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/ResultRemarksUpdate.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/StudentCourseDrop.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/StudentDueForAdmitCard.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/StudentGradeChange.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/TabulationResultRemarksSetup.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/UnRegistration.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/UnRegistrationSingleStudent.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/UploadResultXLFile.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/result/UploadResultXLFileNew.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/ClassRoutine.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/ClassRoutineManage.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/ConflickCheck.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/CoursePredict.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/DayLectureEntry.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/DayScheduleMaster.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/ExamScheduleCreate.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/ExamScheduleDayCreate.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/ExamScheduleDayList.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/ExamScheduleDayUpdate.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/ExamScheduleList.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/ExamScheduleSeatPlanManagement.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/ExamScheduleSeatPlanManagementMixed.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/ExamScheduleSetCreate.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/ExamScheduleSetList.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/ExamScheduleSetUpdate.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/ExamScheduleTimeSlotCreate.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/ExamScheduleTimeSlotList.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/ExamScheduleTimeSlotUpdate.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/ExamScheduleUpdate.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/ExamStudentPresent.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/ExcelFiles/SampleExcel.xlsx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/InvigilationScheduleOnly.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/report/ReportClassRoutine.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/report/ReportClassRoutine.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/report/RptAttendance.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/report/RptAttendance.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/report/RptAttendance2.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/report/RptAttendance3.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/report/RptClassRoutine.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/report/RptClassRoutine.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/report/RptClassScheduleForFaculty.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/report/RptClassScheuleForFaculty.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/report/RptCourseListBySemester.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/report/RptCourseListBySemester.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/report/RptDayScheduleMaster.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/report/RptDayScheduleMaster.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/report/RptExamAttendanceSheet.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/report/RptExamRoutine.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/report/RptExamSeatPlan.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/report/RptExamSeatPlan.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/report/RptInvigilationScheduleReport.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/report/RptLabAttendance.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/report/RptLabAttendance.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/report/RptTopSheet.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/report/RptTopSheet.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/report/RptTotalStudentByCourseWise.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/schedular/report/RptTotalStudentByCourseWise.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/ActiveInActiveForRegStudent.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/ActiveStudentSummary.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/AssignCourseTree.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/AssignPreCourse.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/CalculateResult.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/CalculateResultProcess.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/CalculateResultProcessBulk.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/CalculateResultProcessByBatch.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/DegreeCompletion.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/DegreeValidationByStudentID.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/HelpPage.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/LinkPage.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/PersonalProfile.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/PreCourseAdd.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/PreCourseAssign.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/ProbationStudentBlock.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/ProbationReport.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/ProvisionTranscript.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptBatchWiseStudent.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptBatchWiseStudent.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptCourseListByProgram.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptCourseListByProgram.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptCourseWiseStudentList.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptCourseWiseStudentList.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptFlatCourseList.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptFlatCourseList.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptProbationStudentList.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentActive.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentActive.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentCertificate.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentCGPAList.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentCGPAList.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentClassRoutine.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentClassRoutine.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentExamRoutine.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentExamRoutine.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentGradeBySession.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentGradeBySession.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentGradeBySessionNew.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentGradeBySessionNew.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentGradeBySessionStudent.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentGradeBySessionStudent.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentGradeCertificate3rd - Copy.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentGradeCertificate3rd.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentGradeCertificate4th - Copy.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentGradeCertificate4th.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentGradeCertificate6th - Copy.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentGradeCertificate6th.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentGradeCertificate8th - Copy.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentGradeCertificate8th.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentGradeCertificateSemesterWise.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentGradeCertificateSessionWise.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentRegSummary.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentRegSummary.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentResultHistoryList.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentResultHistoryList.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentResultSemesterWise.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentResultSemesterWise.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentRoadmap.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentRoadmap.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentTranscript.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentTranscriptNew.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentTranscriptNew.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentTranscriptNew2.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentTranscriptNew2.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentTranscriptRunning.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentTranscriptRunning.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentTranscriptV2.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentTranscriptV2.rdlc">
+      <publishTime>01/20/2026 18:09:07</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentWiseGradeBySessionNew.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/RptStudentWiseGradeBySessionNew.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/report/stdcertificatejs.js">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/StudentActive.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/StudentAdmitCardUnBlock.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/StudentBlock.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/StudentCourseHistory.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/StudentCourseHistoryEdit.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/StudentCourseHistoryEditBulk.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/StudentCourseWaiver.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/StudentFeedbackPage.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/StudentFeedbackPageAdmin.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/StudentInfoEdit.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/StudentInformationViewUpdateAndMigrateNewStudent.aspx">
+      <publishTime>01/01/2026 16:33:27</publishTime>
+    </File>
+    <File Include="Module/student/StudentPictureEdit.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/StudentProfile.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/StudentRegistrationUnBlock.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/StudentResultUnBlock.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/StudentUnBlockByProgram.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Module/student/StudentYearSemesterPromotion.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>01/20/2026 18:09:07</publishTime>
+    </File>
+    <File Include="Properties/PublishProfiles/FolderProfile.pubxml.user">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Registration/CourseRegistration.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Registration/MultiSpanCourseRegistration.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Registration/OpenCourse.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Registration/PrepareStudentWorksheet.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Registration/Registration.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Registration/SectionPopUp.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Report/ReportHome.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Scheduler/SchedulerHome.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Security/Home.aspx">
+      <publishTime>01/25/2026 15:21:13</publishTime>
+    </File>
+    <File Include="Security/LogIn.aspx">
+      <publishTime>01/25/2026 15:09:58</publishTime>
+    </File>
+    <File Include="SpecialMenu/SpecialMenuHome.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="StudentManagement/AssignCourseTree.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="StudentManagement/CGPA.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="StudentManagement/CourseAutoAssignOpen.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="StudentManagement/DiscountEntry.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="StudentManagement/DiscountWorksheet.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="StudentManagement/Profile/AddressInfo.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="StudentManagement/Profile/ContactInfo.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="StudentManagement/Profile/EducationInfo.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="StudentManagement/Profile/FamilyInfo.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="StudentManagement/Profile/PhotoAndSignature.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="StudentManagement/Profile/StudentProfile.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="StudentManagement/ProfileView.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="StudentManagement/StudentDiscountWorksheet.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="StudentManagement/StudentManagementHome.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="SyllabusMan/AssociateCourseList.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="SyllabusMan/CalendarDistribution.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="SyllabusMan/CalendarUnitCreator.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="SyllabusMan/CalendarUnitType.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="SyllabusMan/ClassRoutine.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="SyllabusMan/CourseCreator.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="SyllabusMan/CourseExplorer.aspx">
+      <publishTime>01/20/2026 18:09:07</publishTime>
+    </File>
+    <File Include="SyllabusMan/CourseGroupPage.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="SyllabusMan/CourseOffering.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="SyllabusMan/CurriculumDistribution.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="SyllabusMan/EquivalentCourseList.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="SyllabusMan/ExamRoutine.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="SyllabusMan/Prequisit.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="SyllabusMan/PrerequisiteCourseList.rdlc">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="SyllabusMan/SyllabusManHome.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="SyllabusMan/TreeMaster.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="TreeLineImages/dash.gif">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="TreeLineImages/dashminus.gif">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="TreeLineImages/dashplus.gif">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="TreeLineImages/i.gif">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="TreeLineImages/l.gif">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="TreeLineImages/lminus.gif">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="TreeLineImages/lplus.gif">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="TreeLineImages/minus.gif">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="TreeLineImages/noexpand.gif">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="TreeLineImages/plus.gif">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="TreeLineImages/r.gif">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="TreeLineImages/rminus.gif">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="TreeLineImages/rplus.gif">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="TreeLineImages/t.gif">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="TreeLineImages/tminus.gif">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="TreeLineImages/tplus.gif">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="UnderConstruction.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Upload/Avatar/Female.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Upload/Avatar/Male.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Upload/Avatar/Teacher/7848.jpg">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Upload/BA-BSS-EXAM-ONLINE-FORM-FILL-UP-INSTRUCTION-2017.pdf">
+      <publishTime>05/18/2025 18:24:02</publishTime>
+    </File>
+    <File Include="Upload/BABSSExam2022.pdf">
+      <publishTime>05/18/2025 18:24:02</publishTime>
+    </File>
+    <File Include="Upload/Instructions of BA BSS online Form fill-up Exam 2020.pdf">
+      <publishTime>05/18/2025 18:24:02</publishTime>
+    </File>
+    <File Include="Upload/Notice of BA BSS online Form fill-up Exam-2020.pdf">
+      <publishTime>05/18/2025 18:24:02</publishTime>
+    </File>
+    <File Include="Upload/Notice-BA-BSS-%28Pass%29-Exam-2018.pdf">
+      <publishTime>05/18/2025 18:24:02</publishTime>
+    </File>
+    <File Include="Upload/Notice.jpg">
+      <publishTime>05/18/2025 18:24:02</publishTime>
+    </File>
+    <File Include="Upload/Notice_BA_BSS_Exam_Form_Fill_up_2021.pdf">
+      <publishTime>05/18/2025 18:24:02</publishTime>
+    </File>
+    <File Include="Upload/SampleExcel/SampleStudentMigrationFile.xlsx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Upload/Student-Form-Fill-Up-Manual.pdf">
+      <publishTime>05/18/2025 18:24:02</publishTime>
+    </File>
+    <File Include="UserControls/BatchUserControl.ascx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="UserControls/BatchUserControlAll.ascx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="UserControls/CourseByProgramUserControl.ascx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="UserControls/CoursePicker/CoursePickerBox.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="UserControls/CoursePicker/CoursePickerCtl.ascx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="UserControls/CourseSelector.ascx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="UserControls/InstitutionUserControl.ascx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="UserControls/ProgramUserControl.ascx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="UserControls/SessionUserControl.ascx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="UserControls/TreeUserControl.ascx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Verify.aspx">
+      <publishTime>12/30/2025 11:17:35</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/20/2026 18:09:07</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
