@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ViewCourseDistribution" targetNamespace="http://tempuri.org/ViewCourseDistribution.xsd" xmlns:mstns="http://tempuri.org/ViewCourseDistribution.xsd" xmlns="http://tempuri.org/ViewCourseDistribution.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="UIUConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="UIUConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BussinessObjects.Properties.Settings.GlobalReference.Default.UIUConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ViewCourseDistribution" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ViewCourseDistribution" msprop:Generator_DataSetName="ViewCourseDistribution" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ProgStructCourse" msprop:Generator_UserTableName="ProgStructCourse" msprop:Generator_RowDeletedName="ProgStructCourseRowDeleted" msprop:Generator_RowChangedName="ProgStructCourseRowChanged" msprop:Generator_RowClassName="ProgStructCourseRow" msprop:Generator_RowChangingName="ProgStructCourseRowChanging" msprop:Generator_RowEvArgName="ProgStructCourseRowChangeEvent" msprop:Generator_RowEvHandlerName="ProgStructCourseRowChangeEventHandler" msprop:Generator_TableClassName="ProgStructCourseDataTable" msprop:Generator_TableVarName="tableProgStructCourse" msprop:Generator_RowDeletingName="ProgStructCourseRowDeleting" msprop:Generator_TablePropName="ProgStructCourse">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NodeID" msprop:Generator_UserColumnName="NodeID" msprop:Generator_ColumnPropNameInRow="NodeID" msprop:Generator_ColumnVarNameInTable="columnNodeID" msprop:Generator_ColumnPropNameInTable="NodeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ProgStructName" msprop:Generator_UserColumnName="ProgStructName" msprop:Generator_ColumnPropNameInRow="ProgStructName" msprop:Generator_ColumnVarNameInTable="columnProgStructName" msprop:Generator_ColumnPropNameInTable="ProgStructNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CourseID" msprop:Generator_UserColumnName="CourseID" msprop:Generator_ColumnPropNameInRow="CourseID" msprop:Generator_ColumnVarNameInTable="columnCourseID" msprop:Generator_ColumnPropNameInTable="CourseIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="VersionID" msprop:Generator_UserColumnName="VersionID" msprop:Generator_ColumnPropNameInRow="VersionID" msprop:Generator_ColumnVarNameInTable="columnVersionID" msprop:Generator_ColumnPropNameInTable="VersionIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="FormalCode" msprop:Generator_UserColumnName="FormalCode" msprop:Generator_ColumnPropNameInRow="FormalCode" msprop:Generator_ColumnVarNameInTable="columnFormalCode" msprop:Generator_ColumnPropNameInTable="FormalCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VersionCode" msprop:Generator_UserColumnName="VersionCode" msprop:Generator_ColumnPropNameInRow="VersionCode" msprop:Generator_ColumnVarNameInTable="columnVersionCode" msprop:Generator_ColumnPropNameInTable="VersionCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Title" msprop:Generator_UserColumnName="Title" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_ColumnPropNameInTable="TitleColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PassingGPA" msprop:Generator_UserColumnName="PassingGPA" msprop:Generator_ColumnPropNameInRow="PassingGPA" msprop:Generator_ColumnVarNameInTable="columnPassingGPA" msprop:Generator_ColumnPropNameInTable="PassingGPAColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Priority" msprop:Generator_UserColumnName="Priority" msprop:Generator_ColumnPropNameInRow="Priority" msprop:Generator_ColumnVarNameInTable="columnPriority" msprop:Generator_ColumnPropNameInTable="PriorityColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AssocCourseID" msprop:Generator_UserColumnName="AssocCourseID" msprop:Generator_ColumnPropNameInRow="AssocCourseID" msprop:Generator_ColumnVarNameInTable="columnAssocCourseID" msprop:Generator_ColumnPropNameInTable="AssocCourseIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AssocVersionID" msprop:Generator_UserColumnName="AssocVersionID" msprop:Generator_ColumnPropNameInRow="AssocVersionID" msprop:Generator_ColumnVarNameInTable="columnAssocVersionID" msprop:Generator_ColumnPropNameInTable="AssocVersionIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="StartTrimesterID" msprop:Generator_UserColumnName="StartTrimesterID" msprop:Generator_ColumnPropNameInRow="StartTrimesterID" msprop:Generator_ColumnVarNameInTable="columnStartTrimesterID" msprop:Generator_ColumnPropNameInTable="StartTrimesterIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ProgramID" msprop:Generator_UserColumnName="ProgramID" msprop:Generator_ColumnPropNameInRow="ProgramID" msprop:Generator_ColumnVarNameInTable="columnProgramID" msprop:Generator_ColumnPropNameInTable="ProgramIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CourseContent" msprop:Generator_UserColumnName="CourseContent" msprop:Generator_ColumnPropNameInRow="CourseContent" msprop:Generator_ColumnVarNameInTable="columnCourseContent" msprop:Generator_ColumnPropNameInTable="CourseContentColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Credits" msprop:Generator_UserColumnName="Credits" msprop:Generator_ColumnPropNameInRow="Credits" msprop:Generator_ColumnVarNameInTable="columnCredits" msprop:Generator_ColumnPropNameInTable="CreditsColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IsCreditCourse" msprop:Generator_UserColumnName="IsCreditCourse" msprop:Generator_ColumnPropNameInRow="IsCreditCourse" msprop:Generator_ColumnVarNameInTable="columnIsCreditCourse" msprop:Generator_ColumnPropNameInTable="IsCreditCourseColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsThesis" msprop:Generator_UserColumnName="IsThesis" msprop:Generator_ColumnPropNameInRow="IsThesis" msprop:Generator_ColumnVarNameInTable="columnIsThesis" msprop:Generator_ColumnPropNameInTable="IsThesisColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsProject" msprop:Generator_UserColumnName="IsProject" msprop:Generator_ColumnPropNameInRow="IsProject" msprop:Generator_ColumnVarNameInTable="columnIsProject" msprop:Generator_ColumnPropNameInTable="IsProjectColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="HasEquivalents" msprop:Generator_UserColumnName="HasEquivalents" msprop:Generator_ColumnPropNameInRow="HasEquivalents" msprop:Generator_ColumnVarNameInTable="columnHasEquivalents" msprop:Generator_ColumnPropNameInTable="HasEquivalentsColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ProgStruct" msprop:Generator_UserTableName="ProgStruct" msprop:Generator_RowDeletedName="ProgStructRowDeleted" msprop:Generator_RowChangedName="ProgStructRowChanged" msprop:Generator_RowClassName="ProgStructRow" msprop:Generator_RowChangingName="ProgStructRowChanging" msprop:Generator_RowEvArgName="ProgStructRowChangeEvent" msprop:Generator_RowEvHandlerName="ProgStructRowChangeEventHandler" msprop:Generator_TableClassName="ProgStructDataTable" msprop:Generator_TableVarName="tableProgStruct" msprop:Generator_RowDeletingName="ProgStructRowDeleting" msprop:Generator_TablePropName="ProgStruct">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NodeID" msprop:Generator_UserColumnName="NodeID" msprop:Generator_ColumnVarNameInTable="columnNodeID" msprop:Generator_ColumnPropNameInRow="NodeID" msprop:Generator_ColumnPropNameInTable="NodeIDColumn" type="xs:int" />
+              <xs:element name="ProgStructureName" msprop:Generator_UserColumnName="ProgStructureName" msprop:Generator_ColumnVarNameInTable="columnProgStructureName" msprop:Generator_ColumnPropNameInRow="ProgStructureName" msprop:Generator_ColumnPropNameInTable="ProgStructureNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ParentNodeID" msprop:Generator_UserColumnName="ParentNodeID" msprop:Generator_ColumnVarNameInTable="columnParentNodeID" msprop:Generator_ColumnPropNameInRow="ParentNodeID" msprop:Generator_ColumnPropNameInTable="ParentNodeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="IsLastLevel" msprop:Generator_UserColumnName="IsLastLevel" msprop:Generator_ColumnVarNameInTable="columnIsLastLevel" msprop:Generator_ColumnPropNameInRow="IsLastLevel" msprop:Generator_ColumnPropNameInTable="IsLastLevelColumn" type="xs:boolean" />
+              <xs:element name="MinCredit" msprop:Generator_UserColumnName="MinCredit" msprop:Generator_ColumnVarNameInTable="columnMinCredit" msprop:Generator_ColumnPropNameInRow="MinCredit" msprop:Generator_ColumnPropNameInTable="MinCreditColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MaxCredit" msprop:Generator_UserColumnName="MaxCredit" msprop:Generator_ColumnVarNameInTable="columnMaxCredit" msprop:Generator_ColumnPropNameInRow="MaxCredit" msprop:Generator_ColumnPropNameInTable="MaxCreditColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MinCourses" msprop:Generator_UserColumnName="MinCourses" msprop:Generator_ColumnVarNameInTable="columnMinCourses" msprop:Generator_ColumnPropNameInRow="MinCourses" msprop:Generator_ColumnPropNameInTable="MinCoursesColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="MaxCourse" msprop:Generator_UserColumnName="MaxCourse" msprop:Generator_ColumnVarNameInTable="columnMaxCourse" msprop:Generator_ColumnPropNameInRow="MaxCourse" msprop:Generator_ColumnPropNameInTable="MaxCourseColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="IsVirtual" msprop:Generator_UserColumnName="IsVirtual" msprop:Generator_ColumnVarNameInTable="columnIsVirtual" msprop:Generator_ColumnPropNameInRow="IsVirtual" msprop:Generator_ColumnPropNameInTable="IsVirtualColumn" type="xs:boolean" />
+              <xs:element name="IsBundle" msprop:Generator_UserColumnName="IsBundle" msprop:Generator_ColumnVarNameInTable="columnIsBundle" msprop:Generator_ColumnPropNameInRow="IsBundle" msprop:Generator_ColumnPropNameInTable="IsBundleColumn" type="xs:boolean" />
+              <xs:element name="StartTrimesterID" msprop:Generator_UserColumnName="StartTrimesterID" msprop:Generator_ColumnVarNameInTable="columnStartTrimesterID" msprop:Generator_ColumnPropNameInRow="StartTrimesterID" msprop:Generator_ColumnPropNameInTable="StartTrimesterIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="OperatorID" msprop:Generator_UserColumnName="OperatorID" msprop:Generator_ColumnVarNameInTable="columnOperatorID" msprop:Generator_ColumnPropNameInRow="OperatorID" msprop:Generator_ColumnPropNameInTable="OperatorIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="OperandNodes" msprop:Generator_UserColumnName="OperandNodes" msprop:Generator_ColumnVarNameInTable="columnOperandNodes" msprop:Generator_ColumnPropNameInRow="OperandNodes" msprop:Generator_ColumnPropNameInTable="OperandNodesColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VnodeSet" msprop:Generator_UserTableName="VnodeSet" msprop:Generator_RowDeletedName="VnodeSetRowDeleted" msprop:Generator_RowChangedName="VnodeSetRowChanged" msprop:Generator_RowClassName="VnodeSetRow" msprop:Generator_RowChangingName="VnodeSetRowChanging" msprop:Generator_RowEvArgName="VnodeSetRowChangeEvent" msprop:Generator_RowEvHandlerName="VnodeSetRowChangeEventHandler" msprop:Generator_TableClassName="VnodeSetDataTable" msprop:Generator_TableVarName="tableVnodeSet" msprop:Generator_RowDeletingName="VnodeSetRowDeleting" msprop:Generator_TablePropName="VnodeSet">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VNodeSetID" msprop:Generator_UserColumnName="VNodeSetID" msprop:Generator_ColumnPropNameInRow="VNodeSetID" msprop:Generator_ColumnVarNameInTable="columnVNodeSetID" msprop:Generator_ColumnPropNameInTable="VNodeSetIDColumn" type="xs:int" />
+              <xs:element name="NodeID" msprop:Generator_UserColumnName="NodeID" msprop:Generator_ColumnPropNameInRow="NodeID" msprop:Generator_ColumnVarNameInTable="columnNodeID" msprop:Generator_ColumnPropNameInTable="NodeIDColumn" type="xs:int" />
+              <xs:element name="SetNo" msprop:Generator_UserColumnName="SetNo" msprop:Generator_ColumnPropNameInRow="SetNo" msprop:Generator_ColumnVarNameInTable="columnSetNo" msprop:Generator_ColumnPropNameInTable="SetNoColumn" type="xs:int" />
+              <xs:element name="OperandNodeID" msprop:Generator_UserColumnName="OperandNodeID" msprop:Generator_ColumnPropNameInRow="OperandNodeID" msprop:Generator_ColumnVarNameInTable="columnOperandNodeID" msprop:Generator_ColumnPropNameInTable="OperandNodeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="OperandCourseID" msprop:Generator_UserColumnName="OperandCourseID" msprop:Generator_ColumnPropNameInRow="OperandCourseID" msprop:Generator_ColumnVarNameInTable="columnOperandCourseID" msprop:Generator_ColumnPropNameInTable="OperandCourseIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="OperandVersionID" msprop:Generator_UserColumnName="OperandVersionID" msprop:Generator_ColumnPropNameInRow="OperandVersionID" msprop:Generator_ColumnVarNameInTable="columnOperandVersionID" msprop:Generator_ColumnPropNameInTable="OperandVersionIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="OperatorName" msprop:Generator_UserColumnName="OperatorName" msprop:Generator_ColumnPropNameInRow="OperatorName" msprop:Generator_ColumnVarNameInTable="columnOperatorName" msprop:Generator_ColumnPropNameInTable="OperatorNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WildCard" msprop:Generator_UserColumnName="WildCard" msprop:Generator_ColumnPropNameInRow="WildCard" msprop:Generator_ColumnVarNameInTable="columnWildCard" msprop:Generator_ColumnPropNameInTable="WildCardColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsStudntSpec" msprop:Generator_UserColumnName="IsStudntSpec" msprop:Generator_ColumnPropNameInRow="IsStudntSpec" msprop:Generator_ColumnVarNameInTable="columnIsStudntSpec" msprop:Generator_ColumnPropNameInTable="IsStudntSpecColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ProgStruct" />
+      <xs:field xpath="mstns:NodeID" />
+    </xs:unique>
+    <xs:unique name="VnodeSet_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VnodeSet" />
+      <xs:field xpath="mstns:VNodeSetID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

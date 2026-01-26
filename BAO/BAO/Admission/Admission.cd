@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BussinessObject.CourseStatus" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAABCAEIAAgAABECDAgAQEAAAACAQBAAAAgAACgAAw=</HashCode>
+      <FileName>Admission\CourseStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BussinessObject.CourseWavTransfrDetail" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQACAAAAAAAAAAAACABAAAAAAAAAAAAAgAAg=</HashCode>
+      <FileName>Admission\CourseWavTransfrDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BussinessObject.CourseWavTransfrMaster" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIACAABAACAAAAAAAAAAAAAAAACAAABAADAAA=</HashCode>
+      <FileName>Admission\CourseWavTransfrMaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BussinessObject.SkillType" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCEECAAEAEAAAABAGCQAAQEAABFiAQBAAAAAAACAEAA=</HashCode>
+      <FileName>Admission\SkillType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BussinessObject.StatusType" Collapsed="true">
+    <Position X="7.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAACAAEgEAgAABASCQAAQEAgBAiAQBAAQAAAACAAAA=</HashCode>
+      <FileName>Admission\StatusType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BussinessObject.Std_AcademicCalender" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAgRBKAEAAA4AQBESCBgBQMAAAGCAwBKCAAABQGiAEQ=</HashCode>
+      <FileName>Admission\Std_AcademicCalender.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BussinessObject.Std_CourseStatus" Collapsed="true">
+    <Position X="2.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YYQADIMEAAAAAQBACCAkQQEIAEEyAQlAAAAACAGAAg8=</HashCode>
+      <FileName>Admission\Std_CourseStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BussinessObject.StdEducationInfo" Collapsed="true">
+    <Position X="6" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAACAAAABEkAEAAAAAAUgABAABQAAAAACBAQAAIKAAE=</HashCode>
+      <FileName>Admission\StdEducationInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BussinessObject.Student_ACUDetail" Collapsed="true">
+    <Position X="4" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YAQbBKGUgEAwIQBkSCRERQEYgQECAwNACQAAAQCiEUA=</HashCode>
+      <FileName>Admission\Student_ACUDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BussinessObject.Student_Course" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAYAIAFAKAUGQBhSCBAxSMUIAECE6FJCAAAAECaAUA=</HashCode>
+      <FileName>Admission\Student_Course.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BussinessObject.Student_SkillType" Collapsed="true">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAgAAAEAAAAAAAAAAAAAAAACAAAAAACEAA=</HashCode>
+      <FileName>Admission\Student_SkillType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BussinessObject.DeptRegSetUp">
+    <Position X="6.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>4ACAkMCEwIMWUUBQCLxzEcEHchFCX4RMkB80AECAEoQ=</HashCode>
+      <FileName>Registration\DeptRegSetUp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BussinessObject.Student">
+    <Position X="3.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>cSHS+drWfEpAAWQ8zKkeFU6DNfGwI6BodxZuUGgiNPs=</HashCode>
+      <FileName>Admission\Student.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FA064159-8BE3-45A7-87D4-87E3F296D602}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Common</RootNamespace>
+    <AssemblyName>CAOEMS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admission\CandidateEntity.cs" />
+    <Compile Include="Admission\StudentEntity.cs" />
+    <Compile Include="Admission\Student_ACUDetailEntity.cs" />
+    <Compile Include="Admission\SubmittedPapersEntity.cs" />
+    <Compile Include="BaseEntity.cs" />
+    <Compile Include="BasicSetup\BillableCourseEntity.cs" />
+    <Compile Include="BasicSetup\Class1.cs" />
+    <Compile Include="BasicSetup\DiscountContinuationSetupEntity.cs" />
+    <Compile Include="BasicSetup\ExamMarksAllocationEntity.cs" />
+    <Compile Include="BasicSetup\ExamTypeNameEntity.cs" />
+    <Compile Include="BasicSetup\FeeSetupEntity.cs" />
+    <Compile Include="BasicSetup\GradeDetailsEntity.cs" />
+    <Compile Include="BasicSetup\RelationDiscountCourseEntity.cs" />
+    <Compile Include="BasicSetup\RelationDiscountRetakeEntity.cs" />
+    <Compile Include="BasicSetup\RelationDiscountSectionEntity.cs" />
+    <Compile Include="BasicSetup\SiblingsetupEntity.cs" />
+    <Compile Include="BasicSetup\TypeDefinitionEntity.cs" />
+    <Compile Include="BasicSetup\ViewNotSetBillableCoursesEntity.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Cryptography.cs" />
+    <Compile Include="CustomException\CustomException.cs" />
+    <Compile Include="DAOParameters.cs" />
+    <Compile Include="Date.cs" />
+    <Compile Include="GradeSheet\GradeDdlEntity.cs" />
+    <Compile Include="GradeSheet\GradeSheetEntity.cs" />
+    <Compile Include="GradeSheet\ConflictResultEntity.cs" />
+    <Compile Include="GradeSheet\GradeSheetEntity1.cs" />
+    <Compile Include="Message.cs" />
+    <Compile Include="Methods.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Registration\AllCourseByNodeEntity.cs" />
+    <Compile Include="Registration\DeptRegSetUpEntity.cs" />
+    <Compile Include="Registration\SectionEntity.cs" />
+    <Compile Include="SqlParam.cs" />
+    <Compile Include="BasicSetup\AcademiccalenderEntity.cs" />
+    <Compile Include="Admission\AdmissionFormEntity.cs" />
+    <Compile Include="StudentManagement\DiscountWorksheetEntity.cs" />
+    <Compile Include="Admission\EmsCandidateEntity.cs" />
+    <Compile Include="Admission\FormGridEntity.cs" />
+    <Compile Include="BasicSetup\ProgramEntity.cs" />
+    <Compile Include="StudentManagement\SlectedStudentForGPACalculationEntity.cs" />
+    <Compile Include="StudentManagement\StdDiscountEntity.cs" />
+    <Compile Include="StudentManagement\StudentdiscountworksheetEntity.cs" />
+    <Compile Include="StudentManagement\Student_CalCourseProgNodeEntity.cs" />
+    <Compile Include="SyllabusMan\Cal_Course_Prog_NodeEntity.cs" />
+    <Compile Include="SyllabusMan\CourseEntity.cs" />
+    <Compile Include="SyllabusMan\NodeEntity.cs" />
+    <Compile Include="SyllabusMan\OperatorEntity.cs" />
+    <Compile Include="SyllabusMan\PreReqDetailEntity.cs" />
+    <Compile Include="SyllabusMan\TreeCalendarDetailEntity.cs" />
+    <Compile Include="SyllabusMan\TreeCalendarMasterEntity.cs" />
+    <Compile Include="SyllabusMan\TreeDetailEntity.cs" />
+    <Compile Include="SyllabusMan\VNodeSetEntity.cs" />
+    <Compile Include="SyllabusMan\VNodeSetMasterEntity.cs" />
+    <Compile Include="Utilities.cs" />
+    <Compile Include="Variables.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
