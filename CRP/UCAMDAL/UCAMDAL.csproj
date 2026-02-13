@@ -58,6 +58,12 @@
     <Compile Include="Batch.cs">
       <DependentUpon>UCAMModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="BillHistory.cs">
+      <DependentUpon>UCAMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BillHistoryMaster.cs">
+      <DependentUpon>UCAMModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="CalenderUnitMaster.cs">
       <DependentUpon>UCAMModel.tt</DependentUpon>
     </Compile>
@@ -65,6 +71,9 @@
       <DependentUpon>UCAMModel.tt</DependentUpon>
     </Compile>
     <Compile Include="CoE_PaperGenerate.cs">
+      <DependentUpon>UCAMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CollectionHistory.cs">
       <DependentUpon>UCAMModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Course.cs">

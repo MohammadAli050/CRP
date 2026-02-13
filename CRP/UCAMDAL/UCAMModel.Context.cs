@@ -57,5 +57,8 @@ namespace UCAMDAL
         public virtual DbSet<SystemImageTypeMetaTable> SystemImageTypeMetaTables { get; set; }
         public virtual DbSet<Department> Departments { get; set; }
         public virtual DbSet<ProgramWiseFaculty> ProgramWiseFaculties { get; set; }
+        public virtual DbSet<BillHistory> BillHistories { get; set; }
+        public virtual DbSet<BillHistoryMaster> BillHistoryMasters { get; set; }
+        public virtual DbSet<CollectionHistory> CollectionHistories { get; set; }
     }
 }

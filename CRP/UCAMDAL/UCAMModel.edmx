@@ -6,7 +6,7 @@
     <edmx:StorageModels>
     <Schema Namespace="UCAMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <!--Errors Found During Generation:
-warning 6002: The table/view 'BUP_AFF_Result.dbo.AffiliatedInstitution' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'CRP.dbo.AffiliatedInstitution' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="AffiliatedInstitution">
           <Key>
             <PropertyRef Name="Id" />
@@ -38,6 +38,51 @@ warning 6002: The table/view 'BUP_AFF_Result.dbo.AffiliatedInstitution' does not
           <Property Name="Attribute1" Type="nvarchar(max)" />
           <Property Name="Attribute2" Type="nvarchar(max)" />
           <Property Name="Attribute3" Type="nvarchar(max)" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="BillHistory">
+          <Key>
+            <PropertyRef Name="BillHistoryId" />
+          </Key>
+          <Property Name="BillHistoryId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StudentId" Type="int" />
+          <Property Name="FundTypeId" Type="int" />
+          <Property Name="FeeTypeId" Type="int" />
+          <Property Name="AcaCalId" Type="int" />
+          <Property Name="Fees" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Remark" Type="varchar(max)" />
+          <Property Name="BillingDate" Type="datetime" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="BillHistoryMasterId" Type="int" />
+          <Property Name="Attribute1" Type="varchar" MaxLength="50" />
+          <Property Name="Attribute2" Type="varchar" MaxLength="50" />
+          <Property Name="Attribute3" Type="varchar" MaxLength="50" />
+          <Property Name="Attribute4" Type="varchar" MaxLength="50" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="BillHistoryMaster">
+          <Key>
+            <PropertyRef Name="BillHistoryMasterId" />
+          </Key>
+          <Property Name="BillHistoryMasterId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StudentId" Type="int" />
+          <Property Name="Amount" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="ReferenceNo" Type="varchar" MaxLength="50" />
+          <Property Name="BillingDate" Type="datetime" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="IsDue" Type="bit" />
+          <Property Name="ParentBillHistroyMasterId" Type="int" />
+          <Property Name="AcaCalId" Type="int" />
+          <Property Name="Attribute1" Type="varchar" MaxLength="50" />
+          <Property Name="Attribute2" Type="varchar" MaxLength="50" />
+          <Property Name="Attribute3" Type="varchar" MaxLength="50" />
+          <Property Name="Attribute4" Type="varchar" MaxLength="50" />
           <Property Name="CreatedBy" Type="int" />
           <Property Name="CreatedDate" Type="datetime" />
           <Property Name="ModifiedBy" Type="int" />
@@ -95,6 +140,36 @@ warning 6002: The table/view 'BUP_AFF_Result.dbo.AffiliatedInstitution' does not
           <Property Name="DownloaderLoginId" Type="nvarchar(max)" />
           <Property Name="DownloadIP" Type="nvarchar(max)" />
           <Property Name="IsDownloaded" Type="bit" />
+        </EntityType>
+        <EntityType Name="CollectionHistory">
+          <Key>
+            <PropertyRef Name="CollectionHistoryId" />
+          </Key>
+          <Property Name="CollectionHistoryId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StudentId" Type="int" />
+          <Property Name="BillHistoryMasterId" Type="int" />
+          <Property Name="BillHistoryId" Type="int" />
+          <Property Name="MoneyReciptSerialNo" Type="varchar" MaxLength="50" />
+          <Property Name="AcaCalId" Type="int" />
+          <Property Name="TypeDefinitionId" Type="int" />
+          <Property Name="Amount" Type="numeric" Precision="18" Scale="2" />
+          <Property Name="CollectionDate" Type="datetime" />
+          <Property Name="PaymentType" Type="varchar" MaxLength="150" />
+          <Property Name="CounterId" Type="int" />
+          <Property Name="BankName" Type="varchar" MaxLength="350" />
+          <Property Name="ChequeNo" Type="varchar" MaxLength="150" />
+          <Property Name="ReferenceNo" Type="varchar" MaxLength="150" />
+          <Property Name="Comments" Type="varchar(max)" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="TransactionCode" Type="nvarchar(max)" />
+          <Property Name="Attribute1" Type="varchar" MaxLength="50" />
+          <Property Name="Attribute2" Type="varchar" MaxLength="50" />
+          <Property Name="Attribute3" Type="varchar" MaxLength="50" />
+          <Property Name="Attribute4" Type="varchar" MaxLength="50" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
         </EntityType>
         <EntityType Name="Course">
           <Key>
@@ -434,7 +509,7 @@ warning 6002: The table/view 'BUP_AFF_Result.dbo.AffiliatedInstitution' does not
           <Property Name="ModifiedDate" Type="datetime" />
         </EntityType>
         <!--Errors Found During Generation:
-warning 6002: The table/view 'BUP_AFF_Result.dbo.StudentACUDetail' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'CRP.dbo.StudentACUDetail' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="StudentACUDetail">
           <Key>
             <PropertyRef Name="StdACUDetailID" />
@@ -623,12 +698,9 @@ warning 6002: The table/view 'BUP_AFF_Result.dbo.StudentACUDetail' does not have
           <Property Name="ModifiedBy" Type="int" />
           <Property Name="ModifiedDate" Type="datetime" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'BUP_AFF_Result.dbo.UserInPerson' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="UserInPerson">
           <Key>
             <PropertyRef Name="User_ID" />
-            <PropertyRef Name="PersonID" />
           </Key>
           <Property Name="User_ID" Type="int" Nullable="false" />
           <Property Name="PersonID" Type="int" Nullable="false" />
@@ -718,9 +790,12 @@ warning 6002: The table/view 'BUP_AFF_Result.dbo.UserInPerson' does not have a p
         </Association>
         <EntityContainer Name="UCAMModelStoreContainer">
           <EntitySet Name="Batch" EntityType="Self.Batch" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BillHistory" EntityType="Self.BillHistory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BillHistoryMaster" EntityType="Self.BillHistoryMaster" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CalenderUnitMaster" EntityType="Self.CalenderUnitMaster" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CalenderUnitType" EntityType="Self.CalenderUnitType" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CoE_PaperGenerate" EntityType="Self.CoE_PaperGenerate" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CollectionHistory" EntityType="Self.CollectionHistory" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Course" EntityType="Self.Course" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CourseRegistrationApprovalHistory" EntityType="Self.CourseRegistrationApprovalHistory" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CourseRegistrationApprovalStatus" EntityType="Self.CourseRegistrationApprovalStatus" Schema="dbo" store:Type="Tables" />
@@ -744,6 +819,7 @@ warning 6002: The table/view 'BUP_AFF_Result.dbo.UserInPerson' does not have a p
           <EntitySet Name="SystemImageTypeMetaTable" EntityType="Self.SystemImageTypeMetaTable" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="UserAccessProgram" EntityType="Self.UserAccessProgram" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserInPerson" EntityType="Self.UserInPerson" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="UserInstitution" EntityType="Self.UserInstitution" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Year" EntityType="Self.Year" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="AffiliatedInstitution" EntityType="Self.AffiliatedInstitution" store:Type="Tables" store:Schema="dbo">
@@ -783,16 +859,6 @@ warning 6002: The table/view 'BUP_AFF_Result.dbo.UserInPerson' does not have a p
     [StudentACUDetail].[ModifiedDate] AS [ModifiedDate], 
     [StudentACUDetail].[Remarks] AS [Remarks]
     FROM [dbo].[StudentACUDetail] AS [StudentACUDetail]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="UserInPerson" EntityType="Self.UserInPerson" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [UserInPerson].[User_ID] AS [User_ID], 
-    [UserInPerson].[PersonID] AS [PersonID], 
-    [UserInPerson].[CreatedBy] AS [CreatedBy], 
-    [UserInPerson].[CreatedDate] AS [CreatedDate], 
-    [UserInPerson].[ModifiedBy] AS [ModifiedBy], 
-    [UserInPerson].[ModifiedDate] AS [ModifiedDate]
-    FROM [dbo].[UserInPerson] AS [UserInPerson]</DefiningQuery>
           </EntitySet>
           <AssociationSet Name="FK_StudentCourseHistory_Student" Association="Self.FK_StudentCourseHistory_Student">
             <End Role="Student" EntitySet="Student" />
@@ -982,6 +1048,9 @@ warning 6002: The table/view 'BUP_AFF_Result.dbo.UserInPerson' does not have a p
           <EntitySet Name="SystemImageTypeMetaTables" EntityType="UCAMModel.SystemImageTypeMetaTable" />
           <EntitySet Name="Departments" EntityType="UCAMModel.Department" />
           <EntitySet Name="ProgramWiseFaculties" EntityType="UCAMModel.ProgramWiseFaculty" />
+          <EntitySet Name="BillHistories" EntityType="UCAMModel.BillHistory" />
+          <EntitySet Name="BillHistoryMasters" EntityType="UCAMModel.BillHistoryMaster" />
+          <EntitySet Name="CollectionHistories" EntityType="UCAMModel.CollectionHistory" />
         </EntityContainer>
         <EntityType Name="CoE_PaperGenerate">
           <Key>
@@ -1575,6 +1644,81 @@ warning 6002: The table/view 'BUP_AFF_Result.dbo.UserInPerson' does not have a p
           <Property Name="FacultyName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
           <Property Name="CreatedBy" Type="Int32" Nullable="false" />
           <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="BillHistory">
+          <Key>
+            <PropertyRef Name="BillHistoryId" />
+          </Key>
+          <Property Name="BillHistoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StudentId" Type="Int32" />
+          <Property Name="FundTypeId" Type="Int32" />
+          <Property Name="FeeTypeId" Type="Int32" />
+          <Property Name="AcaCalId" Type="Int32" />
+          <Property Name="Fees" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Remark" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="BillingDate" Type="DateTime" Precision="3" />
+          <Property Name="IsDeleted" Type="Boolean" />
+          <Property Name="BillHistoryMasterId" Type="Int32" />
+          <Property Name="Attribute1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Attribute2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Attribute3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Attribute4" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="BillHistoryMaster">
+          <Key>
+            <PropertyRef Name="BillHistoryMasterId" />
+          </Key>
+          <Property Name="BillHistoryMasterId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StudentId" Type="Int32" />
+          <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="ReferenceNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="BillingDate" Type="DateTime" Precision="3" />
+          <Property Name="IsDeleted" Type="Boolean" />
+          <Property Name="IsDue" Type="Boolean" />
+          <Property Name="ParentBillHistroyMasterId" Type="Int32" />
+          <Property Name="AcaCalId" Type="Int32" />
+          <Property Name="Attribute1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Attribute2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Attribute3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Attribute4" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="CollectionHistory">
+          <Key>
+            <PropertyRef Name="CollectionHistoryId" />
+          </Key>
+          <Property Name="CollectionHistoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StudentId" Type="Int32" />
+          <Property Name="BillHistoryMasterId" Type="Int32" />
+          <Property Name="BillHistoryId" Type="Int32" />
+          <Property Name="MoneyReciptSerialNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="AcaCalId" Type="Int32" />
+          <Property Name="TypeDefinitionId" Type="Int32" />
+          <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="CollectionDate" Type="DateTime" Precision="3" />
+          <Property Name="PaymentType" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="CounterId" Type="Int32" />
+          <Property Name="BankName" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+          <Property Name="ChequeNo" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="ReferenceNo" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="Comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="IsDeleted" Type="Boolean" />
+          <Property Name="TransactionCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Attribute2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Attribute3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Attribute4" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
           <Property Name="ModifiedBy" Type="Int32" />
           <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
         </EntityType>
@@ -2260,6 +2404,84 @@ warning 6002: The table/view 'BUP_AFF_Result.dbo.UserInPerson' does not have a p
                 <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
                 <ScalarProperty Name="FacultyName" ColumnName="FacultyName" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BillHistories">
+            <EntityTypeMapping TypeName="UCAMModel.BillHistory">
+              <MappingFragment StoreEntitySet="BillHistory">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Attribute4" ColumnName="Attribute4" />
+                <ScalarProperty Name="Attribute3" ColumnName="Attribute3" />
+                <ScalarProperty Name="Attribute2" ColumnName="Attribute2" />
+                <ScalarProperty Name="Attribute1" ColumnName="Attribute1" />
+                <ScalarProperty Name="BillHistoryMasterId" ColumnName="BillHistoryMasterId" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="BillingDate" ColumnName="BillingDate" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="Fees" ColumnName="Fees" />
+                <ScalarProperty Name="AcaCalId" ColumnName="AcaCalId" />
+                <ScalarProperty Name="FeeTypeId" ColumnName="FeeTypeId" />
+                <ScalarProperty Name="FundTypeId" ColumnName="FundTypeId" />
+                <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+                <ScalarProperty Name="BillHistoryId" ColumnName="BillHistoryId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BillHistoryMasters">
+            <EntityTypeMapping TypeName="UCAMModel.BillHistoryMaster">
+              <MappingFragment StoreEntitySet="BillHistoryMaster">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Attribute4" ColumnName="Attribute4" />
+                <ScalarProperty Name="Attribute3" ColumnName="Attribute3" />
+                <ScalarProperty Name="Attribute2" ColumnName="Attribute2" />
+                <ScalarProperty Name="Attribute1" ColumnName="Attribute1" />
+                <ScalarProperty Name="AcaCalId" ColumnName="AcaCalId" />
+                <ScalarProperty Name="ParentBillHistroyMasterId" ColumnName="ParentBillHistroyMasterId" />
+                <ScalarProperty Name="IsDue" ColumnName="IsDue" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="BillingDate" ColumnName="BillingDate" />
+                <ScalarProperty Name="ReferenceNo" ColumnName="ReferenceNo" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+                <ScalarProperty Name="BillHistoryMasterId" ColumnName="BillHistoryMasterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CollectionHistories">
+            <EntityTypeMapping TypeName="UCAMModel.CollectionHistory">
+              <MappingFragment StoreEntitySet="CollectionHistory">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Attribute4" ColumnName="Attribute4" />
+                <ScalarProperty Name="Attribute3" ColumnName="Attribute3" />
+                <ScalarProperty Name="Attribute2" ColumnName="Attribute2" />
+                <ScalarProperty Name="Attribute1" ColumnName="Attribute1" />
+                <ScalarProperty Name="TransactionCode" ColumnName="TransactionCode" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="Comments" ColumnName="Comments" />
+                <ScalarProperty Name="ReferenceNo" ColumnName="ReferenceNo" />
+                <ScalarProperty Name="ChequeNo" ColumnName="ChequeNo" />
+                <ScalarProperty Name="BankName" ColumnName="BankName" />
+                <ScalarProperty Name="CounterId" ColumnName="CounterId" />
+                <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+                <ScalarProperty Name="CollectionDate" ColumnName="CollectionDate" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="TypeDefinitionId" ColumnName="TypeDefinitionId" />
+                <ScalarProperty Name="AcaCalId" ColumnName="AcaCalId" />
+                <ScalarProperty Name="MoneyReciptSerialNo" ColumnName="MoneyReciptSerialNo" />
+                <ScalarProperty Name="BillHistoryId" ColumnName="BillHistoryId" />
+                <ScalarProperty Name="BillHistoryMasterId" ColumnName="BillHistoryMasterId" />
+                <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+                <ScalarProperty Name="CollectionHistoryId" ColumnName="CollectionHistoryId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
