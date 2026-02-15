@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a0e460fa930544189b3210fb346da5b2" Name="Diagram1" ZoomLevel="77">
+        <EntityTypeShape EntityType="BUFT_AdmissionModel.BasicInfo" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="BUFT_AdmissionModel.CandidatePayment" Width="1.5" PointX="5.375" PointY="0.75" />
+        <AssociationConnector Association="BUFT_AdmissionModel.FK_BasicInfo_BloodGroup" />
+        <AssociationConnector Association="BUFT_AdmissionModel.FK_BasicInfo_CandidateUser" />
+        <AssociationConnector Association="BUFT_AdmissionModel.FK_BasicInfo_Country" />
+        <AssociationConnector Association="BUFT_AdmissionModel.FK_BasicInfo_Gender" />
+        <AssociationConnector Association="BUFT_AdmissionModel.FK_BasicInfo_Language" />
+        <AssociationConnector Association="BUFT_AdmissionModel.FK_BasicInfo_MaritalStatus" />
+        <AssociationConnector Association="BUFT_AdmissionModel.FK_BasicInfo_Quota" />
+        <AssociationConnector Association="BUFT_AdmissionModel.FK_BasicInfo_Religion" />
+        <EntityTypeShape EntityType="BUFT_AdmissionModel.CandidateUser" Width="1.5" PointX="1.125" PointY="3.875" />
+        <AssociationConnector Association="BUFT_AdmissionModel.FK_BasicInfo_CandidateUser1" />
+        <AssociationConnector Association="BUFT_AdmissionModel.FK_CandidatePayment_BasicInfo" />
+        <EntityTypeShape EntityType="BUFT_AdmissionModel.OnlineCollectionAttempt" Width="1.5" PointX="5.375" PointY="5.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

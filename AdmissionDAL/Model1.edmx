@@ -1,0 +1,572 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="BUFT_AdmissionModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="BasicInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="MiddleName" Type="nvarchar" MaxLength="100" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="100" />
+          <Property Name="NickName" Type="nvarchar" MaxLength="100" />
+          <Property Name="FullName_BEN" Type="nvarchar" MaxLength="500" />
+          <Property Name="Mobile" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="PhoneResidence" Type="nvarchar" MaxLength="50" />
+          <Property Name="EmergencyPhone" Type="nvarchar" MaxLength="50" />
+          <Property Name="GuardianPhone" Type="nvarchar" MaxLength="50" />
+          <Property Name="SMSPhone" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="DateOfBirth" Type="datetime" Nullable="false" />
+          <Property Name="PlaceOfBirth" Type="nvarchar" MaxLength="100" />
+          <Property Name="BirthRegistrationNo" Type="nvarchar" MaxLength="100" />
+          <Property Name="NationalityID" Type="int" />
+          <Property Name="NationalIdNumber" Type="nvarchar" MaxLength="100" />
+          <Property Name="MotherTongueID" Type="int" />
+          <Property Name="MaritalStatusID" Type="int" />
+          <Property Name="ReligionID" Type="int" />
+          <Property Name="QuotaID" Type="int" />
+          <Property Name="BloodGroupID" Type="int" />
+          <Property Name="GenderID" Type="int" />
+          <Property Name="CandidateUserID" Type="bigint" Nullable="false" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="UniqueIdentifier" Type="uniqueidentifier" />
+          <Property Name="Remarks" Type="nvarchar" MaxLength="500" />
+          <Property Name="AttributeStr1" Type="nvarchar" MaxLength="50" />
+          <Property Name="AttributeStr2" Type="nvarchar" MaxLength="50" />
+          <Property Name="AttributeInt1" Type="int" />
+          <Property Name="AttributeInt2" Type="int" />
+          <Property Name="AttributeDec" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="AttributeBool" Type="bit" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="DateModified" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+        </EntityType>
+        <EntityType Name="CandidatePayment">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CandidateID" Type="bigint" />
+          <Property Name="PaymentId" Type="bigint" />
+          <Property Name="AcaCalID" Type="int" />
+          <Property Name="IsPaid" Type="bit" />
+          <Property Name="Amount" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="DateCreated" Type="datetime" />
+          <Property Name="CreatedBy" Type="bigint" />
+          <Property Name="DateModified" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+          <Property Name="Attribute1" Type="nvarchar" MaxLength="50" />
+          <Property Name="Attribute2" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="CandidateUser">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UsernameLoginId" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="ConfirmationToken" Type="nvarchar" MaxLength="128" />
+          <Property Name="IsConfirmed" Type="bit" Nullable="false" />
+          <Property Name="IsLocked" Type="bit" Nullable="false" />
+          <Property Name="LastPasswordFailureDate" Type="datetime" />
+          <Property Name="PasswordChangedDate" Type="datetime" />
+          <Property Name="PasswordVerificationToken" Type="nvarchar" MaxLength="128" />
+          <Property Name="PasswordVerificationTokenExpirationDate" Type="datetime" />
+          <Property Name="ValidTill" Type="datetime" Nullable="false" />
+          <Property Name="Degree" Type="int" />
+          <Property Name="IsSentSms" Type="bit" />
+          <Property Name="IsSentEmail" Type="bit" />
+          <Property Name="RoleID" Type="bigint" />
+          <Property Name="AdmissionSetupID" Type="bigint" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="DateModified" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+          <Property Name="IsActive" Type="bit" />
+        </EntityType>
+        <EntityType Name="OnlineCollectionAttempt">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CandidateId" Type="bigint" />
+          <Property Name="PaymentId" Type="bigint" />
+          <Property Name="TransactionId" Type="nvarchar(max)" />
+          <Property Name="PaymentAmount" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="IsPaid" Type="bit" />
+          <Property Name="Remarks" Type="nvarchar(max)" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedBy" Type="bigint" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <Association Name="FK_BasicInfo_CandidateUser">
+          <End Role="CandidateUser" Type="Self.CandidateUser" Multiplicity="1" />
+          <End Role="BasicInfo" Type="Self.BasicInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CandidateUser">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="BasicInfo">
+              <PropertyRef Name="CandidateUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CandidatePayment_BasicInfo">
+          <End Role="BasicInfo" Type="Self.BasicInfo" Multiplicity="0..1" />
+          <End Role="CandidatePayment" Type="Self.CandidatePayment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BasicInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="CandidatePayment">
+              <PropertyRef Name="CandidateID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="BUFT_AdmissionModelStoreContainer">
+          <EntitySet Name="BasicInfo" EntityType="Self.BasicInfo" Schema="Candidate" store:Type="Tables" />
+          <EntitySet Name="CandidatePayment" EntityType="Self.CandidatePayment" Schema="Candidate" store:Type="Tables" />
+          <EntitySet Name="CandidateUser" EntityType="Self.CandidateUser" Schema="Candidate" store:Type="Tables" />
+          <EntitySet Name="OnlineCollectionAttempt" EntityType="Self.OnlineCollectionAttempt" Schema="Candidate" store:Type="Tables" />
+          <AssociationSet Name="FK_BasicInfo_CandidateUser" Association="Self.FK_BasicInfo_CandidateUser">
+            <End Role="CandidateUser" EntitySet="CandidateUser" />
+            <End Role="BasicInfo" EntitySet="BasicInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CandidatePayment_BasicInfo" Association="Self.FK_CandidatePayment_BasicInfo">
+            <End Role="BasicInfo" EntitySet="BasicInfo" />
+            <End Role="CandidatePayment" EntitySet="CandidatePayment" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BUFT_AdmissionModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="BasicInfoes" EntityType="BUFT_AdmissionModel.BasicInfo" />
+          <EntitySet Name="CandidatePayments" EntityType="BUFT_AdmissionModel.CandidatePayment" />
+          <AssociationSet Name="FK_BasicInfo_BloodGroup" Association="BUFT_AdmissionModel.FK_BasicInfo_BloodGroup">
+            <End Role="BasicInfo" EntitySet="BasicInfoes" />
+            <End Role="BasicInfo1" EntitySet="BasicInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasicInfo_CandidateUser" Association="BUFT_AdmissionModel.FK_BasicInfo_CandidateUser">
+            <End Role="BasicInfo" EntitySet="BasicInfoes" />
+            <End Role="BasicInfo1" EntitySet="BasicInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasicInfo_Country" Association="BUFT_AdmissionModel.FK_BasicInfo_Country">
+            <End Role="BasicInfo" EntitySet="BasicInfoes" />
+            <End Role="BasicInfo1" EntitySet="BasicInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasicInfo_Gender" Association="BUFT_AdmissionModel.FK_BasicInfo_Gender">
+            <End Role="BasicInfo" EntitySet="BasicInfoes" />
+            <End Role="BasicInfo1" EntitySet="BasicInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasicInfo_Language" Association="BUFT_AdmissionModel.FK_BasicInfo_Language">
+            <End Role="BasicInfo" EntitySet="BasicInfoes" />
+            <End Role="BasicInfo1" EntitySet="BasicInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasicInfo_MaritalStatus" Association="BUFT_AdmissionModel.FK_BasicInfo_MaritalStatus">
+            <End Role="BasicInfo" EntitySet="BasicInfoes" />
+            <End Role="BasicInfo1" EntitySet="BasicInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasicInfo_Quota" Association="BUFT_AdmissionModel.FK_BasicInfo_Quota">
+            <End Role="BasicInfo" EntitySet="BasicInfoes" />
+            <End Role="BasicInfo1" EntitySet="BasicInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasicInfo_Religion" Association="BUFT_AdmissionModel.FK_BasicInfo_Religion">
+            <End Role="BasicInfo" EntitySet="BasicInfoes" />
+            <End Role="BasicInfo1" EntitySet="BasicInfoes" />
+          </AssociationSet>
+          <EntitySet Name="CandidateUsers" EntityType="BUFT_AdmissionModel.CandidateUser" />
+          <AssociationSet Name="FK_BasicInfo_CandidateUser1" Association="BUFT_AdmissionModel.FK_BasicInfo_CandidateUser1">
+            <End Role="CandidateUser" EntitySet="CandidateUsers" />
+            <End Role="BasicInfo" EntitySet="BasicInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CandidatePayment_BasicInfo" Association="BUFT_AdmissionModel.FK_CandidatePayment_BasicInfo">
+            <End Role="BasicInfo" EntitySet="BasicInfoes" />
+            <End Role="CandidatePayment" EntitySet="CandidatePayments" />
+          </AssociationSet>
+          <EntitySet Name="OnlineCollectionAttempts" EntityType="BUFT_AdmissionModel.OnlineCollectionAttempt" />
+        </EntityContainer>
+        <EntityType Name="BasicInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="MiddleName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="NickName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="FullName_BEN" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Mobile" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneResidence" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EmergencyPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="GuardianPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SMSPhone" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="DateOfBirth" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="PlaceOfBirth" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="BirthRegistrationNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="NationalityID" Type="Int32" />
+          <Property Name="NationalIdNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="MotherTongueID" Type="Int32" />
+          <Property Name="MaritalStatusID" Type="Int32" />
+          <Property Name="ReligionID" Type="Int32" />
+          <Property Name="QuotaID" Type="Int32" />
+          <Property Name="BloodGroupID" Type="Int32" />
+          <Property Name="GenderID" Type="Int32" />
+          <Property Name="CandidateUserID" Type="Int64" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="UniqueIdentifier" Type="Guid" />
+          <Property Name="Remarks" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="AttributeStr1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AttributeStr2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AttributeInt1" Type="Int32" />
+          <Property Name="AttributeInt2" Type="Int32" />
+          <Property Name="AttributeDec" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="AttributeBool" Type="Boolean" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="DateModified" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <NavigationProperty Name="BasicInfo1" Relationship="BUFT_AdmissionModel.FK_BasicInfo_BloodGroup" FromRole="BasicInfo" ToRole="BasicInfo1" />
+          <NavigationProperty Name="BasicInfo2" Relationship="BUFT_AdmissionModel.FK_BasicInfo_BloodGroup" FromRole="BasicInfo1" ToRole="BasicInfo" />
+          <NavigationProperty Name="BasicInfo11" Relationship="BUFT_AdmissionModel.FK_BasicInfo_CandidateUser" FromRole="BasicInfo" ToRole="BasicInfo1" />
+          <NavigationProperty Name="BasicInfo3" Relationship="BUFT_AdmissionModel.FK_BasicInfo_CandidateUser" FromRole="BasicInfo1" ToRole="BasicInfo" />
+          <NavigationProperty Name="BasicInfo12" Relationship="BUFT_AdmissionModel.FK_BasicInfo_Country" FromRole="BasicInfo" ToRole="BasicInfo1" />
+          <NavigationProperty Name="BasicInfo4" Relationship="BUFT_AdmissionModel.FK_BasicInfo_Country" FromRole="BasicInfo1" ToRole="BasicInfo" />
+          <NavigationProperty Name="BasicInfo13" Relationship="BUFT_AdmissionModel.FK_BasicInfo_Gender" FromRole="BasicInfo" ToRole="BasicInfo1" />
+          <NavigationProperty Name="BasicInfo5" Relationship="BUFT_AdmissionModel.FK_BasicInfo_Gender" FromRole="BasicInfo1" ToRole="BasicInfo" />
+          <NavigationProperty Name="BasicInfo14" Relationship="BUFT_AdmissionModel.FK_BasicInfo_Language" FromRole="BasicInfo" ToRole="BasicInfo1" />
+          <NavigationProperty Name="BasicInfo6" Relationship="BUFT_AdmissionModel.FK_BasicInfo_Language" FromRole="BasicInfo1" ToRole="BasicInfo" />
+          <NavigationProperty Name="BasicInfo15" Relationship="BUFT_AdmissionModel.FK_BasicInfo_MaritalStatus" FromRole="BasicInfo" ToRole="BasicInfo1" />
+          <NavigationProperty Name="BasicInfo7" Relationship="BUFT_AdmissionModel.FK_BasicInfo_MaritalStatus" FromRole="BasicInfo1" ToRole="BasicInfo" />
+          <NavigationProperty Name="BasicInfo16" Relationship="BUFT_AdmissionModel.FK_BasicInfo_Quota" FromRole="BasicInfo" ToRole="BasicInfo1" />
+          <NavigationProperty Name="BasicInfo8" Relationship="BUFT_AdmissionModel.FK_BasicInfo_Quota" FromRole="BasicInfo1" ToRole="BasicInfo" />
+          <NavigationProperty Name="BasicInfo17" Relationship="BUFT_AdmissionModel.FK_BasicInfo_Religion" FromRole="BasicInfo" ToRole="BasicInfo1" />
+          <NavigationProperty Name="BasicInfo9" Relationship="BUFT_AdmissionModel.FK_BasicInfo_Religion" FromRole="BasicInfo1" ToRole="BasicInfo" />
+          <NavigationProperty Name="CandidateUser" Relationship="BUFT_AdmissionModel.FK_BasicInfo_CandidateUser1" FromRole="BasicInfo" ToRole="CandidateUser" />
+          <NavigationProperty Name="CandidatePayments" Relationship="BUFT_AdmissionModel.FK_CandidatePayment_BasicInfo" FromRole="BasicInfo" ToRole="CandidatePayment" />
+        </EntityType>
+        <EntityType Name="CandidatePayment">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CandidateID" Type="Int64" />
+          <Property Name="PaymentId" Type="Int64" />
+          <Property Name="AcaCalID" Type="Int32" />
+          <Property Name="IsPaid" Type="Boolean" />
+          <Property Name="Amount" Type="Int32" />
+          <Property Name="DateCreated" Type="DateTime" Precision="3" />
+          <Property Name="CreatedBy" Type="Int64" />
+          <Property Name="Attribute1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Attribute2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DateModified" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <NavigationProperty Name="BasicInfo" Relationship="BUFT_AdmissionModel.FK_CandidatePayment_BasicInfo" FromRole="CandidatePayment" ToRole="BasicInfo" />
+        </EntityType>
+        <Association Name="FK_BasicInfo_BloodGroup">
+          <End Type="BUFT_AdmissionModel.BasicInfo" Role="BasicInfo" Multiplicity="1" />
+          <End Type="BUFT_AdmissionModel.BasicInfo" Role="BasicInfo1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="BasicInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="BasicInfo1">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasicInfo_CandidateUser">
+          <End Type="BUFT_AdmissionModel.BasicInfo" Role="BasicInfo" Multiplicity="1" />
+          <End Type="BUFT_AdmissionModel.BasicInfo" Role="BasicInfo1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="BasicInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="BasicInfo1">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasicInfo_Country">
+          <End Type="BUFT_AdmissionModel.BasicInfo" Role="BasicInfo" Multiplicity="1" />
+          <End Type="BUFT_AdmissionModel.BasicInfo" Role="BasicInfo1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="BasicInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="BasicInfo1">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasicInfo_Gender">
+          <End Type="BUFT_AdmissionModel.BasicInfo" Role="BasicInfo" Multiplicity="1" />
+          <End Type="BUFT_AdmissionModel.BasicInfo" Role="BasicInfo1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="BasicInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="BasicInfo1">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasicInfo_Language">
+          <End Type="BUFT_AdmissionModel.BasicInfo" Role="BasicInfo" Multiplicity="1" />
+          <End Type="BUFT_AdmissionModel.BasicInfo" Role="BasicInfo1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="BasicInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="BasicInfo1">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasicInfo_MaritalStatus">
+          <End Type="BUFT_AdmissionModel.BasicInfo" Role="BasicInfo" Multiplicity="1" />
+          <End Type="BUFT_AdmissionModel.BasicInfo" Role="BasicInfo1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="BasicInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="BasicInfo1">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasicInfo_Quota">
+          <End Type="BUFT_AdmissionModel.BasicInfo" Role="BasicInfo" Multiplicity="1" />
+          <End Type="BUFT_AdmissionModel.BasicInfo" Role="BasicInfo1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="BasicInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="BasicInfo1">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasicInfo_Religion">
+          <End Type="BUFT_AdmissionModel.BasicInfo" Role="BasicInfo" Multiplicity="1" />
+          <End Type="BUFT_AdmissionModel.BasicInfo" Role="BasicInfo1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="BasicInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="BasicInfo1">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="CandidateUser">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UsernameLoginId" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="ConfirmationToken" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="IsConfirmed" Type="Boolean" Nullable="false" />
+          <Property Name="IsLocked" Type="Boolean" Nullable="false" />
+          <Property Name="LastPasswordFailureDate" Type="DateTime" Precision="3" />
+          <Property Name="PasswordChangedDate" Type="DateTime" Precision="3" />
+          <Property Name="PasswordVerificationToken" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="PasswordVerificationTokenExpirationDate" Type="DateTime" Precision="3" />
+          <Property Name="ValidTill" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Degree" Type="Int32" />
+          <Property Name="IsSentSms" Type="Boolean" />
+          <Property Name="IsSentEmail" Type="Boolean" />
+          <Property Name="RoleID" Type="Int64" />
+          <Property Name="AdmissionSetupID" Type="Int64" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="DateModified" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <Property Name="IsActive" Type="Boolean" />
+          <NavigationProperty Name="BasicInfoes" Relationship="BUFT_AdmissionModel.FK_BasicInfo_CandidateUser1" FromRole="CandidateUser" ToRole="BasicInfo" />
+        </EntityType>
+        <Association Name="FK_BasicInfo_CandidateUser1">
+          <End Type="BUFT_AdmissionModel.CandidateUser" Role="CandidateUser" Multiplicity="1" />
+          <End Type="BUFT_AdmissionModel.BasicInfo" Role="BasicInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CandidateUser">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="BasicInfo">
+              <PropertyRef Name="CandidateUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CandidatePayment_BasicInfo">
+          <End Type="BUFT_AdmissionModel.BasicInfo" Role="BasicInfo" Multiplicity="0..1" />
+          <End Type="BUFT_AdmissionModel.CandidatePayment" Role="CandidatePayment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BasicInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="CandidatePayment">
+              <PropertyRef Name="CandidateID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="OnlineCollectionAttempt">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CandidateId" Type="Int64" />
+          <Property Name="PaymentId" Type="Int64" />
+          <Property Name="TransactionId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PaymentAmount" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="IsPaid" Type="Boolean" />
+          <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BUFT_AdmissionModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="BasicInfoes">
+            <EntityTypeMapping TypeName="BUFT_AdmissionModel.BasicInfo">
+              <MappingFragment StoreEntitySet="BasicInfo">
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="AttributeBool" ColumnName="AttributeBool" />
+                <ScalarProperty Name="AttributeDec" ColumnName="AttributeDec" />
+                <ScalarProperty Name="AttributeInt2" ColumnName="AttributeInt2" />
+                <ScalarProperty Name="AttributeInt1" ColumnName="AttributeInt1" />
+                <ScalarProperty Name="AttributeStr2" ColumnName="AttributeStr2" />
+                <ScalarProperty Name="AttributeStr1" ColumnName="AttributeStr1" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="UniqueIdentifier" ColumnName="UniqueIdentifier" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="CandidateUserID" ColumnName="CandidateUserID" />
+                <ScalarProperty Name="GenderID" ColumnName="GenderID" />
+                <ScalarProperty Name="BloodGroupID" ColumnName="BloodGroupID" />
+                <ScalarProperty Name="QuotaID" ColumnName="QuotaID" />
+                <ScalarProperty Name="ReligionID" ColumnName="ReligionID" />
+                <ScalarProperty Name="MaritalStatusID" ColumnName="MaritalStatusID" />
+                <ScalarProperty Name="MotherTongueID" ColumnName="MotherTongueID" />
+                <ScalarProperty Name="NationalIdNumber" ColumnName="NationalIdNumber" />
+                <ScalarProperty Name="NationalityID" ColumnName="NationalityID" />
+                <ScalarProperty Name="BirthRegistrationNo" ColumnName="BirthRegistrationNo" />
+                <ScalarProperty Name="PlaceOfBirth" ColumnName="PlaceOfBirth" />
+                <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="SMSPhone" ColumnName="SMSPhone" />
+                <ScalarProperty Name="GuardianPhone" ColumnName="GuardianPhone" />
+                <ScalarProperty Name="EmergencyPhone" ColumnName="EmergencyPhone" />
+                <ScalarProperty Name="PhoneResidence" ColumnName="PhoneResidence" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="FullName_BEN" ColumnName="FullName_BEN" />
+                <ScalarProperty Name="NickName" ColumnName="NickName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CandidatePayments">
+            <EntityTypeMapping TypeName="BUFT_AdmissionModel.CandidatePayment">
+              <MappingFragment StoreEntitySet="CandidatePayment">
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+                <ScalarProperty Name="Attribute2" ColumnName="Attribute2" />
+                <ScalarProperty Name="Attribute1" ColumnName="Attribute1" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="IsPaid" ColumnName="IsPaid" />
+                <ScalarProperty Name="AcaCalID" ColumnName="AcaCalID" />
+                <ScalarProperty Name="PaymentId" ColumnName="PaymentId" />
+                <ScalarProperty Name="CandidateID" ColumnName="CandidateID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CandidateUsers">
+            <EntityTypeMapping TypeName="BUFT_AdmissionModel.CandidateUser">
+              <MappingFragment StoreEntitySet="CandidateUser">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="AdmissionSetupID" ColumnName="AdmissionSetupID" />
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+                <ScalarProperty Name="IsSentEmail" ColumnName="IsSentEmail" />
+                <ScalarProperty Name="IsSentSms" ColumnName="IsSentSms" />
+                <ScalarProperty Name="Degree" ColumnName="Degree" />
+                <ScalarProperty Name="ValidTill" ColumnName="ValidTill" />
+                <ScalarProperty Name="PasswordVerificationTokenExpirationDate" ColumnName="PasswordVerificationTokenExpirationDate" />
+                <ScalarProperty Name="PasswordVerificationToken" ColumnName="PasswordVerificationToken" />
+                <ScalarProperty Name="PasswordChangedDate" ColumnName="PasswordChangedDate" />
+                <ScalarProperty Name="LastPasswordFailureDate" ColumnName="LastPasswordFailureDate" />
+                <ScalarProperty Name="IsLocked" ColumnName="IsLocked" />
+                <ScalarProperty Name="IsConfirmed" ColumnName="IsConfirmed" />
+                <ScalarProperty Name="ConfirmationToken" ColumnName="ConfirmationToken" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="UsernameLoginId" ColumnName="UsernameLoginId" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OnlineCollectionAttempts">
+            <EntityTypeMapping TypeName="BUFT_AdmissionModel.OnlineCollectionAttempt">
+              <MappingFragment StoreEntitySet="OnlineCollectionAttempt">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="IsPaid" ColumnName="IsPaid" />
+                <ScalarProperty Name="PaymentAmount" ColumnName="PaymentAmount" />
+                <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+                <ScalarProperty Name="PaymentId" ColumnName="PaymentId" />
+                <ScalarProperty Name="CandidateId" ColumnName="CandidateId" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
