@@ -2,20 +2,20 @@
 using LogicLayer.BusinessLogic;
 using LogicLayer.BusinessObjects;
 using LogicLayer.BusinessObjects.DTO;
-using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.Entity;
 using System.Data.SqlClient;
-using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Security.Claims;
 using System.Text;
 using System.Web.Http;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
 using EntityState = System.Data.Entity.EntityState;
 
 
@@ -36,9 +36,9 @@ namespace EMSBankServiceApi.Controllers
             // 1. Initial Logging
             try
             {
-                MisscellaneousCommonMethods.InsertLog(UserName, "Post Payment Request By Bkash App",
-                    $"Bkash API: ID {request.StudentId}, Ref {request.ReferenceNo}, Amt {request.Amount}, Trx {request.TransactionCode}",
-                    "", request.StudentId, "0", "Bkash Payment API Controller Page", "api/BkashPostPayment");
+                //MisscellaneousCommonMethods.InsertLog(UserName, "Post Payment Request By Bkash App",
+                //    $"Bkash API: ID {request.StudentId}, Ref {request.ReferenceNo}, Amt {request.Amount}, Trx {request.TransactionCode}",
+                //    "", request.StudentId, "0", "Bkash Payment API Controller Page", "api/BkashPostPayment");
             }
             catch { }
 
@@ -234,7 +234,7 @@ namespace EMSBankServiceApi.Controllers
             #region Log Insert
             try
             {
-                MisscellaneousCommonMethods.InsertLog(UserName, "Verify Payment Request By Bkash App", "Bkash Payment API Verify Payment Request with  TransactionCode : " + request.TransactionCode, "", "", "0", "Bkash Payment API Controller Page", "api/VerifyPaymentByTransactionId");
+                //MisscellaneousCommonMethods.InsertLog(UserName, "Verify Payment Request By Bkash App", "Bkash Payment API Verify Payment Request with  TransactionCode : " + request.TransactionCode, "", "", "0", "Bkash Payment API Controller Page", "api/VerifyPaymentByTransactionId");
             }
             catch (Exception ex)
             {

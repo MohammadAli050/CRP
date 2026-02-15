@@ -10,7 +10,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
-    <NameOfLastUsedPublishProfile>D:\Git Bash_Solution\CRP_New\EMSBankServiceApi\Properties\PublishProfiles\FolderProfile1.pubxml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>D:\Git Bash_Solution\CRP_New\EMSBankServiceApi\Properties\PublishProfiles\EMS_Bank_Service_API.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>

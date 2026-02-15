@@ -39,7 +39,7 @@ namespace EMSBankServiceApi.Controllers
                 try
                 {
                     string logDesc = $"BKash Payment API: ID {request.StudentId}, Type {request.BillingTypeId}, MY {request.MonthYear}";
-                    MisscellaneousCommonMethods.InsertLog(UserName, "Get Student Info By Payment App", logDesc, "", request.StudentId, "0", "BKash Payment API Controller Page", "api/BKashVerifyStudent");
+                    //MisscellaneousCommonMethods.InsertLog(UserName, "Get Student Info By Payment App", logDesc, "", request.StudentId, "0", "BKash Payment API Controller Page", "api/BKashVerifyStudent");
                 }
                 catch { /* Keep empty as per original logic */ }
 
@@ -146,7 +146,7 @@ namespace EMSBankServiceApi.Controllers
                     {
                         try
                         {
-                            MisscellaneousCommonMethods.InsertLog(UserName, "Get Student Info Success", $"ID: {request.StudentId}, Ref: {paymentObj.ReferanceNo}", "", request.StudentId, "0", "Controller", "api/BKashVerifyStudent");
+                            //MisscellaneousCommonMethods.InsertLog(UserName, "Get Student Info Success", $"ID: {request.StudentId}, Ref: {paymentObj.ReferanceNo}", "", request.StudentId, "0", "Controller", "api/BKashVerifyStudent");
                         }
                         catch { }
 
